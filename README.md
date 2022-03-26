@@ -1,33 +1,206 @@
 # AZ900 - Exam Preparation
 
-## Introdução aos conceitos básicos do Azure
+## Introduction to Azure fundamentals
 
-### Introdução 
+### Introduction
 
-- Plataforma de computação em nuvem
-- Criar soluções e cumprir suas metas de negócios
-- Nesse módulo, você terá uma perspectiva básica de ponta a ponta sobre a Azure e suas funcionalidades
+- Cloud computing platform
+- Build solutions to meet your business goals
+- In this module, you'll take an entry-level, end-to-end look at Azure and its capabilities
 
-### O que são os Conceitos Básicos do Azure?
+### What is Azure fundamentals?
 
 - Série de seis roteiros de aprendizagem
 - Ajudam você a se familiarizar com o Azure e seus diversos serviços e recursos
 
-### Por que devo estudar os conceitos básicos do Azure?
+#### Why should I take Azure fundamentals?
 
-#### Preparação para o Exame AZ-900
+##### Preparation for Exam AZ-900
 
 Exame inclui seis áreas de domínio de conhecimento:
 
-| Área de domínio do AZ-900                                                       | Peso   |
-|---------------------------------------------------------------------------------|--------|
-| Descrever os conceitos da nuvem                                                 | 20-25% |
-| Descrever os principais serviços do Azure                                       | 15-20% |
-| Descrever as principais soluções e ferramentas de gerenciamento no Azure        | 10-15% |
-| Descrever os recursos gerais de segurança de rede e segurança                   | 10-15% |
-| Descrever recursos de identidade, governança, privacidade e conformidade        | 20-25% |
-| Descrever os Contratos de Nível de Serviço e o gerenciamento de custos do Azure | 10-15% |
+| AZ-900 Domain Area                                              | Weight |
+| --------------------------------------------------------------- | ------ |
+| Describe cloud concepts                                         | 20-25% |
+| Describe core Azure services                                    | 15-20% |
+| Describe core solutions and management tools on Azure           | 10-15% |
+| Describe general security and network security features         | 10-15% |
+| Describe identity, governance, privacy, and compliance features | 20-25% |
+| Describe Azure cost management and Service Level Agreements     | 10-15% |
 
-### O que é a computação em nuvem?
+### What is cloud computing?
 
+- Delivery of computing services over the internet
+- Services = servers, storage, databases, networking, software, analytics, and intelligence
+- Compute power = how much processing your computer can deliver
+- Storage = amount of data that can be stored on your computer
 
+### Why is cloud computing typically cheaper to use?
+
+- Cloud computing is the delivery of computing services over the Internet using a pay-as-you-go pricing model
+- You only pay for the cloud services you use, which helps:
+  - Reduce operating costs
+  - Run infrastructure more efficiently
+  - Scale operations according to business needs
+- The cloud provider is responsible for maintaining the underlying infrastructure for you
+
+### Why should I move to the cloud?
+
+- Two current trends:
+  - Teams deliver new features to users in record time
+  - Users expect an increasingly sophisticated and immersive experience across their devices and software.
+- Weekly or daily releases
+
+### What is Azure?
+
+- Tipos de serviços:
+
+  - SAAS
+  - PAAS
+  - IAAS
+
+- VMs
+- Cloud Base Storage
+  - Store application or backup safely
+- Escalable hosting platforms
+  - Azure Web Apps
+    - Deploy, operate and scale app
+  - Azure Functions
+    - Event driven, serverless application, with no coding required
+  - Azure Container Instances and Azure Kubernetes Service
+    - Deploy containerized applications with fully managed services
+- Fully managed relational and in-memory databases, spanning proprietary and open source engines
+- Microsoft Cosmos DB
+  - Support for several popular NoSQL APIs
+- Azure Artificial Inteligence and Machine Learing services
+
+  - Empower developers and data scientists
+  - Wide range productive experiences for building, training and deploying machine learing models faster
+
+- Azure's regional data centers allow you to ditribute your applications globally so you can locate your data in apps where they're needed most
+- Azure Portal lets you create, configure and control all your services and resources from a single easy to use web-based interface
+
+### How does Azure work?
+
+- Azure uses a technology known as virtualization
+- Virtualization separates the tight coupling between a computer's hardware (HW) and its operating system using an abstraction layer called a hypervisor
+- The **hypervisor** emulates all the functions of a real computer and its CPU in a virtual machine
+- Each **data center** has mini racks filled with servers
+- Each **server** includes a hypervisor to run multiple virtual machines
+- **Network switch** provides connectivity to all those servers
+- One server in each rack runs a special piece of SW called **fabric controller**
+- Each **fabric controller** is connected to another special piece of SW known as **Orchestrator**
+- **Orchestrator** is responsible for managing everything that happens in Azure:
+  - Responding to user requests
+- User's make requests using the **Orchestrator's Web API**
+  - Can be called by the user interface (UI) of the Azure Portal
+
+### What is the Azure Portal?
+
+- Web-based, unified console that provides an alternative to command-line tools
+- Manage your Azure subscription by using a graphical user interface
+  - Build, manage, and monitor everything from simple web apps to complex cloud deployments
+  - Create custom dashboards for an organized view of resources
+  - Configure accessibility options for an optimal experience
+- Designed for resiliency and continuous availability
+  - Maintains a presence in every Azure datacenter
+  - Resilient to individual datacenter failures and avoids network slowdowns by being close to users
+  - Requires no downtime for maintenance activitie
+
+### What is Azure Marketplace?
+
+- Customers can find, try, purchase, and provision applications and services from hundreds of leading service providers
+- ## All solutions and services are certified to run on Azure
+
+### Tour of Azure Services
+
+#### Azure Services
+
+![Azure Services big-picture](https://docs.microsoft.com/en-us/learn/azure-fundamentals/intro-to-azure-fundamentals/media/azure-services-6c41a736.png)
+
+##### Compute
+
+Range of options for hosting applications and services.
+
+Some examples of compute services in Azure:
+
+| Service Name                     | Service Function                                                         |
+| -------------------------------- | ------------------------------------------------------------------------ |
+| Azure Virtual Machines           | Windows or Linux virtual machines (VMs) hosted in Azure                  |
+| Azure Virtual Machine Scale Sets | Scaling for Windows or Linux VMs hosted in Azure                         |
+| Azure Kubernetes Service         | Cluster management for VMs that run containerized services               |
+| Azure Service Fabric             | Distributed systems platform that runs in Azure or on-premises           |
+| Azure Batch                      | Managed service for parallel and high-performance computing applications |
+| Azure Container Instances        | Containerized apps run on Azure without provisioning servers or VMs      |
+| Azure Functions                  | An event-driven, serverless compute service                              |
+
+##### Networking
+
+Linking compute resources and providing access to applications is the key of Azure networking.
+
+Connect the outside world to services and features in the global Azure datacenters.
+
+Some examples of networking services in Azure:
+
+| Service name                   | Service function                                                                     |
+| ------------------------------ | ------------------------------------------------------------------------------------ |
+| Azure Virtual Network          | Connects VMs to incoming virtual private network (VPN) connections                   |
+| Azure Load Balancer            | Balances inbound and outbound connections to applications or service endpoints       |
+| Azure Application Gateway      | Optimizes app server farm delivery while increasing application security             |
+| Azure VPN Gateway              | Accesses Azure Virtual Networks through high-performance VPN gateways                |
+| Azure DNS                      | Provides ultra-fast DNS responses and ultra-high domain availability                 |
+| Azure Content Delivery Network | Delivers high-bandwidth content to customers globally                                |
+| Azure DDoS Protection          | Protects Azure-hosted applications from distributed denial of service (DDOS) attacks |
+| Azure Traffic Manager          | Distributes network traffic across Azure regions worldwide                           |
+| Azure ExpressRoute             | Connects to Azure over high-bandwidth dedicated secure connections                   |
+| Azure Network Watcher          | Monitors and diagnoses network issues by using scenario-based analysis               |
+| Azure Firewall                 | Implements high-security, high-availability firewall with unlimited scalability      |
+| Azure Virtual WAN              | Creates a unified wide area network (WAN) that connects local and remote sites       |
+
+##### Storage
+
+Four main types of storage services:
+
+| Service name        | Service function                                                                                                                                                                   |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Azure Blob storage  | Storage service for very large objects, such as video files or bitmaps                                                                                                             |
+| Azure File storage  | File shares that can be accessed and managed like a file server                                                                                                                    |
+| Azure Queue storage | A data store for queuing and reliably delivering messages between applications                                                                                                     |
+| Azure Table storage | Table storage is a service that stores non-relational structured data (also known as structured NoSQL data) in the cloud, providing a key/attribute store with a schemaless design |
+
+These services all share several common characteristics:
+
+- **Durable** and highly available with redundancy and replication
+- **Secure** through automatic encryption and role-based access control
+- **Scalable** with virtually unlimited storage
+- **Managed** handling maintenance and any critical problems for you
+- **Accessible** from anywhere in the world over HTTP or HTTPS
+
+##### Mobile
+
+- Create mobile back-end services for IOS, Android and Windows apps quickly and easily
+- Adding corporate sign-in and the connecting to on-premises resources such as SAP, Oracle, SQL Server and SharePoint
+- Offline data synchronization
+- Connectivity to on-premises data
+- Broadcasting push notifications
+- Autoscaling to match business needs
+
+##### Databases
+
+Provides multiple databases services to store a wide variety of data types and volumes.
+
+| Service name                         | Service function                                                                                    |
+| ------------------------------------ | --------------------------------------------------------------------------------------------------- |
+| Azure Cosmos DB                      | Globally distributed database that supports NoSQL options                                           |
+| Azure SQL Database                   | Fully managed relational database with auto-scale, integral intelligence, and robust security       |
+| Azure Database for MySQL             | Fully managed and scalable MySQL relational database with high availability and security            |
+| Azure Database for PostgreSQL        | Fully managed and scalable PostgreSQL relational database with high availability and security       |
+| SQL Server on Azure Virtual Machines | Service that hosts enterprise SQL Server apps in the cloud                                          |
+| Azure Synapse Analytics              | Fully managed data warehouse with integral security at every level of scale at no extra cost        |
+| Azure Database Migration Service     | Service that migrates databases to the cloud with no application code changes                       |
+| Azure Cache for Redis                | Fully managed service caches frequently used and static data to reduce data and application latency |
+| Azure Database for MariaDB           | Fully managed and scalable MariaDB relational database with high availability and security          |
+
+##### Web
+
+---
