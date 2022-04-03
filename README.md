@@ -224,4 +224,58 @@ Includes firts-class support to build and host web apps and HTTP-based web servi
 
 ##### Big data
 
+- Open-source cluster technologies developed to deal with large data sets
+- Azure supports a broad range of technologies and services to provide big data and analytics solutions
+
+| Service name            | Description                                                                                                                                                                                     |
+| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Azure Synapse Analytics | Run analytics at a massive scale by using a cloud-based enterprise data warehouse that takes advantage of massively parallel processing to run complex queries quickly across petabytes of data |
+| Azure HDInsight         | Process massive amounts of data with managed clusters of Hadoop clusters in the cloud                                                                                                           |
+| Azure Databricks        | Integrate this collaborative Apache Spark-based analytics service with other big data services in Azure                                                                                         |
+
+##### AI
+
+- AI, in the context of cloud computing, is based around a broad range of services, the core of which is machine learning
+  - Data science technique that allows computers to use existing data to forecast future behaviors, outcomes, and trends
+  - Using machine learning, computers learn without being explicitly programmed
+
+| Service name                   | Description                                                                                                                                                                                                                                                  |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Azure Machine Learning Service | Cloud-based environment you can use to develop, train, test, deploy, manage, and track machine learning models. It can auto-generate a model and auto-tune it for you. It will let you start training on your local machine, and then scale out to the cloud |
+| Azure ML Studio                | Collaborative visual workspace where you can build, test, and deploy machine learning solutions by using prebuilt machine learning algorithms and data-handling modules                                                                                      |
+
+- Closely related services: Cognitive Services
+  - Prebuilt APIs to solve complex problems
+
+| Service name                | Description                                                                                                                             |
+| --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Vision                      | Use image-processing algorithms to smartly identify, caption, index, and moderate your pictures and videos                              |
+| Speech                      | Convert spoken audio into text, use voice for verification, or add speaker recognition to your app                                      |
+| Knowledge mapping           | Map complex information and data to solve tasks such as intelligent recommendations and semantic search                                 |
+| Bing Search                 | Add Bing Search APIs to your apps and harness the ability to comb billions of webpages, images, videos, and news with a single API call |
+| Natural Language processing | Allow your apps to process natural language with prebuilt scripts, evaluate sentiment, and learn how to recognize what users want       |
+
+##### DevOps
+
+- Automating software delivery
+- You can create build and release pipelines that provide continuous integration, delivery, and deployment for your applications
+- You can integrate repositories and application tests, perform application monitoring, and work with build artifacts
+- You can also work with and backlog items for tracking, automate infrastructure deployment, and integrate a range of third-party tools and services such as Jenkins and Chef
+
+| Service name       | Description                                                                                                                                                                                                                            |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Azure DevOps       | Use development collaboration tools such as high-performance pipelines, free private Git repositories, configurable Kanban boards, and extensive automated and cloud-based load testing. Formerly known as Visual Studio Team Services |
+| Azure DevTest Labs | Quickly create on-demand Windows and Linux environments to test or demo applications directly from deployment pipelines                                                                                                                |
+
+### Get started with Azure accounts
+
+- To create and use Azure services, you need an Azure subscription
+- You need to create an Azure account, and a subscription will be created for you
+- For example, your company might use a single Azure account for your business and separate subscriptions for development, marketing, and sales departments
+- After you've created an Azure subscription, you can start creating Azure resources within each subscription
+
+![Azure accounts hierarchy](https://docs.microsoft.com/en-us/learn/azure-fundamentals/intro-to-azure-fundamentals/media/scope-levels-12669ee1.png)
+
+### Create an Azure account
+
 ---
