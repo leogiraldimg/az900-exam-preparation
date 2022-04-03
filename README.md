@@ -1,5 +1,7 @@
 # AZ900 - Exam Preparation
 
+Knowledge trail: https://docs.microsoft.com/en-us/learn/paths/az-900-describe-cloud-concepts/.
+
 ## Introduction to Azure fundamentals
 
 ### Introduction
