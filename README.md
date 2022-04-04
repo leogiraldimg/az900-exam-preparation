@@ -278,6 +278,48 @@ Includes firts-class support to build and host web apps and HTTP-based web servi
 
 ![Azure accounts hierarchy](https://docs.microsoft.com/en-us/learn/azure-fundamentals/intro-to-azure-fundamentals/media/scope-levels-12669ee1.png)
 
-### Create an Azure account
+#### Create an Azure account
+
+- You can purchase Azure access directly from Microsoft by signing up on the Azure website or through a Microsoft representative
+- You can also purchase Azure access through a Microsoft partner
+- Free account:
+  - $200 credit
+  - azure.microsoft.com/free
+- Multiple subscriptions -> organize them into invoice sections
+  - Each invoice section is a line item on the invoice that shows the charges incurred that month
+- Multiple invoices -> Billing profiles
+  - Has it's own monthly invoice and payment method
+- Subscription:
+  - (Documentation)[docs.microsoft.com]
+  - Support
+  - Videos
+
+#### What is the Azure free account?
+
+- Includes:
+  - Free access to popular Azure products for 12 months
+  - A credit to spend for the first 30 days
+  - Access to more than 25 products that are always free
+- To sign up you need:
+  - A phone number
+  - A credit card
+  - A Microsoft or Github account
+
+#### What is the Azure free student account?
+
+- Includes:
+  - Free access to certain Azure services for 12 months
+  - A credit ($100) to use in the first 12 months
+  - Free access to certain software developer tools
+
+You can sign up without credit card.
+
+#### What is Learn sandbox?
+
+- Temporary subscription
+- Allows you to create Azure resources for the duration of a Lear module
+- Automatically cleans up the temporary resources for you after you've completed the module
+
+### Case study introduction
 
 ---
