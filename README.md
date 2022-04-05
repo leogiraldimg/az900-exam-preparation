@@ -593,4 +593,165 @@ The "serverless" name comes from the fact that the tasks associated with infra p
 
 Devs can increase their focus on the business logic and deliver more value to the core of the business. Stay focused on innovation.
 
+### Describe core Azure architectural components
+
+#### Overview of Azure subscriptions, management groups, and resources
+
+The Azure organizing structure for resources, which has 4 levels: management groups, subscriptions, resource groups and resources.
+
+![Azure organizing structure for resources](https://docs.microsoft.com/en-us/learn/azure-fundamentals/azure-architecture-fundamentals/media/hierarchy-372fef74.png)
+
+- **Resources**: instances of services that you create, like VMs, storage or SQL databases
+- **Resource groups**: resources are combined into resource groups, which act as a logical container into which Azure resources like web apps, databases and storage accounts are deployed and managed
+- **Subscriptions**: groups together user accounts and the resources that have been created by those user accounts. For each subscription, there is limits or quotas on the amount of resources that you can create and use. Organizations can use subscriptions to manage costs and the resources that are created by users, teams and projects
+- **Management groups**: help manage access, policy and compliance for multiple subscriptions. All subscriptions in a management group automatically inherit the conditions applied to the management group
+
+#### Azure regions, availability zones, and region pairs
+
+- Resources are created in regions, which are different geographical locations around the globe that contain Azure datacenters.
+- Datacenter around the globe
+- Azure organizes them into regions
+- Some offer availability zones, which are Azure datacenters within that region
+
+##### Azure regions
+
+- Geographical area on the planet that contains at least one potentially multiple datacenters that are nearby and networked together with a low-latency network
+- Some services or VM features are only available in certain regions, such as specific VM sizes or storage types
+- There are also some global Azure services that don't require you to select a particular region, such as Azure Active Directory, Azure Traffic Manager, and Azure DNS
+- All the available regions as of June 2020:
+
+![Available Azure regions](https://docs.microsoft.com/en-us/learn/azure-fundamentals/azure-architecture-fundamentals/media/regions-small-be724495.png)
+
+##### Why are regions important?
+
+- Flexibility to bring applications closer to your users no matter where they are
+- Better scalability and redundancy
+- Preserve data residency for your services
+
+##### Special Azure regions
+
+- When you build out your applications for compliance or legal purposes
+- Examples:
+  - **US DoD Central, US Gov Virginia, US Gov lowa and more**:
+    - Physical and logical network-isolated instances for U.S. government
+    - Operated by screened U.S. personnel
+    - Additional compliance certifications
+  - **China East, China North, and more**:
+    - Partnership between Microsoft and 21Vianet
+    - Microsoft doesn't directly maintain the datacenter
+
+##### Azure availability zones
+
+Azure can help make your app highly available through availability zones.
+
+###### What is an availability zones?
+
+- Physically separate datacenter within Azure region
+- Each availability zone is made up for one or more datacenters equipped with independent power, cooling and networking
+- Set up to be an _isolation boundary_
+- Connected through high-speed, private fiber-optic networks
+
+![Availability zones schema](https://docs.microsoft.com/en-us/learn/azure-fundamentals/azure-architecture-fundamentals/media/availability-zones-5c3c490c.png)
+
+##### Supported regions
+
+- Not every region has support for availability zones
+- [Regions that support availability zones in Azure](https://docs.microsoft.com/en-us/azure/availability-zones/az-region)
+
+##### Use availability zones in your apps
+
+- To run mission-critical applications
+- Build high availability into your application architecture by co-locating your compute, storage, networking and data resources within zone and replicating in other zones
+- Are primarily for:
+  - VMs
+  - Managed disks
+  - Load balancers
+  - SQL databases
+- Services that support availability zones:
+  - **Zonal services**: pin the resource to a specific zone (VMs, managed disks, IP addresses)
+  - **Zone-redundant services**: the platform replicates automatically across zones (zone-redundant storage, SQL database)
+  - **Non-regional services**: always available from Azure geographies and ae resilient to zone-wide outages as well as region-wide outages
+
+#### Azure region pairs
+
+- There's a minimum of three zones within a single region
+- Large disaster tat could cause an outage to affect two datacenters
+  - Azure also creates _region pairs_
+
+##### What is region pair?
+
+- Each Azure region is always paired with another region within the same geography at least 300 miles away
+- Allows for the replication of resources
+- Helps reduce the likelihood of interruptions because of events such as natural disasters, civil unrest, power outages, or physical network outages that affect both regions at once
+- If a region in a pair was affected by a natural disaster, for instance, services would automatically failover to the other region in its region pair
+
+![Example of region pair](https://docs.microsoft.com/en-us/learn/azure-fundamentals/azure-architecture-fundamentals/media/region-pairs-d9eb9728.png)
+
+- Provide reliable services and data redundancy
+- Additional advantages of region pairs:
+  - If an extensive Azure outage occurs, one region out of every pair is prioritized to make sure at least one is restored as quickly as possible for applications hosted in that region pair
+  - Planned Azure updates are rolled out to paired regions one region at a time to minimize downtime and risk of application outage
+  - Data continues to reside within the same geography as its pair (except for Brazil South) for tax- and law-enforcement jurisdiction purposes
+
+#### Azure resources and Azure Resource Manager
+
+- **Resource**: manageable item that's available through Azure
+  - VMs
+  - Storage accounts
+  - Web apps
+  - Databases
+  - Virtual networks
+- **Resource group**: container that holds related resources for an Azure solution
+
+##### Azure resource groups
+
+- Logical container for resources deployed on Azure
+- Resources = anything you create in an Azure subscription
+  - VMs
+  - Azure Application Gateway instances
+  - Azure Cosmos DB instances
+  - ...
+- All resources must be in a resource group
+- A resource can only be a member of a single resource group
+- Resource groups can't be nested
+- Resources can be moved between resource groups with some services having specific limitations or requirements to move
+
+###### Logical grouping
+
+- Exist to help manage and organize your Azure resources
+
+###### Life cycle
+
+- If you delete a resource group, all resources contained within it are also deleted
+- Organizing resources by life cycle can be useful in nonproduction environments
+
+###### Authorization
+
+- Scope for applying role-based access control (RBAC) permissions
+- Ease administration and limit access to allow only what's needed
+
+##### Azure Resource Manager
+
+- Deployment and management service for Azure
+- Provides a management layer that enables you to create, update, and delete resources in your Azure account
+- Flux:
+  - User sends a request from any of the Azure tools, APIs, or SDKs -> Resource Manager receives the request -> authenticates and authorizes the request -> sends the request to the Azure service, which takes the requested action
+
+![The role Resource Manager plays in handling Azure requests](https://docs.microsoft.com/en-us/learn/azure-fundamentals/azure-architecture-fundamentals/media/consistent-management-layer-feef9259.png)
+
+- All capabilities that are available in the Azure portal are also available through PowerShell, the Azure CLI, REST APIs, and client SDKs
+- Functionality initially released through APIs will be represented in the portal within 180 days of initial release
+
+###### The benefits of using Resource Manager
+
+- Manage your infrastructure through declarative templates rather than scripts. A Resource Manager template is a JSON file that defines what you want to deploy to Azure
+- Deploy, manage, and monitor all the resources for your solution as a group, rather than handling these resources individually
+- Redeploy your solution throughout the development life cycle and have confidence your resources are deployed in a consistent state
+- Define the dependencies between resources so they're deployed in the correct order
+- Apply access control to all services because RBAC is natively integrated into the management platform
+- Apply tags to resources to logically organize all the resources in your subscription
+- Clarify your organization's billing by viewing costs for a group of resources that share the same tag
+
+### Azure subscriptions and management groups
+
 ---
