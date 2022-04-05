@@ -1,23 +1,25 @@
 # AZ900 - Exam Preparation
 
-Knowledge trail: https://docs.microsoft.com/en-us/learn/paths/az-900-describe-cloud-concepts/.
+Knowledge trail: https://docs.microsoft.com/en-us/learn/certifications/exams/az-900.
 
-## Introduction to Azure fundamentals
+## Microsoft Azure Fundamentals: Describe core Azure concepts
 
-### Introduction
+### Introduction to Azure fundamentals
+
+#### Introduction
 
 - Cloud computing platform
 - Build solutions to meet your business goals
 - In this module, you'll take an entry-level, end-to-end look at Azure and its capabilities
 
-### What is Azure fundamentals?
+#### What is Azure fundamentals?
 
 - Série de seis roteiros de aprendizagem
 - Ajudam você a se familiarizar com o Azure e seus diversos serviços e recursos
 
-#### Why should I take Azure fundamentals?
+##### Why should I take Azure fundamentals?
 
-##### Preparation for Exam AZ-900
+###### Preparation for Exam AZ-900
 
 Exame inclui seis áreas de domínio de conhecimento:
 
@@ -30,14 +32,14 @@ Exame inclui seis áreas de domínio de conhecimento:
 | Describe identity, governance, privacy, and compliance features | 20-25% |
 | Describe Azure cost management and Service Level Agreements     | 10-15% |
 
-### What is cloud computing?
+#### What is cloud computing?
 
 - Delivery of computing services over the internet
 - Services = servers, storage, databases, networking, software, analytics, and intelligence
 - Compute power = how much processing your computer can deliver
 - Storage = amount of data that can be stored on your computer
 
-### Why is cloud computing typically cheaper to use?
+#### Why is cloud computing typically cheaper to use?
 
 - Cloud computing is the delivery of computing services over the Internet using a pay-as-you-go pricing model
 - You only pay for the cloud services you use, which helps:
@@ -46,14 +48,14 @@ Exame inclui seis áreas de domínio de conhecimento:
   - Scale operations according to business needs
 - The cloud provider is responsible for maintaining the underlying infrastructure for you
 
-### Why should I move to the cloud?
+#### Why should I move to the cloud?
 
 - Two current trends:
   - Teams deliver new features to users in record time
   - Users expect an increasingly sophisticated and immersive experience across their devices and software.
 - Weekly or daily releases
 
-### What is Azure?
+#### What is Azure?
 
 - Tipos de serviços:
 
@@ -82,7 +84,7 @@ Exame inclui seis áreas de domínio de conhecimento:
 - Azure's regional data centers allow you to ditribute your applications globally so you can locate your data in apps where they're needed most
 - Azure Portal lets you create, configure and control all your services and resources from a single easy to use web-based interface
 
-### How does Azure work?
+#### How does Azure work?
 
 - Azure uses a technology known as virtualization
 - Virtualization separates the tight coupling between a computer's hardware (HW) and its operating system using an abstraction layer called a hypervisor
@@ -97,7 +99,7 @@ Exame inclui seis áreas de domínio de conhecimento:
 - User's make requests using the **Orchestrator's Web API**
   - Can be called by the user interface (UI) of the Azure Portal
 
-### What is the Azure Portal?
+#### What is the Azure Portal?
 
 - Web-based, unified console that provides an alternative to command-line tools
 - Manage your Azure subscription by using a graphical user interface
@@ -109,18 +111,18 @@ Exame inclui seis áreas de domínio de conhecimento:
   - Resilient to individual datacenter failures and avoids network slowdowns by being close to users
   - Requires no downtime for maintenance activitie
 
-### What is Azure Marketplace?
+#### What is Azure Marketplace?
 
 - Customers can find, try, purchase, and provision applications and services from hundreds of leading service providers
-- ## All solutions and services are certified to run on Azure
+- All solutions and services are certified to run on Azure
 
-### Tour of Azure Services
+#### Tour of Azure Services
 
-#### Azure Services
+##### Azure Services
 
 ![Azure Services big-picture](https://docs.microsoft.com/en-us/learn/azure-fundamentals/intro-to-azure-fundamentals/media/azure-services-6c41a736.png)
 
-##### Compute
+###### Compute
 
 Range of options for hosting applications and services.
 
@@ -136,7 +138,7 @@ Some examples of compute services in Azure:
 | Azure Container Instances        | Containerized apps run on Azure without provisioning servers or VMs      |
 | Azure Functions                  | An event-driven, serverless compute service                              |
 
-##### Networking
+###### Networking
 
 Linking compute resources and providing access to applications is the key of Azure networking.
 
@@ -159,7 +161,7 @@ Some examples of networking services in Azure:
 | Azure Firewall                 | Implements high-security, high-availability firewall with unlimited scalability      |
 | Azure Virtual WAN              | Creates a unified wide area network (WAN) that connects local and remote sites       |
 
-##### Storage
+###### Storage
 
 Four main types of storage services:
 
@@ -178,7 +180,7 @@ These services all share several common characteristics:
 - **Managed** handling maintenance and any critical problems for you
 - **Accessible** from anywhere in the world over HTTP or HTTPS
 
-##### Mobile
+###### Mobile
 
 - Create mobile back-end services for IOS, Android and Windows apps quickly and easily
 - Adding corporate sign-in and the connecting to on-premises resources such as SAP, Oracle, SQL Server and SharePoint
@@ -187,7 +189,7 @@ These services all share several common characteristics:
 - Broadcasting push notifications
 - Autoscaling to match business needs
 
-##### Databases
+###### Databases
 
 Provides multiple databases services to store a wide variety of data types and volumes.
 
@@ -203,7 +205,7 @@ Provides multiple databases services to store a wide variety of data types and v
 | Azure Cache for Redis                | Fully managed service caches frequently used and static data to reduce data and application latency |
 | Azure Database for MariaDB           | Fully managed and scalable MariaDB relational database with high availability and security          |
 
-##### Web
+###### Web
 
 Includes firts-class support to build and host web apps and HTTP-based web services.
 
@@ -216,7 +218,7 @@ Includes firts-class support to build and host web apps and HTTP-based web servi
 | Web Apps feature of Azure App Service | Create and deploy mission-critical web apps at scale                      |
 | Azure SignalR Service                 | Add real-time web functionalities easil                                   |
 
-##### IoT
+###### IoT
 
 | Service name  | Description                                                                                                                                                                                         |
 | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -224,7 +226,7 @@ Includes firts-class support to build and host web apps and HTTP-based web servi
 | Azure IoT Hub | Messaging hub that provides secure communications between and monitoring of millions of IoT devices                                                                                                 |
 | IoT Edge      | Fully managed service that allows data analysis models to be pushed directly onto IoT devices, which allows them to react quickly to state changes without needing to consult cloud-based AI models |
 
-##### Big data
+###### Big data
 
 - Open-source cluster technologies developed to deal with large data sets
 - Azure supports a broad range of technologies and services to provide big data and analytics solutions
@@ -235,7 +237,7 @@ Includes firts-class support to build and host web apps and HTTP-based web servi
 | Azure HDInsight         | Process massive amounts of data with managed clusters of Hadoop clusters in the cloud                                                                                                           |
 | Azure Databricks        | Integrate this collaborative Apache Spark-based analytics service with other big data services in Azure                                                                                         |
 
-##### AI
+###### AI
 
 - AI, in the context of cloud computing, is based around a broad range of services, the core of which is machine learning
   - Data science technique that allows computers to use existing data to forecast future behaviors, outcomes, and trends
@@ -257,7 +259,7 @@ Includes firts-class support to build and host web apps and HTTP-based web servi
 | Bing Search                 | Add Bing Search APIs to your apps and harness the ability to comb billions of webpages, images, videos, and news with a single API call |
 | Natural Language processing | Allow your apps to process natural language with prebuilt scripts, evaluate sentiment, and learn how to recognize what users want       |
 
-##### DevOps
+###### DevOps
 
 - Automating software delivery
 - You can create build and release pipelines that provide continuous integration, delivery, and deployment for your applications
@@ -269,7 +271,7 @@ Includes firts-class support to build and host web apps and HTTP-based web servi
 | Azure DevOps       | Use development collaboration tools such as high-performance pipelines, free private Git repositories, configurable Kanban boards, and extensive automated and cloud-based load testing. Formerly known as Visual Studio Team Services |
 | Azure DevTest Labs | Quickly create on-demand Windows and Linux environments to test or demo applications directly from deployment pipelines                                                                                                                |
 
-### Get started with Azure accounts
+#### Get started with Azure accounts
 
 - To create and use Azure services, you need an Azure subscription
 - You need to create an Azure account, and a subscription will be created for you
@@ -278,7 +280,7 @@ Includes firts-class support to build and host web apps and HTTP-based web servi
 
 ![Azure accounts hierarchy](https://docs.microsoft.com/en-us/learn/azure-fundamentals/intro-to-azure-fundamentals/media/scope-levels-12669ee1.png)
 
-#### Create an Azure account
+##### Create an Azure account
 
 - You can purchase Azure access directly from Microsoft by signing up on the Azure website or through a Microsoft representative
 - You can also purchase Azure access through a Microsoft partner
@@ -294,7 +296,7 @@ Includes firts-class support to build and host web apps and HTTP-based web servi
   - Support
   - Videos
 
-#### What is the Azure free account?
+##### What is the Azure free account?
 
 - Includes:
   - Free access to popular Azure products for 12 months
@@ -305,7 +307,7 @@ Includes firts-class support to build and host web apps and HTTP-based web servi
   - A credit card
   - A Microsoft or Github account
 
-#### What is the Azure free student account?
+##### What is the Azure free student account?
 
 - Includes:
   - Free access to certain Azure services for 12 months
@@ -314,12 +316,281 @@ Includes firts-class support to build and host web apps and HTTP-based web servi
 
 You can sign up without credit card.
 
-#### What is Learn sandbox?
+##### What is Learn sandbox?
 
 - Temporary subscription
 - Allows you to create Azure resources for the duration of a Lear module
 - Automatically cleans up the temporary resources for you after you've completed the module
 
-### Case study introduction
+#### Case study introduction
+
+- Tailwind Traders currently manages an on-premises datacenter that hosts the company's retail website
+- The datacenter also stores all of the data and streaming video for its applications
+- The IT department is currently responsible for all of the management tasks for its computing HW and software
+- IT team handles the procurement process to buy new HW, installs and configures software, and deploys everything throughout the datacenter
+- It would be advantageous to have servers, storage, databases, and other services immediately available when you develop and deploy applications
+
+#### Summary
+
+- Describe the basic concepts of cloud computing
+- Determine wheter Azure is the right solution for your business needs
+- Differentiate between the different methods of creating an Azure subscription
+
+### Discuss Azure fundamental concepts
+
+#### Introduction
+
+- Tailwind Traders -> decided to migrate its applications and data to Microsoft Azure
+
+#### Discuss different types of cloud models
+
+##### What are public, private, and hybrid clouds?
+
+- Three deployment models for cloud computing:
+  - Public cloud
+  - Private cloud
+  - Hybrid cloud
+
+<table>
+  <thead>
+    <tr>
+      <th>Deployment model</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Public cloud</td>
+      <td>
+        <ul>
+          <li>Services are offered over the public internet and available to anyone who wants to purchase them</li>
+          <li>Cloud resources are owned and operated by a third-party cloud service provider</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Private cloud</td>
+      <td>
+        <ul>
+          <li>Computing resources used exclusively by users from one business or organization</li>
+          <li>Can be phisically located at your organization's on-site (on-premises) datacenter, or it can be hosted by a third-party service provider</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Hybrid cloud</td>
+      <td>
+        <ul>
+          <li>Computing environment that combines a public cloud and a private cloud by allowing data and applications to be shared between them.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+##### Cloud model comparison
+
+- Public cloud
+  - No capital expenditures to scale up
+  - Applications can be quickly provisioned and deprovisioned
+  - Organizations pay only for what they use
+- Private cloud
+  - HW must be purchased for start-up and maintenance
+  - Organizations have complete control over resources and security
+  - Organizations are responsible for HW maintenance and updates
+- Hybrid cloud
+  - Provides the most flexibility
+  - Organizations determine where to run their applications
+  - Organizations control security, compliance, or legal requirements
+
+#### Describe cloud benefits and considerations
+
+##### What are some cloud computing advantages?
+
+Advantages that a cloud environment has over a physical environment:
+
+- **High availability**: depending on the service-level agreement (SLA) that you choose, you cloud-based apps can provide a continuous user experience with no apparent downtime, even when things go wrong
+- **Scalability**:
+  - Scale vertically: adding RAM or CPUs
+  - Scale horizontally: adding instances of resources, such as VMs
+- **Elasticity**:
+  - Autoscaling
+  - Always have the resources they need
+- **Agility**: deploy and configure quickly as app requirements change
+- **Geo-distribution**: deploy apps and data to regional datacenters around the globe, thereby ensuring that your customers have the best performance
+- **Disaster recovery**: backup services, data replication and geo-distribution
+  - Deploy apps with the confidence that comes from knowing that your data is safe in the event of disaster
+
+##### Capital expenses vs. operating expenses
+
+- **Capital Expenditure (CapEx)**:
+  - Up-front spending of money on physical infraestructure
+  - Deducts that up-front expense over time
+- **Operational Expenditure (OpEx)**:
+  - Spending money on services or products now
+  - Billed for them now
+  - Deducts this expense in the same year you spend it
+  - There is no up-front cost as you pay for a service or product as you use it
+
+Tailwind Traders:
+
+- Owns its infraestructure
+- Accountants categorize as CapEx
+- Limited useful lifespan -> assets are depreciated or amortized
+
+Cloud services -> OpEx -> because their consumption model -> cloud service provider manages the costs that are associated with the purchase and lifespan of the physical equipment
+
+##### Cloud computing is a consumption-based model
+
+End users only pay for the resources that they use.
+
+Benefits:
+
+- No upfront costs
+- No need to purchase and manage costly infraestructure that users might not use to its fullest
+- The ability to pay for additional resources when they are needed
+- The ability to stop paying for resources that are no longes needed
+
+#### Describe different cloud services
+
+##### What are cloud service models?
+
+![Cloud service models schema](https://docs.microsoft.com/en-us/learn/azure-fundamentals/fundamental-azure-concepts/media/iaas-paas-saas-575a09e9.png)
+
+These models define the different levels of shared responsibility that a cloud provider and cloud tenant are responsible for.
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Definition</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>IaaS</td>
+      <td>Infraestructure-as-a-service</td>
+      <td>
+        <ul>
+          <li>Closest to managing physical servers</li>
+          <li>Operating system maintenance and network configuration is up to you</li>
+          <li>Advantage: rapid deployment</li>
+          <li>Example: Azure virtual machines</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>PaaS</td>
+      <td>Platform-as-a-service</td>
+      <td>
+        <ul>
+          <li>Managed hosting environment</li>
+          <li>The cloud provider manages the virtual machines and networking resources</li>
+          <li>The cloud tenant deploys their applications into the managed hosting environment</li>
+          <li>Example: Azure App Services</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>SaaS</td>
+      <td>Software-as-a-Service</td>
+      <td>
+        <ul>
+          <li>The cloud provider manages all aspects of the application environment, such as virtual machines, networking resources, data storage and applications</li>
+          <li>The cloud tenant only needs to provide their data to the application managed by the cloud provider</li>
+          <li>Example: Microsoft Office 365</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+###### IaaS
+
+Most fleixble category of cloud services. It aims to give you complete control over the HW that runs your application.
+
+- Advantages:
+  - **No CapEx**
+  - **Agility**: applications can be made accessible quickly and deprovisioned whenever needed
+  - **Management**: shared responsability
+    - User -> manages and maintains the services they have provisioned
+    - Cloud provider -> manages and maintains the cloud infraescruture
+  - **Consumption-based model**:
+    - OpEx model
+    - Pay for what uses
+  - **Skills**: no deep technical skills are required
+  - **Cloud benefits**: organizations can use the skills and expertise of the cloud provider to ensure workloads are made secure and highly available
+  - **Flexibility**: most flexible cloud service
+    - Control do configure and manage the HW running your application
+
+###### PaaS
+
+Same benefits and considerations as IaaS, but there are some additional benefits.
+
+- Advantages:
+  - **No CapEx**
+  - **Agility**: PaaS is more agile than IaaS, and users don't need to configure servers for running applications
+  - **Consumption-based model**
+  - **Skills**: no deep technical skills are required
+  - **Cloud benefits**: users can gain access to more cutting-edge development tools. They can then apply these tools across an application's lifecycle
+  - **Productivity**: users can focus on application development only, because the cloud provider handles all platform management
+- Disadvantage:
+  - **Platform limitations**: there can be some limitations to a cloud platform that might affect how an application runs
+
+###### SaaS
+
+SW centrally hosted and managed for you and your users or customers.
+Licensed through a monthly or annual subscription.
+Provides the same benefits as IaaS, but again there are some additional benefits.
+
+- Advantages:
+  - **No CapEx**
+  - **Agility**: users can provide staff with access to the lastest SW quickly and easily
+  - **Pay-as-you-go princing model**
+  - **Skills**: no deep technical skills are required
+  - **Flexibility**: users can access the same application data from anywhere
+- Disadvantage:
+  - **SW limitations**: there can be some limitations to a SW applicatio that might affect how users work. Because you're using as-is SW, you don't have direct control of features
+
+##### Cloud service model comparison
+
+<table>
+  <thead>
+    <tr>
+      <th>IaaS</th>
+      <th>PaaS</th>
+      <th>SaaS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>The most flexible cloud service</td>
+      <td>Focus on application development</td>
+      <td>Pay-as-you-go princing model</td>
+    </tr>
+    <tr>
+      <td>You configure and manage the HW for your application</td>
+      <td>Platform management is handled by the cloud provider</td>
+      <td>Users pay for the SW they use on a subscription model</td>
+    </tr>
+  </tbody>
+<table>
+
+Various levels of responsibility between a cloud provider and a cloud tenant:
+
+![Levels of responsibility](https://docs.microsoft.com/en-us/learn/azure-fundamentals/fundamental-azure-concepts/media/shared-responsibility-76efbc1e.png)
+
+##### What is serverless computing?
+
+Enables devs to build applications faster by eliminating the need for them to manage infra.
+
+Cloud service provider automatically provisions, scales and manages the infra required to run the code.
+
+Serverless architectures are highly scalable and event-driven, only using resources when a specific function or trigger occurs.
+
+The "serverless" name comes from the fact that the tasks associated with infra provisioning and management are invisible to the dev.
+
+Devs can increase their focus on the business logic and deliver more value to the core of the business. Stay focused on innovation.
 
 ---
