@@ -754,4 +754,24 @@ Azure can help make your app highly available through availability zones.
 
 ### Azure subscriptions and management groups
 
+#### Azure subscriptions
+
+- Provides you with authenticated and authorized access to Azure products and services
+- Logical unit of Azure services that links to an Azure account
+  - Azure account = an identity in Azure Active Directory (Azure AD) or in a directory that Azure AD trusts
+
+![Azure subscription schema](https://docs.microsoft.com/en-us/learn/azure-fundamentals/azure-architecture-fundamentals/media/subscriptions-afe063a7.png)
+
+- An account can have one subscription or multiple subscriptions
+- Define boundaries around Azure products, services, and resources
+- Two types of subscription boundaries:
+  - **Billing boundary**:
+    - Determines how an Azure account is billed for using Azure
+    - Separate billing reports and invoices for each subscription
+  - **Access control boundary**:
+    - Azure applies access-management policies at the subscription level
+    - Manage and control access to the resources that users provision with specific subscriptions
+
+#### Create additional Azure subscriptions
+
 ---
