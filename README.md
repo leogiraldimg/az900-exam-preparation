@@ -772,6 +772,68 @@ Azure can help make your app highly available through availability zones.
     - Azure applies access-management policies at the subscription level
     - Manage and control access to the resources that users provision with specific subscriptions
 
-#### Create additional Azure subscriptions
+##### Create additional Azure subscriptions
+
+You might choose to create additional subscriptions to separate:
+
+- **Environments**:
+  - Set up separate environments for development and testing, security, or to isolate data for compliance reasons
+  - Resource access control occurs at the subscription level
+- **Organizational structures**:
+  - Allows you to manage and control access to the resources that users provision within each subscription
+- **Billing**:
+  - Manage and track costs based on your needs
+  - Create one subscription for your production workloads and another subscription for your development and testing workloads
+
+Additional subscriptions:
+
+- **Subscription limits**:
+  - Subscriptions are bound to some hard limitations
+  - For example, the maximum number of Azure ExpressRoute circuits per subscription is 10
+  - If there's a need to go over those limits in particular scenarios, you might need additional subscriptions
+
+##### Customize billing to meet your needs
+
+- Organize subscriptions into invoice sections
+- You can set up multiple invoices within the same billing account
+  - Create additional billing profiles
+
+![Overview of how billing is structured](https://docs.microsoft.com/en-us/learn/azure-fundamentals/azure-architecture-fundamentals/media/billing-structure-overview-2c81a8ad.png)
+
+#### Azure management groups
+
+- Manage access, policies, and compliance for subscriptions
+- Provide a level of scope above subscriptions
+- Organize subscriptions into containers called management groups
+  - Apply your governance conditions to the management groups
+- Give you enterprise-grade management at a large scale no matter what type of subscriptions you might have
+- All subscriptions within a single management group must trust the same Azure AD tenant
+- Example: apply policies to a management group that limits the regions available for VM creation
+
+##### Hierarchy of management groups and subscriptions
+
+- Build a flexible structure of management groups and subscriptions to organize your resources into a hierarchy for unified policy and access management
+
+![Example of creating a hierarchy for governance by using management groups](https://docs.microsoft.com/en-us/learn/azure-fundamentals/azure-architecture-fundamentals/media/management-groups-and-subscriptions-bba71896.png)
+
+- For example, you could limit VM locations to the US West Region in a group called Production
+  - This policy will inherit onto all the Enterprise Agreement subscriptions that are descendants of that management group and will apply to all VMs under those subscriptions
+- One assignment on the management group can enable users to have access to everything they need instead of scripting RBAC over different subscriptions
+
+##### Important facts about Management Groups
+
+- 10,000 management groups can be supported in a single directory
+- A management group tree can support up to six levels of depth. This limit doesn't include the root level or the subscription level
+- Each management group and subscription can support only one parent
+- Each management group can have many children
+- All subscriptions and management groups are within a single hierarchy in each directory
+
+---
+
+## Microsoft Azure Fundamentals: Describe core Azure services
+
+### Explore Azure compute services
+
+#### Introduction
 
 ---
