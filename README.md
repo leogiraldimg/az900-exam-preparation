@@ -922,4 +922,52 @@ Additional subscriptions:
 
 #### Decide when to use Azure App Service
 
+- Enables you to build and host web apps, background (BG) jobs, mobile back-ends, and RESTful APIs in the programming language of your choice without managing infrastructure
+- Offers automatic scaling and high availability
+- Supports Windows and Linux
+- Enables automated deployments from GitHub, Azure DevOps, or any Git repo to support a continuous deployment model
+- PaaS environment
+- Focus on the website and API logic while Azure handles te infrastructure to run and scale your web applications
+
+##### Azure App Service costs
+
+- Pay for the Azure compute resources your app uses while it processes requests based on the App Service plan you choose
+- The App Service plan determines how much HW is devoted to your host
+- Ex.:
+  - Dedicated or shared HW?
+  - How much memory reserved for it?
+- There's a free tier you can use to host small, low-traffic sites
+
+##### Types of app services
+
+With App Service, you can host most common app service styles like:
+
+- **Web apps**
+  - Full support for hosting web apps by using ASP.NET, ASP.NET Core, Java, Ruby, Node.js, PHP, or Python
+  - Windows or Linux as the host OS
+- **API apps**
+  - You can build REST-based web APIs by using your choice of language and framework
+  - Full swagger support
+  - Ability to package and publish your API in Azure Marketplace
+- **WebJobs**
+  - Run a program (.exe, Java, PHP, Python, or Node.js) or script (.cmd, .bat, PowerShell, or Bash)
+  - Scheduled or run by trigger
+  - Background tasks as part of your logic application
+- **Mobile apps**
+  - Back end for iOS and Android apps
+  - Store mobile app data in cloud-based SQL DB
+  - Authenticate customers against common social providers, such as MSA, Google, Twitter and Facebook
+  - Send push notifications
+  - Execute custom back-end logic in C# or Node.js
+  - SDK support for native iOS and Android, Xamarin and React Native apps
+
+App Service handles:
+
+- Deployment and management are integrated into de platform
+- Endpoints can be secured
+- Sites can be scaled quickly to handle high traffic loads
+- The built-in load balancing and traffic manager provide high availability
+
+#### Decide when to use Azure Container Instances or Azure Kubernetes Service
+
 ---
