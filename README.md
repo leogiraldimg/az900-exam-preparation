@@ -834,6 +834,92 @@ Additional subscriptions:
 
 ### Explore Azure compute services
 
-#### Introduction
+#### Overview of Azure compute services
+
+- Azure compute is an on-demand computing service for running cloud-based applications
+- Some of the most prominent services are:
+  - ![Azure compute services](https://docs.microsoft.com/en-us/learn/azure-fundamentals/azure-compute-fundamentals/media/compute-services-13e531e1.png)
+  - **Azure Virtual Machines**:
+    - _Virtual Machines_:
+      - SW emulations of physical computers
+      - Includes:
+        - Virtual processor
+        - Memory
+        - Storage
+        - Networking resources
+      - Can create and use VMs in the cloud
+      - Provides IaaS
+      - Total control over an operating system (OS) and environment
+    - _Virtual machines scale sets_:
+      - Deploy and manage a set of identical VMs
+      - True autoscale -> VMs configured all the same
+      - No pre-provisioning is required
+      - Demands goes up -> more VM instances can be added
+      - Demands goes down -> VM instances can be removed
+      - ☝️ This process can be manual, automated or a combination of both
+  - **Azure Container Instances**:
+    - _Containers and Kubernets_:
+      - Deploy and manage containers
+      - Containers are lightweight, virtualized application environments
+      - You can run multiple instances of a containerized application on a single host machine
+  - **Azure App Service**:
+    - Build, deploy, and scale enterprise-grade web, mobile, and API apps running on any platform
+    - PaaS
+    - Rigorous performance, scalability, security and compliance requirements while using a fully managed platform
+  - **Azure Functions (or serverless computing)**:
+    - Ideal when you're concerned only about the code running your service and not the underlying platform or infrastructure
+    - Used when you need to perform work in response to an event, timer or message from another Azure service
+    - Work that can be completed quickly
+
+#### Decide when to use Azure Virtual Machines
+
+- Provides IaaS in the form of a virtualized server
+- VMs are an ideal choice when you need:
+  - Total control over the OS
+  - The ability to run custom software
+  - To use custom hosting configurations.
+- Preconfigured VM image
+  - An image is a template used to create a VM
+  - Include an OS and often other software, like development tools or web hosting environments
+
+##### Examples of when to use VMs
+
+- **During testing and development**
+- **When running applications in the cloud**
+  - Provide substantial economic benefits
+    - Application might need to handle fluctuations in demand
+    - Shutting down VMs when you don't need them
+    - Quickly starting them up to meet a sudden increase in demand
+    - You pay only for the resources you use
+- **When extending your datacenter to the cloud**
+  - Creating a virtual network in Azure and adding VMs to that virtual network
+- **During disaster recovery**
+  - Get significant cost savings by using an IaaS-based approach to disaster recovery
+  - If a primary datacenter fails, you can create VMs running on Azure to run your critical applications
+
+##### Move to the cloud with VMs
+
+- Excellent choice when you move from a physical server to the cloud = "lift and shift"
+  - Create an image of the physical server and host it within a VM
+
+##### Scale VMs in Azure
+
+- Single VMs for testing, development, or minor tasks or group VMs to provide high availability, scalability and redundancy
+- Features:
+  - **Virtual machine scale sets**:
+    - Create and manage a group of identical, load-balanced VMs
+    - Centrally manage, configure, and update a large number of VMs in minutes to provide highly available applications
+    - Automatically increase or decrease in response to demand or a defined schedule
+  - **Azure Batch**:
+    - Large-scale parallel and high-performance computing (HPC) batch jobs with the ability to scale to tens, hundreds, or thousands of VMs
+    - Batch does the following:
+      - Starts a pool of compute VMs for you
+      - Installs applications and staging data
+      - Runs jobs with as many tasks as you have
+      - Identifies failures
+      - Requeues work
+      - Scales down the pool as work completes
+
+#### Decide when to use Azure App Service
 
 ---
