@@ -970,4 +970,221 @@ App Service handles:
 
 #### Decide when to use Azure Container Instances or Azure Kubernetes Service
 
+- VMs still limited to a single OS per virtual machine
+- If you want to run multiple instances of an application on a single host machine, containers are an excellent choice
+
+##### What are containers?
+
+- Virtualization environments
+- You can run multiple containers on a single physical or virtual host
+- You don't manage the OS for a container
+- Containers are lightweight and designed to be created, scaled out, and stopped dynamically
+- Containers are designed to allow you to respond to changes on demand
+- Most popular container engine: Docker
+
+##### Compare VMs to containers
+
+- **VMs**
+
+  - Provide an abstraction layer for CPU, memory and storage
+  - Can be changed without having to invest in new HW
+  - You decide de OS, install tools and packaged
+  - Downsides:
+    - VMs can only run one OS at a time
+    - Because it emulates a full computer, tasks like starting one up or taking a snapshot are pretty slow
+  - MAIN POINT: virtualize the HW
+  - WHEN TO USE: complete control the environment
+
+- **Containers**
+  - Bundle a single app and its dependencies
+  - Provides a standardized runtime environment
+  - Abstracts the OS and infrastructure requirements
+  - Allows the containerized application to run side-by-side with other containerized apps
+  - Without sacrificing the isolation that the VM originally offered
+  - Containerized apps tend to be much smaller in size
+  - Can be orchestrated with container cluster orchestration
+    - Can easily deploy and manage multiple containerized applications
+    - Without worrying about which server will host the container
+  - MAIN POINT: virtualize the OS
+  - WHEN TO USE:
+    - Portability
+    - Performance
+
+Azure supports Docker
+
+##### Manage containers
+
+- Containers are managed through a container orchestrator
+- Start, stop and scale out application instances as needed
+- Two ways to manage both Docker and Microsoft-based containers in Azure:
+  - **Azure Container Instances**
+    - Fastest and simplest way to run a container in Azure
+    - Without manage any VMs
+    - Without adopt any additional service
+    - PaaS
+    - Upload your container -> runs
+  - **Azure Kubernetes Services (AKS)**
+    - Automating, managing and interacting with a large number of containers is known as orchestration
+    - Complete orchestration service for containers with:
+      - Distributed architectures
+      - Large volumes of containers
+
+##### What is Kubernetes?
+
+- Container management automation
+- API to create a cloud-native application management powerhouse
+- Manage the placement of pods, which can consist of one or more containers, on a Kubernetes cluster node
+- If one of these pods crashes, Kubernetes can create a new instance of it
+- If a cluster node is removed, Kubernetes can move any affected workload to a different node in the cluster
+- Kubernetes pods can be scaled to provide more or less throughput to meet scale demands
+  - These scale operations can be triggered manually or automatically using Kubernetes horizontal pod auto-scaling
+- Application needs to be updated -> Kubernetes can stagger the update deployment to minimize downtime
+  - Update problematic -> roll back to a previous version
+- Manage storage and networking
+- Persistent volumes -> present data storage to one or more containers
+  - Azure Storage
+  - Azure Cosmos DB
+- Networking
+  - Expose pods to the internet
+  - Load balancing
+  - Isolation
+  - Policy-driven networking security
+- Additional capabilities -> Kubernetes API
+  - Extends Kubernetes functionality
+
+##### Use containers in your solutions
+
+- _Microservice architecture_
+  - Break solutions into smaller, independent pieces
+- Separate portions of your app into logical sections that can be maintained, scaled or updated independently
+
+##### What is a microservice?
+
+- Web service small, well-defined scope and is loosely coupled from any other web service
+- Each one self-contained and implementing a single business capability
+- Don't need to share the same technology stack, libraries or frameworks
+- Microservices can communicate with each other by using well-defined APIs
+- Benefits
+  - High release velocity
+  - Highly scalable
+  - Rich domains
+  - Small development teams
+
+#### Decide when to use Azure Functions
+
+- Event driven -> application waiting for a particular input before it performs any processing
+- _Serverless computing_ -> abstraction of servers, infra, and OSs
+  - Azure takes care of managing the server infra and the allocation and deallocation of resources based on demand
+  - **Abstraction of servers**
+    - Execution can run on different compute instances
+    - This execution context is transparent to the code
+  - **Event-driven scale**
+    - Workloads that respond to incoming events
+    - Events include triggers by:
+      - Timers, for example, if a function needs to run every day at 10:00 AM UTC
+      - HTTP, for example, API and webhook scenarios
+      - Queues, for example, with order processing
+    - Developer authors a function -> contains both code and metadata about its triggers and bindings
+    - Platform schedules the function to run and scales the number of compute instances
+    - Triggers -> define how a function is invoked
+    - Bindings -> provide a declarative way to connect to services from within the code
+  - **Micro-billing**
+    - Pay only for the time their code runs
+
+##### Serverless computing in Azure
+
+- Abstraction of servers -> take your mind off of infra concerns -> focus on developer concerns
+- 3 benefits:
+  - No infra management
+  - Scalability
+  - Only pay for what you use
+- Azure -> 2 implementations of serverless compute:
+  - **Azure Functions**
+    - Perform work in response to an event, timer, or message from another Azure service
+    - Can be completed quickly, within seconds or less
+    - Scale automatically
+    - Solid choice when demand is variable
+    - Automatically deallocates resources
+    - Can be
+      - _Stateless_
+        - Default
+        - Behave as if they're restarted every time they respond to an event
+      - _Stateful_
+        - "Durable Functions"
+        - Context is passed through the function to track prior activity
+  - **Azure Logic Apps**
+    - Trigger logic based on an event
+    - Functions -> execute code
+    - Logic apps -> execute workflows (WFs) -> automate business scenarios -> built from predefined logic blocks
+    - Logic app instances that runs the actions in the WFs
+    - Can include
+      - Data conversions
+      - Flow controls (switch, loops, and branching)
+    - Using a visual designer on the Azure portal or in Visual Studio
+    - Persisted as a JSON file with a known WF schema
+    - More than 200 different connectors and processing blocks
+    - Can build custom connectors and WF steps
+    - Often all without writing any code
+    - Ideal for a business analyst role
+
+##### Functions vs. Logic Apps
+
+- Both create complex orchestrations
+- Functions -> write code to complete each step
+- Logic Apps -> use GUI to define the actions ans how they relate to one another
+- You can mix: calling functions from logic apps and calling logic apps from functions
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>**Functions**</th>
+      <th>**Logic Apps**</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>State</td>
+      <td>Normally stateless, but Durable Functions provide state.</td>
+      <td>Stateful.</td>
+    </tr>
+    <tr>
+      <td>Development</td>
+      <td>Code-first (imperative).</td>
+      <td>Designer-first (declarative).</td>
+    </tr>
+    <tr>
+      <td>Connectivity</td>
+      <td>
+        <p>About a dozen built-in binding types.</p>
+        <p>Write code for custom bindings.</p>
+      </td>
+      <td>
+        <p>Large collection of connectors.</p>
+        <p>Enterprise Integration Pack for B2B scenarios. Build custom connectors.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>Actions</td>
+      <td>Each activity is an Azure function. Write code for activity functions.</td>
+      <td>Large collection of ready-made actions.</td>
+    </tr>
+    <tr>
+      <td>Monitoring</td>
+      <td>Azure Application Insights.</td>
+      <td>Azure portal, Log Analytics.</td>
+    </tr>
+    <tr>
+      <td>Management</td>
+      <td>REST API, Visual Studio.</td>
+      <td>Azure portal, REST API, PowerShell, Visual Studio.</td>
+    </tr>
+    <tr>
+      <td>Execution context</td>
+      <td>Can run locally or in the cloud.</td>
+      <td>Runs only in the cloud.</td>
+    </tr>
+  </tbody>
+</table>
+
 ---
