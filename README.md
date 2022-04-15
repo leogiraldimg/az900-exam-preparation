@@ -1187,4 +1187,69 @@ Azure supports Docker
   </tbody>
 </table>
 
+#### Decide when to use Azure Virtual Desktop
+
+##### What is Azure Virtual Desktop?
+
+- Desktop and application virtualization service that runs on the cloud
+- Cloud-hosted version of Windows
+- Works with apps that you can use to access remote desktops and apps
+- Can use most modern browsers to access
+- Why desktop virtualization?
+  - Central management security
+  - Less IT management overhead
+  - Separates your OS's data and apps from local HW
+    - Running them separately on a remote server
+  - Proximity to your data center or the cloud
+  - Communicate over a secure outbound connection
+  - Multiple users on a single VM
+
+##### Why should you use Azure Virtual Desktop?
+
+- **Provide the best user experience**
+  - Connect to with any device over the internet
+  - Use a Azure Virtual Desktop client to connect to their published Windows desktop and applications
+  - Could either be a native application on the device or the Azure Virtual Desktop HTML5 web client
+  - Users stay productive and don't encounter long load times
+  - User profiles are containerized by using FSLogix
+  - User profile is immediately available and appears in the system exactly like a native user profile
+  - Can provide individual ownership through personal desktops
+    - Engineering team -> can add or remove programs without impacting other users on that remote desktop
+- **Enhance security**
+  - Provides centralized security management
+  - Azure Active Directory (AD)
+  - Multifactor authentication
+  - Granular role-based access controls (RBACs)
+  - Single and multi-session environments
+  - Reverse connect technology -> more secure than Remote Desktop Protocol -> don't open inbound ports to the session host VMs
+
+##### What are some key features of Azure Virtual Desktop?
+
+- **Simplified management**
+  - Azure AD and RBACs to manage access to resources
+  - Automate VM deployments
+  - Manage VM updates
+  - Provide disaster recovery
+  - Uses Azure Monitor for monitoring and alerts
+    - Lets admins identify through a single interface
+- **Performance management**
+  - Load balance users on your VM host pools
+  - *Host pools* -> collections of VMs with the same configuration assigned to multiple users
+  - *Breadth mode* -> configure load balance to occur as users sign in
+    - Users are sequentially allocated across the host pool for your workload
+  - *Depth mode* -> users are fully allocated on one VM before moving to the next
+    - Save costs
+  - Automatically provision additional VMs when incoming demand exceeds threshold
+- **Multi-session Windows 10 deployment**
+  - Windows 10 Enterprise multi-session
+  - More consistence experience with broader application support
+
+##### How can you reduce costs with Azure Virtual Desktop?
+
+- **Bring your own licenses**
+  - No cost if you have an eligible Microsoft 364 license
+  - Just pay for the Azure resources used by Azure Virtual Desktop
+- **Save on compute costs**
+  - Save up to 72% versus pay-as-you-go pricing
+
 ---
