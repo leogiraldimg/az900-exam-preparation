@@ -1591,54 +1591,34 @@ Azure supports Docker
 
 ##### Features and benefits of ExpressRoute
 
-- Layer 3 connectivity between on-premises and Microsoft Cloud
-  - Through a connectivity provider
-  - Can be:
-    - Any-to-any (IPVPN) network
-    - Point-to-point Ethernet connection
-    - Through a virtual cross-connection via an Ethernet exchange
-- Connectivity to Microsoft cloud services across all regions
-- ExpressRoute premium add-on
+- **Layer 3 connectivity between on-premises and Microsoft Cloud**
+  - Through connectivity partners
+  - Connections can be from:
+    - Point-to-point network
+    - Any-to-any network
+    - Can also be virtual cross-connections through an exchange
+- **Connectivity to Microsoft cloud services across all regions**
+  - Enables direct access to the following services:
+    - Microsoft Office 365
+    - Microsoft Dynamics 365
+    - Azure compute services (Azure VMs, etc.)
+    - Azure cloud services (Azure Cosmos DB, etc.)
+- **ExpressRoute premium add-on**
   - Global connectivity to Microsoft services
   - Across all regions
-- Dynamic routing between your network and Microsoft
-  - Via BGP
-- Built-in redundancy in every peering location
-- Connection uptime SLA
-- QoS support for Skype
-
-##### Layer 3 connectivity
-
-- Through connectivity partners
-- Connections can be from:
-  - Point-to-point network
-  - Any-to-any network
-- Can also be virtual cross-connections through an exchange
-
-##### Built-in redundancy
-
-- Connectivity provider uses redundant devices
-- Redundant connections are configured with Layer 3 connectivity
-  - Meet service-level agreements
-
-##### Connectivity to Microsoft cloud services
-
-- Enables direct access to the following services:
-  - Microsoft Office 365
-  - Microsoft Dynamics 365
-  - Azure compute services (Azure VMs, etc.)
-  - Azure cloud services (Azure Cosmos DB, etc.)
-
-##### Across on-premises connectivity with ExpressRoute Global Reach
-
-- Enable ExpressRoute Global Reach to exchange data across your on-premises sites
-- Connect your private datacenter through two ExpressRoute circuits
-- Travel through the Microsoft network
-
-##### Dynamic routing
-
-- Uses the BGP routing protocol
-  - Exchange routes between on-premises and resources in Azure
+- **Dynamic routing between your network and Microsoft**
+  - Uses the BGP routing protocol
+    - Exchange routes between on-premises and resources in Azure
+- **Built-in redundancy in every peering location**
+  - Connectivity provider uses redundant devices
+  - Redundant connections are configured with Layer 3 connectivity
+    - Meet service-level agreements
+- **Connection uptime SLA**
+- **QoS support for Skype**
+- **Across on-premises connectivity with ExpressRoute Global Reach**
+  - Enable ExpressRoute Global Reach to exchange data across your on-premises sites
+  - Connect your private datacenter through two ExpressRoute circuits
+  - Travel through the Microsoft network
 
 ##### ExpressRoute connectivity models
 
