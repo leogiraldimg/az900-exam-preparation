@@ -1354,8 +1354,209 @@ Azure supports Docker
 
 ![](https://docs.microsoft.com/en-us/learn/azure-fundamentals/azure-networking-fundamentals/media/local-or-remote-gateway-in-peered-virual-network-21106a38.png)
 
-### Azure Virtual Network settings
+#### Azure Virtual Network settings
 
-https://docs.microsoft.com/en-us/learn/modules/azure-networking-fundamentals/azure-virtual-network-settings
+- Powerful and highly configurable mechanisms for connecting entities in Azure
+- Connect Azure resources to one another or to resources on-premises
+- Isolate, filter and route your network traffic
+
+##### Create a virtual network
+
+- Configure a number of basic settings
+  - ![](https://docs.microsoft.com/en-us/learn/azure-fundamentals/azure-networking-fundamentals/media/create-virtual-network-286df13c.png)
+    - **Subscription**
+      - Multiple subscriptions to choose
+    - **Resource group**
+    - **Network name**
+      - Unique in subscription
+    - **Region**
+  - ![](https://docs.microsoft.com/en-us/learn/azure-fundamentals/azure-networking-fundamentals/media/create-virtual-network-ip-address-286df13c.png)
+    - **Address space**
+      - Define the internal address space in Classless Interdomain Routing (CIDR) format
+      - Unique within subscription and any other networks that you connect to
+    - **Subnet**
+      - Create one or more subnets
+      - Partitions the virtual network's address space
+      - Subnet names must
+        - Begin with a letter or number
+        - Env with a letter, number or underscore
+        - Contain only letters, numbers, underscores, periods or hyphens
+      - **Service endpoints**
+      - **NAT gateway**
+        - Fully managed and highly resilient Network Address Translation (NAT) service
+        - Configure a subnet to use a static outbound IP address when accessing the internet
+    - ![](https://docs.microsoft.com/en-us/learn/azure-fundamentals/azure-networking-fundamentals/media/create-virtual-network-security-286df13c.png)
+      - **BastionHost**
+        - Azure Bastion
+        - Provides a secure and seamless RDP/SSH connectivity to VMs directly in the Azure portal over SSL
+      - **DDoS Protection Standard**
+        - Premium service
+      - **Firewall**
+        - Managed cloud-based network security service that protects your Azure Virtual Network resources
+- Option to configure advanced settings
+  - Multiple subnets
+  - Distributed denial of service (DDoS) protection
+  - Bastion host
+  - Azure firewall (FW)
+  - Service endpoints
+  - NAT gateway
+
+##### Define additional settings
+
+- Define further settings
+  - **Network security group**
+    - Security rules that enable you to filter the type of network traffic that can flow in and out of virtual network subnets and network interfaces
+    - Create network security group separately
+    - Associate subnet in the virtual network
+  - **Route table**
+    - Azure automatically creates a route table for each subnet
+    - Add system default routes to the table
+    - Can add custom route tables to modify traffic between subnets and virtual networks
+  - **Subnet Delegation**
+    - Designate the subnet to be used by a dedicate service
+- ![](https://docs.microsoft.com/en-us/learn/azure-fundamentals/azure-networking-fundamentals/media/virtual-network-additional-settings-faff6cec.png)
+
+##### Configure virtual networks
+
+![Virtual network panel](https://docs.microsoft.com/en-us/learn/azure-fundamentals/azure-networking-fundamentals/media/configure-virtual-network-9d0515c5.png)
+
+- Settings include:
+  - **Address spaces**: additional address spaces to the initial definition
+  - **Connected devices**: list of all connected host in the virtual network
+  - **Subnets**: additional subnets
+  - **DDos protection**: Standard DDos protection plan
+  - **Firewall**: Azure Firewall service for the virtual network
+  - **Security**: security recommendation you can apply to your virtual network
+  - **Network Manager**: connectivity and security admin configuration the virtual network is associated to
+  - **DNS servers**: configure internal or external DNS servers the resources in the virtual network is associated to
+  - **Peerings**: link virtual networks in peering arrangements
+  - **Service endpoints**: enable service endpoints and apply them to multiple subnets
+  - **Private endpoints**: list of private endpoints enabled in a subnet
+
+#### Azure VPN Gateway fundamentals
+
+- Encrypted tunnel within another network
+- Connect two or more trusted private networks to one another over an untrusted network
+- Traffic is encrypted
+- Prevent (eavesdropping)[https://www.fortinet.com/resources/cyberglossary/eavesdropping]
+
+##### VP GWs
+
+- Type of virtual network GW
+- Deployed in a dedicated subnet of the virtual network
+- Enable the following connectivity:
+  - On-premises <-> virtual networks (*site-to-site* connection)
+  - Individual devices <-> virtual networks (*point-to-site* connection)
+  - virtual networks <-> virtual networks (*network-to-network* connection)
+  
+![VPN GW](https://docs.microsoft.com/en-us/learn/azure-fundamentals/azure-networking-fundamentals/media/vpngateway-site-to-site-connection-diagram-0e1e7db2.png)
+
+- One VPN GW in each virtual network
+- One GW to connect to multiple locations (other virtual networks or on-premises datacenters)
+- VPN types for VPN GW:
+  - ***policy-based***
+    - Specify statically the IP address of packets that should be encrypted through each tunnel
+    - Evaluates every data packet against those sets of IP
+    - Choose the tunnel where that packet is going to be sent through
+    - Key features:
+      - Support for IKEv1 only
+      - *Static routing*:
+        - Source and destination are declared in the policy
+        - Not declared in routing tables
+      - Must be used in specific scenarios
+        - Compatibility with legacy on-premises VPN devices
+  - ***route-based***
+    - IPSec tunnels are modeled as a network interface or virtual tunnel interface
+    - IP routing decides which one of these tunnel interfaces to use when sending each packet
+    - Preferred connection method for on-premises devices
+    - More resilient to topology changes
+    - Scenarios:
+      - Connections between virtual networks
+      - Point-to-site connections
+      - Multisite connections
+      - Coexistence with an Azure ExpressRoute gateway
+    - Key features:
+      - Supports IKEv2
+      - Uses any-to-any (wildcard) traffic selectors
+      - Can use *dynamic routing protocols*
+        - Routing/forwarding tables direct traffic to different IPSec tunnels
+        - Source and destination networks aren't statically defined as they are in policy-based VPNs or even route-based VPNs with static routing
+        - Routing tables are created dynamically using protocols such as Border GW Protocol (BGP)
+- Main difference -> how to traffic to be encrypted is specified
+- Both types:
+  - use a pre-shared key as the only method of authentication
+  - rely on Internet Key Exchange (IKE) and Internet Protocol Security (IPSec)
+    - IKE is used to set up a security association between two endpoints
+    - IPSec suite -> encrypts and decryts data packets
+
+##### VP GW sizes
+
+| SKU       | Site-to-site/Network-to-network tunnels | Aggregate throughput benchmark | BGP support   |
+| --------- | --------------------------------------- | ------------------------------ | ------------- |
+| Basic     | Maximum: 10                             | 100 Mbps                       | Not supported |
+| VpnGw1/Az | Maximum: 30                             | 650 Mbps                       | Supported     |
+| VpnGw2/Az | Maximum: 30                             | 1 Gbps                         | Supported     |
+| VpnGw3/Az | Maximum: 30                             | 1.25 Gbps                      | Supported     |
+| VpnGw4/Az | Maximum: 100                            | 5 Gbps                         | Supported     |
+| VpnGw5/Az | Maximum: 100                            | 10 Gbps                        | Supported     |
+
+##### Deploy VPN GWs
+
+- **Required Azure resources**
+  - <ins>Virtual network</ins>
+    - With enough address space for the additional subnet that you'll need for the VPN GW
+    - You can deployy one VPN GW within a virtual network
+  - <ins>GatewaySubnet</ins>
+    - Subnet called "GatewaySubnet" for the VPN GW
+    - Use at least /27 address mask
+    - You can't use this subnet for any other services
+  - <ins>Public IP address</ins>
+    - Create a Basic-SKU dynamic public IP address
+    - This address provides a public-routable IP address as the target for your on-premises VPN device
+    - Won't change unless you delete and recreate the VPN GW
+  - <ins>Local network GW</ins>
+    - To define the on-premises network's configuration
+    - Includes the on-premises VPN device's public IPv4 address and the on-premises routable networks
+    - This information is used by the VPN GW to route packets that are destined for on-premises networks through the IPSec tunnel
+  - <ins>Virtual network GW</ins>
+    - To route traffic between the virtual network and the on-premises datacenter or other virtual networks
+    - A VPN GW or an ExpressRoute GW
+  - <ins>Connection</ins>
+    - To create a logical connection between the VPN GW and the local network GW
+    - Made to the on-premises VPN device's IPv4 address as defined by the local network GW
+    - From the virtual network GW and its associated public IP address
+    - Can create multiple connections
+  - ![What's required to deploy a VPN GW](https://docs.microsoft.com/en-us/learn/azure-fundamentals/azure-networking-fundamentals/media/resource-requirements-for-vpn-gateway-2518703e.png)
+- **Required on-premises resources**
+  - A VPN device that supports policy-based or route-based VPN GWs
+  - A public-facing (internet-routable) IPv4 address
+
+##### High-availability scenarios
+
+- Ways to ensure you have a fault-tolerant configuration:
+  - **Active/standby**
+    - VPN GWs deployed as two instances -> active/standby
+    - Planned maintenance, unplanned disruption -> standby automatically assumes
+    - Without user intervention
+    - Connections are interrupted during this failover
+    - Restored within a few seconds -> planned maintenance
+    - 90 seconds -> unplanned disruptions
+    - ![VPN active/standby schema](https://docs.microsoft.com/en-us/learn/azure-fundamentals/azure-networking-fundamentals/media/active-standby-c4a3c14d.png)
+  - **Active/active**
+    - Support for the BGP routing protocol
+    - Assign a unique public IP address to each instance
+    - Create separate tunnels from the on-premises device to each IP address
+    - ![VPN active/active schema](https://docs.microsoft.com/en-us/learn/azure-fundamentals/azure-networking-fundamentals/media/dual-redundancy-d76100c9.png)
+  - **ExpressRoute failover**
+    - Configure a VPN GW as a secure failover path for ExpressRoute
+      - Uses the internet as an alternative method of connectivity
+    - Have resiliency built in
+    - But they aren't immune to physical problems
+  - **Zone-redundant GWs**
+    - Regions that support availability zones, VPN GWs and ExpressRoute GWs
+    - Brings resiliency, scalability, and higher availability
+    - Separates GWs within a region while protecting your on-premises network connectivity to Azure from zone-level failures
+      - Require different GW SKUs
+      - Use Standard public IP addresses
 
 ---
