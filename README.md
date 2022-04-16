@@ -1559,4 +1559,123 @@ Azure supports Docker
       - Require different GW SKUs
       - Use Standard public IP addresses
 
+#### Azure ExpressRoute fundamentals
+
+- Extend your on-premises networks into the Microsoft cloud
+- Over a private connection
+- Help of a connectivity provider
+- Can establish connections to Microsoft cloud services
+- Connectivity can be from:
+  - Any-to-any (IP VPN) network
+  - Point-to-point Ethernet network
+  - Virtual cross-connection
+    - Through connectivity provider
+    - Colocation facility
+- Connections don't go over the public internet
+- Advantages
+  - More reliability
+  - Faster speeds
+  - Consistent latencies
+  - Higher security
+
+![Azure ExpressRoute overview](https://docs.microsoft.com/en-us/learn/azure-fundamentals/azure-networking-fundamentals/media/azure-expressroute-overview-5520731d.png)
+
+- Two different layers of the Open Systems Interconnection (OSI) model:
+  - **Layer 2 (L2)**
+    - Data Link Layer
+    - Node-to-node communication on the same network
+  - **Layer 3 (L3)**
+    - Network Layer
+    - Provides addressing and routing
+    - Between node on a multi-node network
+
+##### Features and benefits of ExpressRoute
+
+- Layer 3 connectivity between on-premises and Microsoft Cloud
+  - Through a connectivity provider
+  - Can be:
+    - Any-to-any (IPVPN) network
+    - Point-to-point Ethernet connection
+    - Through a virtual cross-connection via an Ethernet exchange
+- Connectivity to Microsoft cloud services across all regions
+- ExpressRoute premium add-on
+  - Global connectivity to Microsoft services
+  - Across all regions
+- Dynamic routing between your network and Microsoft
+  - Via BGP
+- Built-in redundancy in every peering location
+- Connection uptime SLA
+- QoS support for Skype
+
+##### Layer 3 connectivity
+
+- Through connectivity partners
+- Connections can be from:
+  - Point-to-point network
+  - Any-to-any network
+- Can also be virtual cross-connections through an exchange
+
+##### Built-in redundancy
+
+- Connectivity provider uses redundant devices
+- Redundant connections are configured with Layer 3 connectivity
+  - Meet service-level agreements
+
+##### Connectivity to Microsoft cloud services
+
+- Enables direct access to the following services:
+  - Microsoft Office 365
+  - Microsoft Dynamics 365
+  - Azure compute services (Azure VMs, etc.)
+  - Azure cloud services (Azure Cosmos DB, etc.)
+
+##### Across on-premises connectivity with ExpressRoute Global Reach
+
+- Enable ExpressRoute Global Reach to exchange data across your on-premises sites
+- Connect your private datacenter through two ExpressRoute circuits
+- Travel through the Microsoft network
+
+##### Dynamic routing
+
+- Uses the BGP routing protocol
+  - Exchange routes between on-premises and resources in Azure
+
+##### ExpressRoute connectivity models
+
+![Azure ExpressRoute connectivity models](https://docs.microsoft.com/en-us/learn/azure-fundamentals/azure-networking-fundamentals/media/azure-connectivity-models-4deabab1.png)
+
+- Models to connect on-premises to MS cloud:
+  - **CloudExchange colocation**
+    - Layer 2 and Layer 3 connections
+    - Ex.:
+      - Your datacenter is colocated at a cloud exchange
+      - Request a virtual cross-connection to the Microsoft cloud
+  - **Point-to-point Ethernet connection**
+    - Layer 2 and Layer 3 connections
+    - Point-to-point links
+    - Ex.:
+      - On-premises datacenter
+      - Point-to-point Ethernet link to connect to MS
+  - **Any-to-any connection**
+    - Integrate WAN with Azure
+    - Like you would have between your datacenter and any branch offices
+    - Layer 3
+    - MS behaves like any other location on your private WAN
+  - **Directly from ExpressRoute sites**
+    - Connect directly into the MS's global network
+    - Peering location strategically distributed
+    - Provides dual 100 Gbps or 10 Gbps connectivity
+    - Active/Active connectivity at scale
+
+##### Security considerations
+
+- Data doesn't travel over the public internet
+- Private connection
+  - From on-premises infra
+  - To Azure infra
+- Still sent over the public internet:
+  - DNS queries
+  - Certificate revocation list checking
+  - Azure Content Delivery Network
+
 ---
