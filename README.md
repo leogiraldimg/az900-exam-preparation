@@ -1252,4 +1252,110 @@ Azure supports Docker
 - **Save on compute costs**
   - Save up to 72% versus pay-as-you-go pricing
 
+### Explore Azure networking services
+
+#### Azure Virtual Network fundamentals
+
+- You want to keep your existing IP addressing scheme and network appliances while ensuring that any data transfer is secure
+
+##### What is Azure virtual networking?
+
+- Enable Azure resources, such as VMs, web apps and databases to communicate with:
+  - Each other
+  - Users on the internet
+  - Your on-premises client computers
+- Azure network -> extension of your on-premises network with resources that links other Azure resources
+- Network capabilities:
+  - Isolation and segmentation
+  - Internet communications
+  - Communicate between Azure resources
+  - Communicate with on-premises resources
+  - Route network traffic
+  - Filter network traffic
+  - Connect virtual networks
+
+###### Network configurations for VMs
+- Azure virtual networks = VNets
+  - Segmentation and isolation
+  - Extension of your own data center into the cloud
+  - Filter and route networking traffic between hosts and subnets
+  - Interconnect virtual networks in the same region or even across regions using network peering
+  - Service endpoints can be created to:
+    - Azure Storage
+    - Azure SQL Database
+    - Azure Cosmos DB
+    - Azure SQL Data Warehouse
+    - Azure Database for PostgreSQL
+    - Azure for MySQL
+- Configurations:
+  - **Isolation and segmentation**
+    - Create multiple isolated virtual networks
+    - Define a private IP address space by using either public or private IP address ranges
+    - Divide that IP address space into subnets
+    - Name resolution -> Azure built in name resolution service or use internal or external DNS server
+  - **Internet communications**
+    - VM can connect to internet by default
+    - Enable incoming from internet -> public IP address or public load balancer
+  - **Communicate between Azure resources**
+    - *Virtual Networks*
+      - VMs, App Service Environment for Power Apps, Azure Kubernetes Service and Azure Virtual Machine scale sets
+    - *Service endpoints*
+      - Azure SQL Databases and storage accounts
+      - Link Azure resources to virtual networks -> improve security and provide optimal routing between resources
+  - **Communicate with on-premises resources**
+    - Three mechanisms:
+      - *Point-to-site VPNs*
+        - Computer outside organization into corporate network
+        - Encrypted VPN connection
+      - *Site-to-site VPNs*
+        - Links on-premises VPN device or gateway (GW) to Azure VPN GW in a virtual network
+        - Devices in Azure appear as being on the local network
+        - Encrypted
+        - Over the internet
+      - *Azure ExpressRoute*
+        - Needs greater bandwidth
+        - Higher levels of security
+        - Dedicated private connectivity to Azure
+        - No internet
+  - **Route network traffic**
+    - Default: routes traffic between subnets
+    - Settings:
+      - *Route tables*
+        - Define rules about how traffic should be directed
+        - Control how packets are routed between subnets
+      - *Border GW Protocol (BGP)*
+        - Propagate on-premises BGP routes to Azure virtual networks
+  - **Filter network traffic**
+    - Approaches:
+      - *Network security groups*
+        - Azure resource
+        - Contain multiple inbound and outbound security rules
+        - Allow or block traffic
+        - Factors
+          - Source and destination IP address
+          - Port
+          - Protocol
+      - *Network virtual appliances*
+        - Specialized VM
+        - Can be compared to a hardened network appliance
+        - Carries out a particular network function
+          - Firewall
+          - Wide area network (WAN) optimization
+
+##### Connect virtual networks
+
+- Connect virtual networks together
+- Network *peering*
+  - Enables resources in each virtual network to communicate with each other
+- User-defined routes (UDR)
+  - Significant Azure's Virtual Networks
+  - Greater control over network traffic flow
+  - Control routing tables between subnets within a VNet or between them
+
+![](https://docs.microsoft.com/en-us/learn/azure-fundamentals/azure-networking-fundamentals/media/local-or-remote-gateway-in-peered-virual-network-21106a38.png)
+
+### Azure Virtual Network settings
+
+https://docs.microsoft.com/en-us/learn/modules/azure-networking-fundamentals/azure-virtual-network-settings
+
 ---
