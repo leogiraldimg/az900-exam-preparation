@@ -1658,4 +1658,124 @@ Azure supports Docker
   - Certificate revocation list checking
   - Azure Content Delivery Network
 
+### Explore Azure Storage services
+
+#### Azure Storage account fundamentals
+
+- Service that you can use to store files, messages, tables, and other types of information
+- Clients can read data from and write data to
+- Used by IaaS VMs and PaaS cloud services
+- Azure Storage account
+  - Created through
+    - Azure portal
+    - PowerShell
+    - AzureCLI
+  - Contain
+    - Azure Storage data objects
+    - Blobs
+    - Files
+    - Disks
+  - Unique namespace for Azure Storage data
+    - Accessible from anywhere in the world
+    - HTTP or HTTPS
+    - Data is secure, highly available, durable and massively scalable
+
+![Create storage account](https://docs.microsoft.com/en-us/learn/azure-fundamentals/azure-storage-fundamentals/media/create-storage-account-1c42138c.png)
+
+![Account, container and blob](https://docs.microsoft.com/en-us/learn/azure-fundamentals/azure-storage-fundamentals/media/account-container-blob-4da0ac47.png)
+
+#### Disk storage fundamentals
+
+- Provides disks for Azure VMs
+- Applications and other services can access and use these disks
+- Data is persistently stored and accessed from an attached virtual hard disk
+- Different sizes and performance levels
+  - Solid-state drives (SSDs)
+  - Spinning hard disk drives (HDDs)
+- Standard SSD and HDD -> less critical workloads
+- Premium SSD -> mission-critical production applications
+- Ultra disks -> data-intensive workloads such as SAP HANA, top tier databases, and transaction-heavy workloads
+- IaaS disks with enterprise-grade durability -> ZERO% annualized failure rate
+
+![Azure disks](https://docs.microsoft.com/en-us/learn/azure-fundamentals/azure-storage-fundamentals/media/azure-disks-7841e01e.png)
+
+#### Azure Blob storage fundamentals
+
+- Object storage solution
+- Can store massive amounts of data
+  - Text
+  - Binary data
+- Unstructured -> no restrictions on the kinds of data
+- Can manage
+  - Thousands of simultaneous uploads
+  - Massive amounts of video data
+  - Constantly growing log files
+- Advantage over disk storage: it does not require devs to think about and manage disks
+  - Data is uploaded as blobs
+- Ideal for:
+  - Serving images or docs directly to a browser
+  - Storing files for distributed access
+  - Streaming video and audio
+  - Storing data for backup and restore, disaster recovery, and archiving
+  - Storing data for analysis by an on-premises or Azure-hosted service
+  - Storing up to 8TB of data for VMs
+- Stored in containers
+
+#### Azure Files fundamentals
+
+- Fully managed file shares
+- Accessible via Server Message Block and Network File System protocols
+- Mounted concurrently by cloud or on-premises deployments of Windows, Linux and macOS
+- Application running in Azure VMs or cloud services can mount it to access file data
+- Access simultaneously
+- Possible scenarios of use:
+  - Many on-premises applications use file shares
+    - Makes it easier to migrate
+    - Mount Azure file share to the same drive letter -> application should work
+  - Store configuration files on a file share and access them from multiple VMs
+  - Write data to a file share, and process or analyze the data later
+    - Diagnostic logs, metrics and crash dumps
+- Azure Files ensures the data is encrypted at rest, and SMP protocol ensures the data is encrypted in transit
+  - ![Azure Files](https://docs.microsoft.com/en-us/learn/azure-fundamentals/azure-storage-fundamentals/media/azure-files-5f942c3e.png)
+- != from files on a corporate file share
+  - Can access the files from anywhere in the world
+  - Using URL that points to the file
+  - Can also use Shared Access Signature (SAS) tokens
+    - Allow access to a private asset for a specific amount of time
+- Example of a service SAS URI:
+  - ![SAS storage URI](https://docs.microsoft.com/en-us/learn/azure-fundamentals/azure-storage-fundamentals/media/sas-storage-uri-037308fa.png)
+
+#### Understand Blob access tiers
+
+- To accommodate different access needs, Azure provides several *access tiers*, which you can use to balance your storage costs with your access needs
+- Access tiers for blob storage:
+  - **Hot access tier**
+    - Data that is accessed frequently
+    - Ex.: images for your website
+    - Account level
+    - Blob level, during upload or after upload
+  - **Cool access tier**
+    - Data that is infrequently accessed
+    - Stored for at least 30 days
+    - Ex.: invoices for your costumers
+    - Account level
+    - Blob level, during upload or after upload
+    - Tolerate slightly lower availability
+    - Requires high durability, retrieval latency, and throughput characteristics similar to hot data
+    - Slightly lower SLA
+    - Higher access costs, compared to Hot
+    - Lower storage costs, compared to Hot
+  - **Archive access tier**
+    - Data that is rarely accessed
+    - Stored at least 180 days
+    - Flexible latency requirements
+    - Ex.: long-term backups
+    - Isn't available at the account level
+    - Blob level, during upload or after upload
+    - Stores data offline
+    - Lowest storage costs
+    - Highest costs to rehydrate and access data
+- Choosing between the hot and cool access tiers on a general purpose storage account:
+  - ![Account tier](https://docs.microsoft.com/en-us/learn/azure-fundamentals/azure-storage-fundamentals/media/account-tier-42ec76d7.png)
+
 ---
