@@ -1778,4 +1778,52 @@ Azure supports Docker
 - Choosing between the hot and cool access tiers on a general purpose storage account:
   - ![Account tier](https://docs.microsoft.com/en-us/learn/azure-fundamentals/azure-storage-fundamentals/media/account-tier-42ec76d7.png)
 
+### Explore Azure database and analytics services
+
+#### Explore Azure Cosmos DB
+
+- Globally distributed, multi-model DB service
+- Elastically and independently scale throughput and storage across any number of Azure regions
+- Fast, single-digit-millisecond data access by using any one of several popular APIs
+- Comprehensive SLAs for throughput, latency, availability, and consistency guarantees
+- Supports schema-less data
+- A sample Azure Cosmos DB that's used to store data for a training portal website:
+  - ![Sample Azure Cosmos DB that's used to store data for a training portal website](https://docs.microsoft.com/en-us/learn/azure-fundamentals/azure-database-fundamentals/media/azure-cosmos-db-1c115364.png)
+- Stores data in atom-record-sequence (ARS) format
+- Data is then abstracted and projected as an API
+  - SQL, MongoDB, Cassandra, Tables, and Gremlin
+- Developers can stick with the API that they're the most comfortable with
+
+#### Explore Azure SQL Database
+
+- Relational DB
+- Based on the latest stable version of the Microsoft SQL Server DB engine
+- High-performance, reliable, fully managed, and secure DB
+- Without needing to manage infra
+
+##### Features
+
+- PaaS DB engine
+- Handles most of the database management functions
+  - Upgrading
+  - Patching
+  - Backups
+  - Monitoring
+- Provides 99.99% availability
+- Fully managed service
+- MS handles all updates to the SQL and OS code
+- Process both relation data and non-relational structures, such as graphs, JSON, spatial, and XML
+- Advanced query processing features
+  - High-performance, in-memory technologies and intelligent query processing
+- The newest capabilities of SQL Server are released first to SQL DB
+
+##### Migration
+
+- Minimal downtime by using the **Azure Database Migration Service**
+- Generate assessment reports that provide recommendations to help guide you through required changes prior to performing a migration
+- After you assess and resolve any remediation required, you're ready to begin the migration process
+- You just change the connection string in your apps
+
+https://docs.microsoft.com/en-us/learn/modules/azure-database-fundamentals/exercise-create-sql-database
+
 ---
