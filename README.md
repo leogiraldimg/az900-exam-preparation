@@ -1824,6 +1824,28 @@ Azure supports Docker
 - After you assess and resolve any remediation required, you're ready to begin the migration process
 - You just change the connection string in your apps
 
-https://docs.microsoft.com/en-us/learn/modules/azure-database-fundamentals/exercise-create-sql-database
+#### Exercise - Create a SQL database
+
+Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fundamentals/exercise-create-sql-database
+
+#### Explore Azure database for MySQL
+
+- Relational DB service in the cloud
+- Based on the MySQL Community Edition DB engine, versions 5.6, 5.7, and 8.0
+- 99.99% availability SLA from Azure
+- Built-in security, fault tolerance, and data protection
+- Point-in-time restore to recover a server to an earlier state, as far back as 35 days
+- Delivers:
+  - Built-in high availability with no additional cost
+  - Predictable performance and inclusive, pay-as-you-go pricing
+  - Scale as needed, within seconds
+  - Ability to protect sensitive data at-rest and in-motion
+  - Automatic backups
+  - Enterprise-grade security and compliance
+- You can migrate your existing MySQL DBs with minimal downtime by using the Azure Database Migration Service
+
+![Azure Database for MySQL conceptual diagram](https://docs.microsoft.com/en-us/learn/azure-fundamentals/azure-database-fundamentals/media/azure-db-for-mysql-conceptual-diagram-02e2a10a.png)
+
+- Offers several service tiers -> each tier provides different performance and capabilities to support lightweight to heavyweight database workloads
 
 ---
