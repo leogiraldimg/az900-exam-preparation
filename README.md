@@ -1884,4 +1884,32 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
       - Real-time operational analytics
       - High throughput transactional workloads
 
+#### Explore Azure SQL Managed Instance
+
+- scalable cloud data service
+- provides the broadest SQL Server database engine compatibility
+
+##### Features
+
+- (PaaS) database engine
+- Fully-managed environment
+- Quick provisioning
+- Service scaling
+- Automated patching and version upgrades
+- Built-in high availability features
+  - 99.99% uptime service level agreement (SLA)
+- Automated backups
+- Configurable backup retention period
+- Azure SQL Database and Azure SQL Managed Instance offer many of the same features
+- However, Azure SQL Managed Instance provides several options that might not be available to Azure SQL Database
+- For example
+  - They would like to migrate their existing databases to a SQL database running in the cloud
+  - Their databases use Cyrillic characters for collation
+  - Should migrate their databases to an Azure SQL Managed Instance
+  - Azure SQL Database only uses the default SQL_Latin1_General_CP1_CI_AS server collation
+
+##### Migration
+
+- Azure Database Migration Service (DMS)
+
 ---
