@@ -1848,4 +1848,40 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 
 - Offers several service tiers -> each tier provides different performance and capabilities to support lightweight to heavyweight database workloads
 
+#### Explore Azure Database for PostgreSQL
+
+- Relational database service in the cloud
+- Community version of the open-source PostgreSQL database engine
+- Benefits:
+  - High availability -> no additional configuration, replication, or cost required
+  - Simple and flexible pricing -> predictable performance based on a selected pricing tier
+  - Can scale compute or storage independently as needed, to make sure you adapt your service to match usage
+  - Automatic backups and point-in-time-restore for up to 35 days
+  - Enterprise-grade security and compliance to protect sensitive data at-rest and in-motion
+    - Data encryption on disk
+    - SSL encryption between client and server communication
+- Two deployment options:
+  - **Single Server**
+    - Delivers
+      - High availability with no additional cost
+      - Predictable performance and inclusive, pay-as-you-go pricing
+      - Vertical scale
+      - Monitoring and alerting
+      - Enterprise-grade security and compliance
+      - Protect sensitive data at-rest and in-motion
+      - Backups and point-in-time-restore -> up to 35 days
+    - Three pricing tiers
+      - Basic
+      - General Purpose
+      - Memory Optimized
+    - Different resource capabilities to support your database workloads 
+  - **Hyperscale (Citus)**
+    - Horizontally scales queries across multiple machines by using sharding
+    - Query engine parallelizes incoming SQL queries across these servers for faster responses on large datasets
+    - Workloads that are approaching, or already exceed, 100 GB of data
+    - Supports
+      - Multi-tenant applications
+      - Real-time operational analytics
+      - High throughput transactional workloads
+
 ---
