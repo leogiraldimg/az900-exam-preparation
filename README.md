@@ -1972,4 +1972,80 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 - Setting the dial for how much power you need.
 - Only pay for your job when it's running
 
+## Describe core solutions and management tools on Azure
+
+### Choose the best Azure IoT service for your application
+
+#### Identify the product options
+
+- Azure IoT services
+- Send their sensor readings to a specific endpoint in Azure via a message
+- Message's data is then collected and aggregated
+- Can be converted into reports and alerts
+- Devices could be updated with new firmware
+- Add new functionality by sending software updates from Azure IoT services
+- Messages each machine sends can be received, stored, organized, and displayed by using Azure IoT services
+
+##### Azure IoT Hub
+
+- Managed service
+- Hosted in the cloud
+- Acts as a central message hub for bi-directional communication between your IoT application and the devices it manages
+- Build IoT solutions with reliable and secure communications between millions of IoT devices and a cloud-hosted solution back end
+- Supports multiple messaging patterns
+  - Device-to-cloud telemetry
+  - File upload from devices
+  - Request-reply methods
+- After an IoT hub receives messages from a device, it can route that message to other Azure services
+- Allows for command and control
+
+##### Azure IoT Central
+
+![Azure IoT Central Dashboard](https://docs.microsoft.com/en-us/learn/azure-fundamentals/iot-fundamentals/media/2-identify-product-options-01-9e2f3db7.png)
+
+- Dashboard that allows you to connect, monitor, and manage your IoT devices
+- Connect new devices and watch as they begin sending telemetry or error messages
+- Can watch the overall performance across all devices in aggregate
+- Can set up alerts that send notifications when a specific device needs maintenance
+- Can push firmware updates to the device
+- Provides starter templates
+- Customize the design starter templates directly in the UI
+- Control your devices remotely
+- Key part of IoT Central -> Device templates
+  - Can connect a device without any service-side coding
+- Device developers still need to create code to run on the devices
+  - That code must match the device template specification
+
+##### Azure Sphere
+
+- End-to-end, highly secure IoT solution
+- Encompasses everything from the hardware and operating system on the device to the secure method of sending messages
+- Built-in communication and security features for internet-connected devices
+- Three parts
+  - First part
+    - Azure Sphere micro-controller unit (MCU)
+    - Processing the operating system and signals from attached sensors
+  - Second part
+    - Customized Linux operating system (OS)
+    - Handles communication with the security service
+    - Run the vendor's software
+  - Third part
+    - Azure Sphere Security Service
+    - AS3
+    - Its job is to make sure that the device has not been maliciously compromised
+    - When the device attempts to connect to Azure, it first must authenticate
+    - Certificate-based authentication
+    - Established a secure channel of communication
+    - AS3 pushes any OS or approved customer-developed software updates to the device
+
+### Choose the best AI service for your needs
+
+### Choose the best Azure serverless technology for your business scenario
+
+### Choose the best tools to help organizations build better solutions
+
+### Choose the best tools for managing and configuring your Azure environment
+
+### Choose the best monitoring service for visibility, insight, and outage mitigation
+
 ---
