@@ -1912,4 +1912,64 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 
 - Azure Database Migration Service (DMS)
 
+#### Explore big data and analytics
+
+- Big data
+- Large volumes of data
+- Amount of data becomes increasingly hard to make sense of and to base decisions on
+- Volumes are so large that traditional forms of processing and analysis are no longer appropriate
+
+##### Azure Synapse Analytics
+
+- Formerly Azure SQL Data Warehouse
+- Limitless analytics service
+- Enterprise data warehousing
+- Big data analytics
+- Serverless or provisioned resources at scale
+
+##### Azure HDInsight
+
+- Fully managed
+- Open-source analytics service
+- Easier, faster, and more cost-effective to process massive amounts of data
+- Can run popular open-source frameworks and create cluster types
+  - Apache Spark
+  - Apache Hadoop
+  - Apache Kafka
+  - Apache HBase
+  - Apache Storm
+- Machine Learning Services
+- Range of scenarios
+  - Extraction
+  - Transformation
+  - Loading (ETL)
+  - Data warehousing
+  - Machine learning
+  - IoT
+
+##### Azure Databricks
+
+- Unlock insights from all your data
+- Build artificial intelligence solutions
+- Apache Spark environment
+- Shared projects
+- Interactive workspace
+- Supports
+  - Python
+  - Scala
+  - R
+  - Java
+  - SQL
+  - TensorFlow
+  - PyTorch
+  - Scikit-learn
+
+##### Azure Data Lake Analytics
+
+- Simplifies big data
+- Queries to transform your data and extract valuable insights
+- Jobs of any scale instantly
+- Setting the dial for how much power you need.
+- Only pay for your job when it's running
+
 ---
