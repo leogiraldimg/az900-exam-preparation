@@ -2,7 +2,7 @@
 
 Knowledge trail: https://docs.microsoft.com/en-us/learn/certifications/exams/az-900.
 
-## Microsoft Azure Fundamentals: Describe core Azure concepts
+## Describe core Azure concepts
 
 ### Introduction to Azure fundamentals
 
@@ -830,7 +830,7 @@ Additional subscriptions:
 
 ---
 
-## Microsoft Azure Fundamentals: Describe core Azure services
+## Describe core Azure services
 
 ### Explore Azure compute services
 
