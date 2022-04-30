@@ -2038,6 +2038,29 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
     - Established a secure channel of communication
     - AS3 pushes any OS or approved customer-developed software updates to the device
 
+#### Analyze the decision criteria
+
+- The criteria that experts employ when they decide which IoT service to use for a given business need
+- **Is it critical to ensure that the device is not compromised?**
+  - Not in every case
+  - It's more critical to ensure the integrity than others
+  - When security is a critical consideration in your product's
+  - Azure Sphere
+    - Provides a comprehensive end-to-end solution for IoT devices
+    - Ensures a secure channel of communication between the device and Azure
+      - Controlling everything from the hardware to the operating system and the authentication process
+- **Do I need a dashboard for reporting and management?**
+  - If you
+    - Merely want to connect to your remote devices to receive telemetry && Occasionally push updates && You don't need any reporting capabilities
+      - Azure IoT Hub
+        - Programmers can still create a customized set of management tools and reports -> IoT Hub RESTful API
+  - If you
+    - Pre-built customizable user interface
+      - IoT Central
+        - Integrates with many different Azure products
+        - Create a dashboard with reports
+        - Management features
+
 ### Choose the best AI service for your needs
 
 ### Choose the best Azure serverless technology for your business scenario
