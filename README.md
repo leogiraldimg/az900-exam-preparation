@@ -2061,6 +2061,26 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
         - Create a dashboard with reports
         - Management features
 
+#### Use IoT Hub
+
+- Tailwind Traders
+  - Decided -> create high-end brand that promises a preemptive maintenance service agreement
+  - Appliances will send telemetry information to a centralized location
+  - Data can be analyzed and maintenance can be scheduled
+  - Devices will not require remote control
+  - Merely be sending their telemetry data for analysis and pro-active maintenance
+  - Company wants to integrate all functionality into this existing system
+- **Which service should you choose?**
+  - First
+    - Is it critical to ensure that the device or, in this case, each appliance, isn't compromised?
+    - It's preferable, but not critical
+    - It might not warrant the extra expense or engineering resources that would be required to employ Azure Sphere
+  - Second
+    - Do I need a dashboard for reporting and management?
+    - Tailwind Traders wants to integrate the telemetry data and all other functionality into an existing maintenance request system
+    - Azure IoT Central is not required
+    - Azure IoT Hub is the best choice in this scenario
+
 ### Choose the best AI service for your needs
 
 ### Choose the best Azure serverless technology for your business scenario
