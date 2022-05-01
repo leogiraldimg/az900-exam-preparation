@@ -2081,6 +2081,48 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
     - Azure IoT Central is not required
     - Azure IoT Hub is the best choice in this scenario
 
+#### Use IoT Central
+
+- Tailwind Traders
+  - Owns a fleet of delivery vehicles
+  - Transport products
+    - From warehouses to distribution centers
+    - From distribution centers to stores and homes
+  - Looking for a complete logistics solution
+  - Takes data sent from an onboard vehicle computer
+  - Turns it into actionable information
+  - Shipments can be outfitted with sensors from a third-party vendor
+  - Collect and monitor ambient conditions
+    - Temperature
+    - Humidity
+    - Tilt
+    - Shock
+    - Light
+    - Location of a shipment
+    - Goals
+  - Shipment monitoring with real-time tracing and tracking
+  - Shipment integrity with real-time ambient condition monitoring
+  - Security from theft, loss, or damage of shipments
+  - Geo-fencing, route optimization, fleet management, and vehicle analytics
+  - Forecasting for predictable departure and arrival of shipments
+  - Prefer a pre-built solution
+  - Collect the sensor and vehicle computer data
+  - Provide a graphical user interface that displays reports about shipments and vehicles
+- **Which service should you choose?**
+  - First
+    - Is it critical to ensure that the device or, in this case, each appliance, isn't compromised?
+      - Security was not mentioned as a critical concern
+      - Vehicle computers and sensors are built by a third-party vendor
+  - Second
+    - Does Tailwind Traders need a dashboard for reporting and management?
+      - Reporting and management dashboard is a requirement
+      - Azure IoT Central is the best choice in this scenario
+        - Connected Logistics starter template
+          - Preconfigured to showcase the critical logistics device operations activity
+- **Why not use IoT Hub?**
+  - Preconfigured for its specific needs by the Connected Logistics starter template
+  - Would need to do a lot of custom development
+
 ### Choose the best AI service for your needs
 
 ### Choose the best Azure serverless technology for your business scenario
