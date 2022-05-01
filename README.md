@@ -2123,6 +2123,29 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
   - Preconfigured for its specific needs by the Connected Logistics starter template
   - Would need to do a lot of custom development
 
+#### Use Azure Sphere
+
+- Tailwind Traders
+  - Implement a touchless point-of-sale solution for self-checkout
+  - Should be, above all else, secure
+  - Must be
+    - Impervious to malicious code
+  - Should
+    - Report back vital information on the company's health
+    - Allow secure updates to its software remotely
+  - Decides to work with a leading engineering firm that specializes in IoT solutions
+  - Wants a solution that can help it make sense of all the data that will be generated
+  - Wants an easy way to push software updates to its terminals
+- **Which service should you choose?**
+  - First
+    - Is it critical to ensure that the device or, in this case, each point-of-sale terminal, is not compromised?
+      - Absolutely
+      - Primary requirement
+  - Next
+    - Does Tailwind Traders need a dashboard for reporting and management?
+      - Requires a reporting and management dashboard
+      - IoT engineering firm will build a platform on top of both Azure IoT Central and Azure Sphere
+
 ### Choose the best AI service for your needs
 
 ### Choose the best Azure serverless technology for your business scenario
