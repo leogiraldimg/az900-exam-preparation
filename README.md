@@ -2214,6 +2214,29 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 - Behind the scenes
   - Uses other Azure services, such as Azure Cognitive Services
 
+#### Analyze the decision criteria
+
+- **Are you building a virtual agent that interfaces with humans via natural language?**
+  - Azure Bot Service
+  - Before you jump in to build a custom chat experience
+    - Search for prebuilt, no-code solutions that cover common scenarios
+    - Power Virtual Agents integrates with Microsoft Power Platform
+    - Can use hundreds of prebuilt connectors for data input
+  - Build more complex interactions with Microsoft Bot Framework
+- **Do you need a service that can understand the content and meaning of images, video, or audio, or that can translate text into a different language?**
+  - Azure Cognitive Services
+  - General purpose
+  - Work that Microsoft has already done to train and test these models
+- **Do you need to predict user behavior or provide users with personalized recommendations in your app?**
+  - Azure Cognitive Services Personalizer service
+  - Predict their behavior and provide relevant experiences as it identifies usage patterns
+  - Create your own custom Azure Machine Learning solution
+- **Will your app predict future outcomes based on private historical data?**
+  - Azure Machine Learning
+- **Do you need to build a model by using your own data or perform a different task than those listed above?**
+  - Azure Machine Learning
+  - Maximum flexibility
+
 ### Choose the best Azure serverless technology for your business scenario
 
 ### Choose the best tools to help organizations build better solutions
