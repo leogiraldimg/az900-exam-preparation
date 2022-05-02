@@ -2148,6 +2148,72 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 
 ### Choose the best AI service for your needs
 
+#### Identify the product options
+
+- Computing that allows a software system to perceive its environment and take action that maximizes its chance of successfully achieving its goals
+- Two basic approaches to AI
+  - *Deep learning*
+    - Discover, learn, and grow through experience
+  - *Machine learning*
+    - Uses existing data to train a model, test it, and then apply the model to new data to forecast future behaviors, outcomes, and trends
+
+##### Azure product options
+
+###### Azure Machine Learning
+
+- Platform for making predictions
+- Tools and services
+- Connect to data to train and test models
+- Deploy and use it in real time via a web API endpoint
+- You can:
+  - Create a process that defines how to
+  - Obtain data
+  - Handle missing or bad data
+  - Split the data into either a training set or test set
+  - Deliver the data to the training process
+  - Train and evaluate predictive models
+  - Create pipelines that define where and when to run the compute-intensive experiments
+  - Deploy the best-performing algorithm as an API to an endpoint
+- Data scientists need complete control over the design and training of an algorithm using your own data
+
+###### Azure Cognitive Services
+
+- Prebuilt machine learning models
+- Enable applications to:
+  - See
+  - Hear
+  - Speak
+  - Understand
+  - Begin to reason
+- Analyzing text for emotional sentiment
+- Analyzing images to recognize objects or faces
+- APIs
+- Provides pretrained models
+- Can be divided into the following categories:
+  - Language services
+    - Process natural language
+    - Evaluate sentiment
+    - Learn how to recognize what users want
+  - Speech services
+    - Convert speech into text and text into natural-sounding speech
+    - Translate
+    - Speaker verification and recognition
+  - Vision services
+    - Recognition and identification
+    - Pictures , videos, and other visual content
+  - Decision services
+    - Personalized recommendations for each user
+    - Improve each time they're used
+    - Moderate content
+    - Detect abnormalities
+
+###### Azure Bot Service
+
+- Creating virtual agents that understand and reply to questions just like a human
+- Creates a virtual agent that can intelligently communicate with humans
+- Behind the scenes
+  - Uses other Azure services, such as Azure Cognitive Services
+
 ### Choose the best Azure serverless technology for your business scenario
 
 ### Choose the best tools to help organizations build better solutions
