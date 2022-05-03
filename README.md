@@ -2262,6 +2262,27 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
       - Yes
       - Azure Machine Learning is likely the best choice
 
+#### Use Cognitive Services for data analysis
+
+- Tailwind Traders e-commerce website was available exclusively in English
+- Only 80 percent of potential customers speak English
+- **Which service should you choose?**
+  - First -> Is Tailwind Traders building a virtual agent that interfaces with humans via natural language?
+    - No
+    - Azure Bot Service is not a good candidate
+    - Consider using the Translator API to provide real-time translation
+  - Second -> Does Tailwind Traders need a service that can understand the content and meaning of images, video, audio, or translate text into a different language?
+    - Yes
+    - Azure Cognitive Services Translator
+  - Third -> Does Tailwind Traders need to predict user behavior or provide users with personalized recommendations?
+    - No
+    - Azure Cognitive Services Personalizer is not a good candidate
+  - Finally -> Will the Tailwind Traders app need to predict future outcomes based on private historical data?
+    - No
+    - It's possible to create a Machine Learning model for multilanguage translation
+      - Expensive
+      - Time consuming
+
 ### Choose the best Azure serverless technology for your business scenario
 
 ### Choose the best tools to help organizations build better solutions
