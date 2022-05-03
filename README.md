@@ -2237,6 +2237,31 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
   - Azure Machine Learning
   - Maximum flexibility
 
+#### Use Machine Learning for decision support systems
+
+- Tailwind Traders e-commerce website
+- Marketing team
+  - Convinced that it can increase sales dramatically by suggesting add-on products that complement the items in a shopper's cart
+  - Suggestions could be influenced by product availability, product profitability, and other factors
+- **Which service should you choose?**
+  - First -> Tailwind Traders building a virtual agent that interfaces with humans via natural language?
+    - No
+    - Azure Bot Service is not a good candidate
+  - Second -> Does Tailwind Traders need a service that can understand the content and meaning of images, video, audio, or translate text into a different language?
+    - No
+    - Cognitive Services will not help the company
+  - Third -> Does Tailwind Traders need to predict user behavior or provide users with personalized recommendations?
+    - Yes
+    - Creating recommendations -> only part of the requirement
+    - Complex model
+      - Historical sales data
+      - Trending sales data
+      - Inventory
+    - Azure Cognitive Services Personalizer -> couldn't handle the entire breadth of the project alone
+  - Fourth -> Will the Tailwind Traders app predict future outcomes based on private historical data?
+      - Yes
+      - Azure Machine Learning is likely the best choice
+
 ### Choose the best Azure serverless technology for your business scenario
 
 ### Choose the best tools to help organizations build better solutions
