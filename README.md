@@ -2283,6 +2283,26 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
       - Expensive
       - Time consuming
 
+#### Use Bot Service for interactive chat experiences
+
+- Customer Service team has long asked for a virtual agent to handle the vast majority of questions it gets asked
+- **Which service should you choose?**
+  - First -> Is Tailwind Traders building a virtual agent that interfaces with humans via natural language?
+      - Yes
+      - Azure Bot Service
+        - Virtual agent chat experience
+  - Second -> Does Tailwind Traders need a service that can understand the content and meaning of images, video, audio, or translate text into a different language?
+      - Azure Cognitive Services could be used along with Bot Service to build the solution
+        - QnA Maker (part of Cognitive Services)
+        - Power Virtual Agents
+        - Language Understanding (LUIS)
+        - Translator
+  - Third -> Does Tailwind Traders need to predict user behavior or provide users with personalized recommendations?
+    - No
+    - Azure Cognitive Services Personalizer is not a good candidate
+  - Finally -> Will the Tailwind Traders app need to predict future outcomes based on private historical data?
+    - No
+
 ### Choose the best Azure serverless technology for your business scenario
 
 ### Choose the best tools to help organizations build better solutions
