@@ -2305,6 +2305,93 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 
 ### Choose the best Azure serverless technology for your business scenario
 
+#### Introduction
+
+- **Serverless computing**
+  - Execution environment
+  - Set up and managed for you
+  - Writing code or connecting and configuring components in a visual editor
+  - Never have to worry about an outage
+  - Your code can scale instantly to meet demand
+  - You pay based only on the actual usage
+  
+#### Identify the product options
+
+- Serverless computing
+  - Cloud-hosted execution environment
+  - Abstracts the underlying hosting environment
+  - There is a server (or a group of servers) that executes your code or desired functionality
+  - Key idea
+    - You're not responsible for setting up or maintaining the server
+  - You don't have to worry about scaling it
+  - You don't have to worry about outages
+- Serverless app runs only when it's triggered by an event
+- You're billed only for the resources you use
+- Ordinarily used to handle back-end scenarios
+- Responsible for
+  - Sending messages from one system to another
+  - Processing messages that were sent from other systems
+- Not used for user-facing systems
+
+##### Azure Functions
+
+- Host a single method or function
+- Runs in response to an event
+  - HTTP request
+  - New message on a queue
+  - Message on a timer
+- Can be written in many common programming languages
+- Scales automatically
+- Charges accrue only when a function is triggered
+- Solid choice when demand is variable
+- Stateless environment
+  - Behaves as if it's restarted every time it responds to an event
+- If state is required
+  - Can be connected to an Azure storage account
+- Can perform orchestration tasks
+  - Extension called Durable Functions
+- Allow developers to chain functions together while maintaining state
+- Ideal when
+  - Concerned only with the code that's running your service
+  - Not the underlying platform or infrastructure
+  - Perform work in response to an event
+  - Work can be completed quickly
+
+##### Azure Logic Apps
+
+- Low-code/no-code development platform hosted as a cloud service
+- Helps you
+  - Automate and orchestrate
+    - Tasks
+    - Business processes
+    - Workflows
+    - Integrate apps, data, systems, and services across enterprises or organizations
+- Covers
+  - App integration
+  - Data integration
+  - System integration
+  - Enterprise application integration (EAI)
+  - Business-to-business (B2B) integration
+- Web-based designer
+  - Linking triggers to actions with connectors
+    - A trigger is an event
+    - An action is a task or step that can execute
+    - If you can't find the action or connector you need, you can build your own by using custom code
+
+##### What are the differences between these services?
+
+- Primary difference
+  - Their intent
+    - Azure Functions is a serverless compute service
+    - Azure Logic Apps is intended to be a serverless orchestration service
+- Are priced differently
+  - Azure Functions pricing
+    - Based on the number of executions
+    - Running time of each execution
+  - Logic Apps pricing
+    - Based on the number of executions
+    - Type of connectors
+
 ### Choose the best tools to help organizations build better solutions
 
 ### Choose the best tools for managing and configuring your Azure environment
