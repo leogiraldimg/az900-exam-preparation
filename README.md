@@ -2426,6 +2426,75 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
   - Develop solutions
   - Save money while doing so
 
+#### Understand your product options
+
+- DevOps
+  - Combines philosophies and practices to facilitate technical teams as they work toward common goals
+  - Practices and processes that automate
+    - Development
+    - Maintenance
+    - Deployment of software systems
+- The aim
+  - Expedite the release of software changes
+  - Ensure the ongoing deployability of the system
+  - Ensure that all changes meet a high quality bar
+- Microsoft tools enable
+  - Source-code management
+  - CI/CD
+  - Automate the creation of testing environments
+
+##### Product options
+
+- **Azure DevOps Services**
+  - Suite of services that address every stage of the software development lifecycle
+    - *Azure Repos*
+      - Centralized source-code repository
+      - Publish code for review and collaboration
+    - *Azure Boards*
+      - Agile project management suite
+      - Includes
+        - Kanban boards
+        - Reporting
+        - Tracking ideas
+        - Work from high-level epics to work items and issues
+    - *Azure Pipelines*
+      - CI/CD pipeline automation tool
+    - *Azure Artifacts*
+      - Repository for hosting artifacts
+        - Compiled source code
+      - Can be fed into testing or deployment pipeline steps
+    - *Azure Test Plans*
+      - Automated test tool
+      - Can be used in a CI/CD pipeline
+      - Ensure quality before a software release
+  - Began as on-premises server software
+    - Evolved into SaaS
+- **GitHub and GitHub Actions**
+  - World's most popular code repository for open-source software
+  - GitHub is a hosted version of Git
+  - Functionality
+    - Shared source-code repository
+    - Facilitates project management
+    - Supports issue reporting, discussion, and tracking
+    - Features CI/CD pipeline automation tooling
+    - Includes a wiki for collaborative documentation
+    - Can be run from the cloud or on-premises
+  - GitHub Actions
+    - Enables workflow automation with triggers for many lifecycle events
+    - Automating a CI/CD toolchain
+  - Both Azure DevOps and GitHub allow public and private code repositories
+  - GitHub
+    - Lighter-weight tool than Azure DevOps
+    - Focus on individual developers contributing to the open-source code
+  - Azure DevOps
+    - Focused on enterprise development
+    - Heavier project-management and planning tools
+    - Finer-grained access control
+- **Azure DevTest Labs**
+  - Automated means of managing the process of building, setting up, and tearing down virtual machines (VMs) that contain builds of your software projects
+  - Anything you can deploy in Azure via an ARM template can be provisioned through DevTest Labs
+  - Management team can restrict how many labs can be created, how long they run, and so on
+
 ### Choose the best tools for managing and configuring your Azure environment
 
 ### Choose the best monitoring service for visibility, insight, and outage mitigation
