@@ -2516,6 +2516,72 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 - Explore the array of Azure management tools
 - Decision criteria that experts use to select the right ones
 
+#### Identify the product options
+
+- Two broad categories of management tools:
+  - Visual tools
+    - Full, visually friendly access to all the functionality of Azure
+    - Might be less useful
+    - Large deployment of resources
+    - Interdependencies and configuration options
+  - Code-based tools
+    - Might take time to understand the right commands and parameters
+    - The code that performs setup and configuration can be stored, versioned, and maintained along with application source code
+    - Infrastructure as code
+- Two approaches to infrastructure as code:
+  - Imperative code
+    - Details each individual step that should be performed to achieve a desired outcome
+  - Declarative code
+    - Details only a desired outcome, and it allows an interpreter to decide how to best achieve that outcome
+
+##### The Azure portal
+
+- Web-based user interface
+- Access virtually every feature of Azure
+- Provides a friendly, graphical UI
+
+##### The Azure mobile app
+
+- Provides iOS and Android access to your Azure resources
+- You can
+  - Monitor the health and status of your Azure resources
+  - Check for alerts, quickly diagnose and fix issues, and restart a web app or virtual machine (VM)
+  - Run the Azure CLI or Azure PowerShell commands to manage your Azure resources
+
+##### Azure PowerShell
+
+- Execute commands called cmdlets (pronounced command-lets )
+- Call the Azure Rest API to perform every possible management task
+- Cmdlets can be executed
+  - Independently
+  - Script file
+- Orchestrate
+  - Routine setup, teardown, and maintenance of a single resource or multiple connected resources
+  - Deployment of an entire infrastructure
+  - From imperative code
+- Available for Windows, Linux, and Mac
+- You can access it in a web browser via Azure Cloud Shell
+
+##### The Azure CLI
+
+- Executable program
+- Execute commands in Bash
+- Commands call the Azure Rest API to perform every possible management task in Azure
+- Can run the commands independently or combined into a script
+- Run on Windows, Linux, and Mac
+- Can be accessed in a web browser via Cloud Shell
+- Primary difference is the syntax you use
+
+##### ARM templates
+
+- Azure Resource Manager templates (ARM templates)
+- Imperative code in Azure PowerShell or the Azure CLI
+- Describe the resources you want to use in a declarative JSON format
+- Entire ARM template is verified before any code is executed
+- Ensure that the resources will be created and connected correctly
+- Orchestrates the creation of those resources in parallel
+- Needs only to define the desired state and configuration of each resource
+
 ### Choose the best monitoring service for visibility, insight, and outage mitigation
 
 ---
