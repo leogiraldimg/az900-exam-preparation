@@ -2505,6 +2505,17 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 
 ### Choose the best tools for managing and configuring your Azure environment
 
+#### Introduction
+
+- Azure management tools
+  - Administrators, developers, and managers
+    - Perform such tasks as
+      - Deploying dozens or hundreds of resources at a time
+      - Configuring individual services programmatically
+      - Viewing rich reports across usage, health, costs, and more
+- Explore the array of Azure management tools
+- Decision criteria that experts use to select the right ones
+
 ### Choose the best monitoring service for visibility, insight, and outage mitigation
 
 ---
