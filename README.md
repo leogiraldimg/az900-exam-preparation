@@ -2495,6 +2495,14 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
   - Anything you can deploy in Azure via an ARM template can be provisioned through DevTest Labs
   - Management team can restrict how many labs can be created, how long they run, and so on
 
+#### Analyze the decision criteria
+
+- Do you need to automate and manage test-lab creation?
+- Are you building open-source software?
+  - Regarding source-code management and DevOps tools, what level of granularity do you need for permissions?
+  - Regarding source-code management and DevOps tools, how sophisticated does your project management and reporting need to be?
+  - Regarding source-code management and DevOps tools, how tightly do you need to integrate with third-party tools?
+
 ### Choose the best tools for managing and configuring your Azure environment
 
 ### Choose the best monitoring service for visibility, insight, and outage mitigation
