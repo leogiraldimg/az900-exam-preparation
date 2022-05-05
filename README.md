@@ -2419,6 +2419,13 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 
 ### Choose the best tools to help organizations build better solutions
 
+#### Introduction
+
+- Microsoft has created a comprehensive set of tools that help organizations
+  - Implement DevOps practices
+  - Develop solutions
+  - Save money while doing so
+
 ### Choose the best tools for managing and configuring your Azure environment
 
 ### Choose the best monitoring service for visibility, insight, and outage mitigation
