@@ -2392,6 +2392,31 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
     - Based on the number of executions
     - Type of connectors
 
+#### Analyze the decision criteria
+
+- **Do you need to perform an orchestration across well-known APIs?**
+  - Azure Logic Apps was designed with orchestration in mind
+    - From the web-based visual configurator to the pricing model
+  - Azure Functions
+    - Might take a considerable amount of time
+- **Do you need to execute custom algorithms or perform specialized data parsing and data lookups?**
+  - Azure Functions
+    - Can use the full expressiveness of a programming language
+    - Lets you
+      - Build complex algorithms
+      - Data lookup
+      - Parsing operations
+  - Azure Logic Apps
+    - More verbose
+    - Visually overwhelming
+- **Do you have existing automated tasks written in an imperative programming language?**
+  - Easier to port your code into the body of an Azure Functions
+- **Do you prefer a visual (declarative) workflow or writing (imperative) code?**
+  - Developers
+    - Imperative
+  - IT professionals and business analysts
+    - Low-code/no-code (declarative)
+
 ### Choose the best tools to help organizations build better solutions
 
 ### Choose the best tools for managing and configuring your Azure environment
