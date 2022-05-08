@@ -2582,6 +2582,21 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 - Orchestrates the creation of those resources in parallel
 - Needs only to define the desired state and configuration of each resource
 
+#### Analyze the decision criteria
+
+- **Do you need to perform one-off management, administrative, or reporting actions?**
+  - For one-off scenarios, you may prefer more agile tools like PowerShell, Azure CLI scripts, or the Azure portal
+  - If you're just learning Azure and/or need to set up and manage resources infrequently -> Azure portal
+  - To quickly find the settings and information you want to work with -> Azure CLI or PowerShell
+  - It's likely the best choice when a laptop isn't readily available -> Azure mobile app
+- **Do you need a way to repeatedly set up one or more resources and ensure that all the dependencies are created in the proper order?**
+  - ARM templates
+  - Define your application's infrastructure requirements for a repeatable deployment
+  - Validation step ensures that all resources can be created in the proper order
+- **When you're scripting, do you come from a Windows administration or Linux administration background?**
+  - Cloud administrators come from a Windows administration background -> PowerShell
+  - Cloud administrators come from a Linux administration background -> Azure CLI
+
 ### Choose the best monitoring service for visibility, insight, and outage mitigation
 
 ---
