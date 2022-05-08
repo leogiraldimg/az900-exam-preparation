@@ -2599,4 +2599,9 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 
 ### Choose the best monitoring service for visibility, insight, and outage mitigation
 
+- React quickly to outages
+- Research intermittent issues
+- Optimize your usage
+- Handling future planned downtime
+
 ---
