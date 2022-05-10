@@ -2648,4 +2648,23 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
   - Planned maintenance -> drill down to the affected services, regions, and details to show how an event will affect you and what you need to do
   - Health advisories -> issues that require you to act to avoid service interruption
 
+#### Analyze the decision criteria
+
+- **Do you need to analyze how you're using Azure to reduce costs, improve resilience, or harden your security?**
+  - *Azure Advisor*
+- **Do you want to monitor Azure services or your usage of Azure?**
+  - *Azure Service Health*
+    - Current status of the Azure services
+    - Upcoming planned outages
+    - Services that will be sunset
+  - *Azure Monitor*
+    - Keep track of the performance or issues related to your specific VM or container instances, databases, your applications
+- **Do you want to measure custom events alongside other usage metrics?**
+  - *Azure Monitor*
+    - Measure custom events alongside other collected telemetry data
+    - Added in the source code of your software applications
+- **Do you need to set up alerts for outages or when autoscaling is about to deploy new instances?**
+  - *Azure Monitor*
+    - Set up alerts for key events that are related to your specific resources
+
 ---
