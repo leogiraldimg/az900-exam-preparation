@@ -2604,4 +2604,48 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 - Optimize your usage
 - Handling future planned downtime
 
+#### Identify your product options
+
+##### Azure Advisor
+
+- Evaluates your Azure resources
+- Makes recommendations to help
+- Improve reliability, security, and performance
+- Achieve operational excellence
+- Reduce costs
+- Designed to help you save time on cloud optimization
+- Advisor dashboard displays personalized recommendations for all your subscriptions
+- Recommendations are divided into five categories
+  - Reliability -> ensure and improve the continuity of your business-critical applications
+  - Security -> detect threats and vulnerabilities that might lead to security breaches
+  - Performance -> improve the speed of your applications
+  - Cost -> optimize and reduce your overall Azure spending
+  - Operational Excellence -> achieve process and workflow efficiency, resource manageability, and deployment best practices
+
+##### Azure Monitor
+
+- Platform for
+  - Collecting
+  - Analyzing
+  - Visualizing
+  - Taking action based on the metric and logging data from your entire Azure and on-premises environment
+- ![Azure Monitor](https://docs.microsoft.com/en-us/learn/azure-fundamentals/monitoring-fundamentals/media/2-identify-product-options-01.png)
+  - On the left -> list of the sources of logging and metric data that can be collected from application to operating system and network
+  - In the center -> how the logging and metric data is stored
+  - On the right -> data is used
+- **Azure Application Insights**
+  - Service for sending telemetry information from application source code to Azure
+  - Uses Azure Monitor under the hood
+  - Application developers gain deep insights into an application's operations
+    - Diagnose errors without having to wait for users to report them
+
+##### Azure Service Health
+
+- Provides a personalized view of the health of the Azure services, regions, and resources
+- Displays both major and smaller, localized issues that affect you
+- Event types
+  - Service issues -> affect you right now
+  - Planned maintenance -> drill down to the affected services, regions, and details to show how an event will affect you and what you need to do
+  - Health advisories -> issues that require you to act to avoid service interruption
+
 ---
