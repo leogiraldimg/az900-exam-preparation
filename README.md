@@ -2667,4 +2667,77 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
   - *Azure Monitor*
     - Set up alerts for key events that are related to your specific resources
 
+## Describe general security and network security features
+
+### Protect against security threats on Azure
+
+#### Protect against security threats by using Azure Security Center
+
+##### What's Azure Security Center?
+
+- Monitoring service
+- Provides visibility of your security posture
+- Azure and on-premises
+- Security posture
+  - Cybersecurity policies and controls, as well as how well you can predict, prevent, and respond to security threats
+- Security Center can:
+  - Monitor security settings across on-premises and cloud workloads
+  - Automatically apply required security settings to new resources
+  - Provide security recommendations
+  - Monitor your resources and perform automatic security assessments to identify potential vulnerabilities
+  - Use machine learning to detect and block malware
+  - Adaptive application controls
+  - Define rules that list allowed applications to ensure that only applications you allow can run
+  - Detect and analyze potential inbound attacks and investigate threats and any post-breach activity
+  - Provide just-in-time access control for network ports
+
+##### Understand your security posture
+
+- ![Security Center Compliance](https://docs.microsoft.com/en-us/learn/azure-fundamentals/protect-against-security-threats-azure/media/2-security-center-compliance-32866f57.png)
+- **Resource security hygiene** section
+  - Health of its resources from a security perspective
+  - Recommendations are categorized as low, medium, and high
+- **What's secure score?**
+  - Measurement of an organization's security posture
+  - Based on security controls
+  - Based on the percentage of security controls that you satisfy
+  - Score improves when you remediate all of the recommendations
+  - Helps you:
+    - Report
+    - Improve your security posture
+      - Providing
+      - Discoverability
+      - Visibility
+      - Guidance
+      - Control
+    - Compare with benchmarks
+      - Establish key performance indicators (KPIs)
+
+##### Protect against threats
+
+- Security Center includes advanced cloud defense capabilities:
+  - **Just-in-time VM access**
+    - Blocks traffic by default to specific network ports of VMs
+    - Allows traffic for a specified time when an admin requests and approves it
+  - **Adaptive application controls**
+    - Control which applications are allowed to run on its VMs
+    - Uses machine learning to look at the processes running on a VM
+    - Provides alerts that inform the company about unauthorized applications
+  - **Adaptive network hardening**
+    - Monitor the internet traffic patterns of the VMs
+    - Compare those patterns with the company's current network security group (NSG)
+  - **File integrity monitoring**
+    - Configure the monitoring of changes to important files
+
+##### Respond to security alerts
+
+- Automated response with a workflow automation
+  - Uses Azure Logic Apps and Security Center connectors
+
+#### Detect and respond to security threats by using Azure Sentinel
+
+https://docs.microsoft.com/en-us/learn/modules/protect-against-security-threats-azure/3-detect-respond-threats-sentinel
+
+### Secure network connectivity on Azure
+
 ---
