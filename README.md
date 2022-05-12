@@ -2736,7 +2736,39 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 
 #### Detect and respond to security threats by using Azure Sentinel
 
-https://docs.microsoft.com/en-us/learn/modules/protect-against-security-threats-azure/3-detect-respond-threats-sentinel
+- Security information and event management (SIEM) system
+  - Aggregates security data from many different sources
+  - Capabilities for threat detection and response
+
+##### Azure Sentinel
+  - Microsoft's cloud-based SIEM system
+  - Capabilities
+    - Collect cloud data at scale
+    - Detect previously undetected threats -> minimize false positives
+    - Investigate threats with artificial intelligence -> examine suspicious activities
+    - Respond to incidents rapidly -> built-in orchestration and automation
+  - **Connect your data sources**
+    - Built-in connectors or industry-standard log formats and APIs
+      - Connect Microsoft solutions
+        - Real-time integration
+      - Connect other services and solutions
+        - Available for common non-Microsoft services and solutions
+      - Connect industry-standard data sources
+        - Supports data from other sources that use the Common Event Format (CEF) messaging standard, Syslog, or REST API
+  - **Detect threats**
+    - Built in analytics
+      - Templates designed by Microsoft
+      - Can be customized
+      - Search across the environment for any activity that looks suspicious
+    - Custom analytics
+      - Rules that you create to search for specific criteria within your environment
+  - **Investigate and respond**
+    - Investigation graph
+    - Review information from entities directly connected to the alert,
+    - ![Investigation graph example](https://docs.microsoft.com/en-us/learn/azure-fundamentals/protect-against-security-threats-azure/media/3-investigate-incidents-54765923.png)
+    - *Azure Monitor Workbooks*
+      - Automate responses to threats
+      - Can be run manually or automatically when a rule triggers an alert
 
 ### Secure network connectivity on Azure
 
