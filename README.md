@@ -2805,6 +2805,37 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
   - Integrate Key Vault with storage accounts, container registries, event hubs, and many more Azure services.
   - Securely reference the secrets stored in Key Vault
 
+#### Host your Azure virtual machines on dedicated physical servers by using Azure Dedicated Host
+
+- VMs run on shared hardware
+- VM workloads are isolated from workloads that other Azure customers run
+- **Azure Dedicated Host**
+  - Provides dedicated physical servers to host your Azure VMs for Windows and Linux
+- Diagram that shows how VMs relate to dedicated hosts and host groups
+  - ![Dedicated hosts](https://docs.microsoft.com/en-us/learn/azure-fundamentals/protect-against-security-threats-azure/media/6-dedicated-hosts-cab8e670.png)
+- *Dedicated host*
+  - Mapped to a physical server in an Azure datacenter
+- *Host group*
+  - Collection of dedicated hosts
+
+##### What are the benefits of Azure Dedicated Host?
+
+- Visibility into, and control over, the server infrastructure
+- Helps address compliance requirements
+- Lets you choose the number of processors, server capabilities, VM series, and VM sizes within the same host
+
+##### Availability considerations for Dedicated Host
+
+- For high availability, you can provision multiple hosts in a host group
+- Maintenance control
+  - Control when regular maintenance updates occur
+
+##### Pricing considerations
+
+- You're charged per dedicated host, independent of how many VMs you deploy to it
+
 ### Secure network connectivity on Azure
+
+https://docs.microsoft.com/en-us/learn/modules/secure-network-connectivity-azure/
 
 ---
