@@ -2770,6 +2770,41 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
       - Automate responses to threats
       - Can be run manually or automatically when a rule triggers an alert
 
+#### Store and manage secrets by using Azure Key Vault
+
+- **Azure Key Vault**
+  - Storing an application's secrets in a single, central location
+  - Provides secure access to sensitive information
+  - Access control and logging capabilities
+
+##### What can Azure Key Vault do?
+
+- Manage secrets
+  - Securely store and tightly control access to tokens, passwords, certificates, API keys, and other secrets
+- Manage encryption keys
+  - Key management solution
+  - Create and control the encryption keys that are used to encrypt your data
+- Manage SSL/TLS certificates
+  - Provision, manage, and deploy your public and private Secure Sockets Layer/Transport Layer Security (SSL/TLS) certificates
+- Store secrets backed by hardware security modules (HSMs)
+
+![Key Vault certificates](https://docs.microsoft.com/en-us/learn/azure-fundamentals/protect-against-security-threats-azure/media/4-key-vault-certificates-b32bfbfe.png)
+
+##### What are the benefits of Azure Key Vault?
+
+- Centralized application secrets
+  - Control their distribution, and reduces the chances that secrets are accidentally leaked
+- Securely stored secrets and keys
+  - Access to Key Vault requires proper authentication and authorization
+- Access monitoring and access control
+  - Monitor and control access to your application secrets
+- Simplified administration of application secrets
+  - Makes it easier to enroll and renew certificates from public certificate authorities (CAs)
+  - Scale up and replicate content within regions and use standard certificate management tools
+- Integration with other Azure services
+  - Integrate Key Vault with storage accounts, container registries, event hubs, and many more Azure services.
+  - Securely reference the secrets stored in Key Vault
+
 ### Secure network connectivity on Azure
 
 ---
