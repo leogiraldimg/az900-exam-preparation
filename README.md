@@ -1234,10 +1234,10 @@ Azure supports Docker
     - Lets admins identify through a single interface
 - **Performance management**
   - Load balance users on your VM host pools
-  - *Host pools* -> collections of VMs with the same configuration assigned to multiple users
-  - *Breadth mode* -> configure load balance to occur as users sign in
+  - _Host pools_ -> collections of VMs with the same configuration assigned to multiple users
+  - _Breadth mode_ -> configure load balance to occur as users sign in
     - Users are sequentially allocated across the host pool for your workload
-  - *Depth mode* -> users are fully allocated on one VM before moving to the next
+  - _Depth mode_ -> users are fully allocated on one VM before moving to the next
     - Save costs
   - Automatically provision additional VMs when incoming demand exceeds threshold
 - **Multi-session Windows 10 deployment**
@@ -1275,6 +1275,7 @@ Azure supports Docker
   - Connect virtual networks
 
 ###### Network configurations for VMs
+
 - Azure virtual networks = VNets
   - Segmentation and isolation
   - Extension of your own data center into the cloud
@@ -1297,22 +1298,22 @@ Azure supports Docker
     - VM can connect to internet by default
     - Enable incoming from internet -> public IP address or public load balancer
   - **Communicate between Azure resources**
-    - *Virtual Networks*
+    - _Virtual Networks_
       - VMs, App Service Environment for Power Apps, Azure Kubernetes Service and Azure Virtual Machine scale sets
-    - *Service endpoints*
+    - _Service endpoints_
       - Azure SQL Databases and storage accounts
       - Link Azure resources to virtual networks -> improve security and provide optimal routing between resources
   - **Communicate with on-premises resources**
     - Three mechanisms:
-      - *Point-to-site VPNs*
+      - _Point-to-site VPNs_
         - Computer outside organization into corporate network
         - Encrypted VPN connection
-      - *Site-to-site VPNs*
+      - _Site-to-site VPNs_
         - Links on-premises VPN device or gateway (GW) to Azure VPN GW in a virtual network
         - Devices in Azure appear as being on the local network
         - Encrypted
         - Over the internet
-      - *Azure ExpressRoute*
+      - _Azure ExpressRoute_
         - Needs greater bandwidth
         - Higher levels of security
         - Dedicated private connectivity to Azure
@@ -1320,14 +1321,14 @@ Azure supports Docker
   - **Route network traffic**
     - Default: routes traffic between subnets
     - Settings:
-      - *Route tables*
+      - _Route tables_
         - Define rules about how traffic should be directed
         - Control how packets are routed between subnets
-      - *Border GW Protocol (BGP)*
+      - _Border GW Protocol (BGP)_
         - Propagate on-premises BGP routes to Azure virtual networks
   - **Filter network traffic**
     - Approaches:
-      - *Network security groups*
+      - _Network security groups_
         - Azure resource
         - Contain multiple inbound and outbound security rules
         - Allow or block traffic
@@ -1335,7 +1336,7 @@ Azure supports Docker
           - Source and destination IP address
           - Port
           - Protocol
-      - *Network virtual appliances*
+      - _Network virtual appliances_
         - Specialized VM
         - Can be compared to a hardened network appliance
         - Carries out a particular network function
@@ -1345,7 +1346,7 @@ Azure supports Docker
 ##### Connect virtual networks
 
 - Connect virtual networks together
-- Network *peering*
+- Network _peering_
   - Enables resources in each virtual network to communicate with each other
 - User-defined routes (UDR)
   - Significant Azure's Virtual Networks
@@ -1445,27 +1446,27 @@ Azure supports Docker
 - Type of virtual network GW
 - Deployed in a dedicated subnet of the virtual network
 - Enable the following connectivity:
-  - On-premises <-> virtual networks (*site-to-site* connection)
-  - Individual devices <-> virtual networks (*point-to-site* connection)
-  - virtual networks <-> virtual networks (*network-to-network* connection)
-  
+  - On-premises <-> virtual networks (_site-to-site_ connection)
+  - Individual devices <-> virtual networks (_point-to-site_ connection)
+  - virtual networks <-> virtual networks (_network-to-network_ connection)
+
 ![VPN GW](https://docs.microsoft.com/en-us/learn/azure-fundamentals/azure-networking-fundamentals/media/vpngateway-site-to-site-connection-diagram-0e1e7db2.png)
 
 - One VPN GW in each virtual network
 - One GW to connect to multiple locations (other virtual networks or on-premises datacenters)
 - VPN types for VPN GW:
-  - ***policy-based***
+  - **_policy-based_**
     - Specify statically the IP address of packets that should be encrypted through each tunnel
     - Evaluates every data packet against those sets of IP
     - Choose the tunnel where that packet is going to be sent through
     - Key features:
       - Support for IKEv1 only
-      - *Static routing*:
+      - _Static routing_:
         - Source and destination are declared in the policy
         - Not declared in routing tables
       - Must be used in specific scenarios
         - Compatibility with legacy on-premises VPN devices
-  - ***route-based***
+  - **_route-based_**
     - IPSec tunnels are modeled as a network interface or virtual tunnel interface
     - IP routing decides which one of these tunnel interfaces to use when sending each packet
     - Preferred connection method for on-premises devices
@@ -1478,7 +1479,7 @@ Azure supports Docker
     - Key features:
       - Supports IKEv2
       - Uses any-to-any (wildcard) traffic selectors
-      - Can use *dynamic routing protocols*
+      - Can use _dynamic routing protocols_
         - Routing/forwarding tables direct traffic to different IPSec tunnels
         - Source and destination networks aren't statically defined as they are in policy-based VPNs or even route-based VPNs with static routing
         - Routing tables are created dynamically using protocols such as Border GW Protocol (BGP)
@@ -1747,7 +1748,7 @@ Azure supports Docker
 
 #### Understand Blob access tiers
 
-- To accommodate different access needs, Azure provides several *access tiers*, which you can use to balance your storage costs with your access needs
+- To accommodate different access needs, Azure provides several _access tiers_, which you can use to balance your storage costs with your access needs
 - Access tiers for blob storage:
   - **Hot access tier**
     - Data that is accessed frequently
@@ -1874,7 +1875,7 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
       - Basic
       - General Purpose
       - Memory Optimized
-    - Different resource capabilities to support your database workloads 
+    - Different resource capabilities to support your database workloads
   - **Hyperscale (Citus)**
     - Horizontally scales queries across multiple machines by using sharding
     - Query engine parallelizes incoming SQL queries across these servers for faster responses on large datasets
@@ -2152,9 +2153,9 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 
 - Computing that allows a software system to perceive its environment and take action that maximizes its chance of successfully achieving its goals
 - Two basic approaches to AI
-  - *Deep learning*
+  - _Deep learning_
     - Discover, learn, and grow through experience
-  - *Machine learning*
+  - _Machine learning_
     - Uses existing data to train a model, test it, and then apply the model to new data to forecast future behaviors, outcomes, and trends
 
 ##### Azure product options
@@ -2259,8 +2260,8 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
       - Inventory
     - Azure Cognitive Services Personalizer -> couldn't handle the entire breadth of the project alone
   - Fourth -> Will the Tailwind Traders app predict future outcomes based on private historical data?
-      - Yes
-      - Azure Machine Learning is likely the best choice
+    - Yes
+    - Azure Machine Learning is likely the best choice
 
 #### Use Cognitive Services for data analysis
 
@@ -2288,15 +2289,15 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 - Customer Service team has long asked for a virtual agent to handle the vast majority of questions it gets asked
 - **Which service should you choose?**
   - First -> Is Tailwind Traders building a virtual agent that interfaces with humans via natural language?
-      - Yes
-      - Azure Bot Service
-        - Virtual agent chat experience
+    - Yes
+    - Azure Bot Service
+      - Virtual agent chat experience
   - Second -> Does Tailwind Traders need a service that can understand the content and meaning of images, video, audio, or translate text into a different language?
-      - Azure Cognitive Services could be used along with Bot Service to build the solution
-        - QnA Maker (part of Cognitive Services)
-        - Power Virtual Agents
-        - Language Understanding (LUIS)
-        - Translator
+    - Azure Cognitive Services could be used along with Bot Service to build the solution
+      - QnA Maker (part of Cognitive Services)
+      - Power Virtual Agents
+      - Language Understanding (LUIS)
+      - Translator
   - Third -> Does Tailwind Traders need to predict user behavior or provide users with personalized recommendations?
     - No
     - Azure Cognitive Services Personalizer is not a good candidate
@@ -2314,7 +2315,7 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
   - Never have to worry about an outage
   - Your code can scale instantly to meet demand
   - You pay based only on the actual usage
-  
+
 #### Identify the product options
 
 - Serverless computing
@@ -2447,23 +2448,23 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 
 - **Azure DevOps Services**
   - Suite of services that address every stage of the software development lifecycle
-    - *Azure Repos*
+    - _Azure Repos_
       - Centralized source-code repository
       - Publish code for review and collaboration
-    - *Azure Boards*
+    - _Azure Boards_
       - Agile project management suite
       - Includes
         - Kanban boards
         - Reporting
         - Tracking ideas
         - Work from high-level epics to work items and issues
-    - *Azure Pipelines*
+    - _Azure Pipelines_
       - CI/CD pipeline automation tool
-    - *Azure Artifacts*
+    - _Azure Artifacts_
       - Repository for hosting artifacts
         - Compiled source code
       - Can be fed into testing or deployment pipeline steps
-    - *Azure Test Plans*
+    - _Azure Test Plans_
       - Automated test tool
       - Can be used in a CI/CD pipeline
       - Ensure quality before a software release
@@ -2651,20 +2652,20 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 #### Analyze the decision criteria
 
 - **Do you need to analyze how you're using Azure to reduce costs, improve resilience, or harden your security?**
-  - *Azure Advisor*
+  - _Azure Advisor_
 - **Do you want to monitor Azure services or your usage of Azure?**
-  - *Azure Service Health*
+  - _Azure Service Health_
     - Current status of the Azure services
     - Upcoming planned outages
     - Services that will be sunset
-  - *Azure Monitor*
+  - _Azure Monitor_
     - Keep track of the performance or issues related to your specific VM or container instances, databases, your applications
 - **Do you want to measure custom events alongside other usage metrics?**
-  - *Azure Monitor*
+  - _Azure Monitor_
     - Measure custom events alongside other collected telemetry data
     - Added in the source code of your software applications
 - **Do you need to set up alerts for outages or when autoscaling is about to deploy new instances?**
-  - *Azure Monitor*
+  - _Azure Monitor_
     - Set up alerts for key events that are related to your specific resources
 
 ## Describe general security and network security features
@@ -2741,34 +2742,35 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
   - Capabilities for threat detection and response
 
 ##### Azure Sentinel
-  - Microsoft's cloud-based SIEM system
-  - Capabilities
-    - Collect cloud data at scale
-    - Detect previously undetected threats -> minimize false positives
-    - Investigate threats with artificial intelligence -> examine suspicious activities
-    - Respond to incidents rapidly -> built-in orchestration and automation
-  - **Connect your data sources**
-    - Built-in connectors or industry-standard log formats and APIs
-      - Connect Microsoft solutions
-        - Real-time integration
-      - Connect other services and solutions
-        - Available for common non-Microsoft services and solutions
-      - Connect industry-standard data sources
-        - Supports data from other sources that use the Common Event Format (CEF) messaging standard, Syslog, or REST API
-  - **Detect threats**
-    - Built in analytics
-      - Templates designed by Microsoft
-      - Can be customized
-      - Search across the environment for any activity that looks suspicious
-    - Custom analytics
-      - Rules that you create to search for specific criteria within your environment
-  - **Investigate and respond**
-    - Investigation graph
-    - Review information from entities directly connected to the alert,
-    - ![Investigation graph example](https://docs.microsoft.com/en-us/learn/azure-fundamentals/protect-against-security-threats-azure/media/3-investigate-incidents-54765923.png)
-    - *Azure Monitor Workbooks*
-      - Automate responses to threats
-      - Can be run manually or automatically when a rule triggers an alert
+
+- Microsoft's cloud-based SIEM system
+- Capabilities
+  - Collect cloud data at scale
+  - Detect previously undetected threats -> minimize false positives
+  - Investigate threats with artificial intelligence -> examine suspicious activities
+  - Respond to incidents rapidly -> built-in orchestration and automation
+- **Connect your data sources**
+  - Built-in connectors or industry-standard log formats and APIs
+    - Connect Microsoft solutions
+      - Real-time integration
+    - Connect other services and solutions
+      - Available for common non-Microsoft services and solutions
+    - Connect industry-standard data sources
+      - Supports data from other sources that use the Common Event Format (CEF) messaging standard, Syslog, or REST API
+- **Detect threats**
+  - Built in analytics
+    - Templates designed by Microsoft
+    - Can be customized
+    - Search across the environment for any activity that looks suspicious
+  - Custom analytics
+    - Rules that you create to search for specific criteria within your environment
+- **Investigate and respond**
+  - Investigation graph
+  - Review information from entities directly connected to the alert,
+  - ![Investigation graph example](https://docs.microsoft.com/en-us/learn/azure-fundamentals/protect-against-security-threats-azure/media/3-investigate-incidents-54765923.png)
+  - _Azure Monitor Workbooks_
+    - Automate responses to threats
+    - Can be run manually or automatically when a rule triggers an alert
 
 #### Store and manage secrets by using Azure Key Vault
 
@@ -2813,9 +2815,9 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
   - Provides dedicated physical servers to host your Azure VMs for Windows and Linux
 - Diagram that shows how VMs relate to dedicated hosts and host groups
   - ![Dedicated hosts](https://docs.microsoft.com/en-us/learn/azure-fundamentals/protect-against-security-threats-azure/media/6-dedicated-hosts-cab8e670.png)
-- *Dedicated host*
+- _Dedicated host_
   - Mapped to a physical server in an Azure datacenter
-- *Host group*
+- _Host group_
   - Collection of dedicated hosts
 
 ##### What are the benefits of Azure Dedicated Host?
