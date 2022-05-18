@@ -2844,6 +2844,7 @@ prevent it from being stolen by those who aren't authorized to access it
 defense-in-depth strategy
 slow the advance of an attack that aims at acquiring unauthorized access to data
 Layers of defense in depth
+![](https://docs.microsoft.com/en-us/learn/azure-fundamentals/secure-network-connectivity-azure/media/2-defense-depth.png)
 Each layer provides protection so that if one layer is breached, a subsequent layer is already in place to prevent further exposure
 role of each layer:
 physical security
