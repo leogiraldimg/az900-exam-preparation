@@ -2844,6 +2844,7 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
   - Protect information
   - Prevent it from being stolen by those who aren't authorized to access it
 - Defense-in-depth strategy
+
   - Slow the advance of an attack that aims at acquiring unauthorized access to data
 
 - **Layers of defense in depth**
@@ -2892,12 +2893,49 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 - **Security posture**
   - Organization's ability to protect from and respond to security threats
   - Common principles
-    - *Confidentiality*
+    - _Confidentiality_
       - Principle of least privilege
       - Restricting access to information only to individuals explicitly granted access
-    - *Integrity*
+    - _Integrity_
       - Prevent unauthorized changes to information
-    - *Availability*
+    - _Availability_
       - Ensure that services are functioning and can be accessed only by authorized users
 
----
+#### Protect virtual networks by using Azure Firewall
+
+- Firewall
+
+  - Network security device
+  - Monitors incoming and outgoing network traffic
+  - Decides whether to allow or block specific traffic
+  - Based on a defined set of security rules
+
+- **What's Azure Firewall?**
+  - Cloud-based network security service
+  - Helps protect resources in your Azure virtual networks
+  - Basic Azure Firewall implementation:
+    - ![Diagram that shows a basic Azure Firewall implementation](https://docs.microsoft.com/en-us/learn/azure-fundamentals/secure-network-connectivity-azure/media/3-firewall-overview.png)
+  - Stateful firewall
+    - Analyzes the complete context of a network connection
+    - Features
+      - High availability
+      - Unrestricted cloud scalability
+  - Provides a central location to
+    - Create
+    - Enforce
+    - Log application and network connectivity policies
+  - Uses a static (unchanging) public IP address
+  - Integrated with Azure Monitor to enable logging and analytics
+  - Provides
+    - Inbound Destination Network Address Translation (DNAT) support
+- **What can I configure with Azure Firewall?**
+  - You can configure:
+    - Application rules that define fully qualified domain names (FQDNs)
+    - Network rules that define source address, protocol, destination port, and destination address
+    - Network Address Translation (NAT) rules
+      - Translate inbound requests
+  - Azure Application Gateway, Azure Front Door and Azure Content Delivery Network
+    - Provides
+      - Web application firewall (WAF)
+        - Provides
+          - Centralized, inbound protection
