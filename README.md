@@ -2838,70 +2838,66 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 
 ### Secure network connectivity on Azure
 
-objective of defense in depth
-protect information
-prevent it from being stolen by those who aren't authorized to access it
-defense-in-depth strategy
-slow the advance of an attack that aims at acquiring unauthorized access to data
-Layers of defense in depth
-![](https://docs.microsoft.com/en-us/learn/azure-fundamentals/secure-network-connectivity-azure/media/2-defense-depth.png)
-Each layer provides protection so that if one layer is breached, a subsequent layer is already in place to prevent further exposure
-role of each layer:
-physical security
-protect computing hardware in the datacenter
-dentity and access
-controls access to infrastructure and change contro l
-perimeter
-distributed denial of service (DDoS) protection
-network
-limits communication between resources
-compute
-secures access to virtual machines
-application
-helps ensure that applications are secure and free of security vulnerabilities
-data
-controls access to business and customer data
-Physical security
-securing access to buildings
-controlling access to computing hardware within the datacenter
-Identity and access
-it's important to:
-Control access to infra
-Use single sign-on (SSO) and multifactor authentication
-Audit events and changes
-Perimeter
-it's important to:
-Use DDoS protection
-Use perimeter firewalls
-it's about protecting from network-based attacks
-Network
-it's important to:
-Limit communication between resources
-Deny by default
-Restrict inbound internet access and limit outbound access
-secure connectivity to on-premises networks
-reduce the risk of an attack spreading
-Compute
-it's important to :
-Secure access to virtual machines
-Implement endpoint protection on devices
-keep systems patched and current
-Application
-it's important to:
-Ensure that applications are
-secure
-free of vulnerabilities
-Store sensitive application secrets in a secure storage medium
-Data
-Security posture
-organization's ability to protect from and respond to security threats
-common principles
-Confidentiality
-principle of least privilege
-restricting access to information only to individuals explicitly granted access
-Integrity
-Prevent unauthorized changes to information
-Availability
-Ensure that services are functioning and can be accessed only by authorized users
+#### What is defense in depth?
+
+- Objective of defense in depth
+  - Protect information
+  - Prevent it from being stolen by those who aren't authorized to access it
+- Defense-in-depth strategy
+  - Slow the advance of an attack that aims at acquiring unauthorized access to data
+
+- **Layers of defense in depth**
+  - ![Defense in depth](https://docs.microsoft.com/en-us/learn/azure-fundamentals/secure-network-connectivity-azure/media/2-defense-depth.png)
+  - Each layer provides protection so that if one layer is breached, a subsequent layer is already in place to prevent further exposure
+  - Role of each layer:
+    - Physical security
+      - Protect computing hardware in the datacenter
+      - Securing access to buildings
+      - Controlling access to computing hardware within the datacenter
+    - Identity and access
+      - Controls access to infrastructure and change contro l
+      - It's important to:
+        - Control access to infra
+        - Use single sign-on (SSO) and multifactor authentication
+        - Audit events and changes
+    - Perimeter
+      - Distributed denial of service (DDoS) protection
+      - It's important to:
+        - Use DDoS protection
+        - Use perimeter firewalls
+        - It's about protecting from network-based attacks
+    - Network
+      - Limits communication between resources
+      - It's important to:
+        - Limit communication between resources
+        - Deny by default
+        - Restrict inbound internet access and limit outbound access
+        - Secure connectivity to on-premises networks
+      - Reduce the risk of an attack spreading
+    - Compute
+      - Secures access to virtual machines
+      - It's important to :
+        - Secure access to virtual machines
+        - Implement endpoint protection on devices
+          - Keep systems patched and current
+    - Application
+      - Helps ensure that applications are secure and free of security vulnerabilities
+      - It's important to:
+        - Ensure that applications are
+          - Secure
+          - Free of vulnerabilities
+        - Store sensitive application secrets in a secure storage medium
+    - Data
+      - Controls access to business and customer data
+- **Security posture**
+  - Organization's ability to protect from and respond to security threats
+  - Common principles
+    - *Confidentiality*
+      - Principle of least privilege
+      - Restricting access to information only to individuals explicitly granted access
+    - *Integrity*
+      - Prevent unauthorized changes to information
+    - *Availability*
+      - Ensure that services are functioning and can be accessed only by authorized users
 
 ---
