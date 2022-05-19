@@ -2939,3 +2939,48 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
       - Web application firewall (WAF)
         - Provides
           - Centralized, inbound protection
+
+#### Protect from DDoS attacks by using Azure DDoS Protection
+
+- **What are DDoS attacks?**
+  - Distributed denial of service
+  - Attempts to overwhelm and exhaust an application's resources
+  - Application slow or unresponsive to legitimate users
+- **What is Azure DDoS Protection?**
+  - Protect your Azure resources from DDoS attacks
+  - Uses the scale and elasticity of Microsoft's global network
+  - Analyzing and discarding DDoS traffic at the Azure network edge
+  - This diagram shows network traffic flowing into Azure from both customers and an attacker:
+    - ![Network traffic flowing into Azure](https://docs.microsoft.com/en-us/learn/azure-fundamentals/secure-network-connectivity-azure/media/4-distributed-denial-service.png)
+  - Identifies the attacker's attempt
+  - Blocks further traffic from them
+  - Ensuring that traffic never reaches Azure resources
+  - A cleverly designed DDoS attack can cause you to increase your resource allocation
+  - DDoS Protection Standard
+  - Ensure that the network load you process reflects customer usage
+- **What service tiers are available to DDoS Protection?**
+  - _Basic_
+    - Automatically enabled for free
+    - Always-on traffic monitoring
+    - Real-time mitigation of common network-level attacks
+    - Same defenses that Microsoft's online services use
+    - Ensures that Azure infrastructure itself is not affected during a large-scale DDoS attack
+  - _Standard_
+    - Provides additional mitigation capabilities
+    - Specifically to Azure Virtual Network resources
+    - Always-on traffic monitoring
+    - Real-time mitigation of common network-level attacks
+    - Provides the same defenses that Microsoft's online services use
+    - Protection policies are tuned through
+    - Dedicated traffic monitoring
+    - Machine learning algorithms
+    - Policies are applied to public IP addresses
+- **What kinds of attacks can DDoS Protection help prevent?**
+  - _Volumetric attacks_
+    - Flood the network layer with a substantial amount of seemingly legitimate traffic
+  - _Protocol attacks_
+    - Exploiting a weakness in the layer 3 and layer 4 protocol stack
+  - _Resource-layer (application-layer) attacks (only with web application firewall)_
+    - Target web application packets
+    - Disrupt the transmission of data between hosts
+- DDoS Protection Standard protects the WAF from volumetric and protocol attacks
