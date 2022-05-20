@@ -2984,3 +2984,26 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
     - Target web application packets
     - Disrupt the transmission of data between hosts
 - DDoS Protection Standard protects the WAF from volumetric and protocol attacks
+
+#### Filter network traffic by using network security groups
+
+- **What are network security groups?**
+  - Filter network traffic to and from Azure resources within an Azure virtual network
+  - Like an internal firewall
+  - Can contain multiple inbound and outbound security rules
+- **How do I specify NSG rules?**
+
+| Property              | Description                                                                                                               |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Name                  | A unique name for the NSG.                                                                                                |
+| Priority              | A number between 100 and 4096. Rules are processed in priority order, with lower numbers processed before higher numbers. |
+| Source or Destination | A single IP address or IP address range, service tag, or application security group.                                      |
+| Protocol              | TCP, UDP, or Any.                                                                                                         |
+| Direction             | Whether the rule applies to inbound or outbound traffic.                                                                  |
+| Port Range            | A single port or range of ports.                                                                                          |
+| Action                | Allow or Deny.                                                                                                            |
+
+- When you create a network security group
+  - Azure creates a series of default rules to provide a baseline level of security
+  - Can't remove the default rules
+  - Can override them by creating new rules with higher priorities
