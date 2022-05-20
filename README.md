@@ -3007,3 +3007,42 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
   - Azure creates a series of default rules to provide a baseline level of security
   - Can't remove the default rules
   - Can override them by creating new rules with higher priorities
+
+#### Combine Azure services to create a complete network security solution
+
+- Recommendations on how to combine Azure services to create a complete network security solution
+- **Secure the perimeter layer**
+  - Azure DDoS Protection
+    - Filter large-scale attacks
+  - Azure Firewall
+    - Identify and alert on malicious attacks
+- **Secure the network layer**
+  - Network security groups
+    - Create rules that define allowed inbound and outbound communication
+  - Recommended practices:
+    - Limit communication between resources
+      - Segmenting your network
+        - Configuring access controls
+    - Deny by default
+    - Restrict inbound internet access
+    - Limit outbound where appropriate
+    - Implement secur connectivity to on-premises networks
+- **Combine services**
+  - Combine Azure networking and security services
+  - Two ways you can combine services:
+    - _Network security groups and Azure Firewall_
+      - Azure Firewall complements Network security groups
+      - Provide better defense-in-depth network security
+      - Network security groups
+        - Provide distributed network-layer traffic filtering
+        - Within virtual networks in each subscription
+      - Azure Firewall
+        - Provides network-level and application-level protection across different subscriptions and virtual networks
+    - _Azure Application Gateway web application firewall and Azure Firewall_
+      - Web application firewall (WAF)
+        - Feature of Azure Application Gateway
+        - Centralized, inbound protection against common exploits and vulnerabilities
+      - Azure Firewall
+        - Inbound protection for non-HTTP/S protocols
+        - Outbound network-level protection for all ports and protocols
+        - Application-level protection for outbound HTTP/S
