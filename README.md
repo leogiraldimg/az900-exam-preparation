@@ -32,6 +32,8 @@ Exame inclui seis áreas de domínio de conhecimento:
 | Describe identity, governance, privacy, and compliance features | 20-25% |
 | Describe Azure cost management and Service Level Agreements     | 10-15% |
 
+## Describe cloud concepts
+
 #### What is cloud computing?
 
 - Delivery of computing services over the internet
@@ -827,8 +829,6 @@ Additional subscriptions:
 - Each management group and subscription can support only one parent
 - Each management group can have many children
 - All subscriptions and management groups are within a single hierarchy in each directory
-
----
 
 ## Describe core Azure services
 
@@ -3046,3 +3046,5 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
         - Inbound protection for non-HTTP/S protocols
         - Outbound network-level protection for all ports and protocols
         - Application-level protection for outbound HTTP/S
+
+## Describe identity, governance, privacy, and compliance features
