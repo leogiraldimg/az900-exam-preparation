@@ -3140,3 +3140,57 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
       - Self-service password reset
       - Diagram that shows how Azure AD Connect fits between on-premises Active Directory and Azure AD:
         - ![How Azure AD Connect fits between on-premises Active Directory and Azure AD](https://docs.microsoft.com/en-us/learn/azure-fundamentals/secure-access-azure-identity-services/media/3-azure-ad-connect.png)
+
+#### What are multifactor authentication and Conditional Access?
+
+- **What's multifactor authentication?**
+  - Process where a user is prompted during the sign-in process for an additional form of identification
+  - Code on their mobile phone or a fingerprint scan
+  - Additional security for your identities
+    - Requiring two or more elements to fully authenticate
+  - Three categories:
+    - _Something the user knows_
+      - Email address and password
+    - _Something the user has_
+      - Code that's sent to the user's mobile phone
+    - _Something the user is_
+      - Biometric property, such as a fingerprint or face scan
+  - Increases identity security by limiting the impact of credential exposure
+- **What's Azure AD Multi-Factor Authentication?**
+  - Service that provides multifactor authentication capabilities
+  - Additional form of authentication during sign-in
+  - These services provide Azure AD Multi-Factor Authentication capabilities:
+    - _Azure Active Directory_
+      - Azure Active Directory free edition
+        - Azure AD Multi-Factor Authentication for administrators with the global admin level of access
+        - Microsoft Authenticator app, phone call, or SMS code
+      - Azure Active Directory Premium (P1 or P2 licenses)
+        - Comprehensive and granular configuration of Azure AD Multi-Factor Authentication
+    - _Multifactor authentication for Office 365_
+- **What's Conditional Access?**
+  - Tool that Azure Active Directory uses to allow (or deny) access to resources based on identity signals
+    - Who the user is
+    - Where the user is
+    - What device the user is requesting access from
+  - Provides a more granular multifactor authentication experience for users
+    - Example
+      - User might not be challenged for second authentication factor if they're at a known location
+      - They might be challenged for a second authentication factor if their sign-in signals are unusual or they're at an unexpected location
+  - Diagram that illustrates this flow:
+    - ![Conditional Access flow](https://docs.microsoft.com/en-us/learn/azure-fundamentals/secure-access-azure-identity-services/media/4-conditional-access-signal-decision-enforcement.png)
+  - The action is to allow access or require the user to provide a second form of authentication
+- **When can I use Conditional Access?**
+  - Useful when you need to:
+    - _Require multifactor authentication to access an application_
+      - All users require multifactor authentication or only certain users
+      - All networks or only untrusted networks
+    - _Require access to services only through approved client applications_
+    - _Require users to access your application only from managed devices_
+    - _Block access from untrusted sources, such as access from unknown or unexpected locations._
+  - What If tool
+    - Helps you plan and troubleshoot your Conditional Access policies
+    - Model your proposed Conditional Access policies across recent sign-in attempts
+    - Test your proposed Conditional Access policies before you implement them
+- **Where is Conditional Access available?**
+  - Azure AD Premium P1 or P2 license
+  - Microsoft 365 Business Premium license
