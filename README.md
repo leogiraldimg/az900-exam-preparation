@@ -3048,3 +3048,18 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
         - Application-level protection for outbound HTTP/S
 
 ## Describe identity, governance, privacy, and compliance features
+
+### Secure access to your applications by using Azure identity services
+
+### Compare authentication and authorization
+
+- **Authentication (AuthN)**
+  - Process of establishing the identity of a person or service that wants to access a resource
+  - Act of challenging a party for legitimate credentials
+  - Basis for creating a security principal for identity and access control
+  - Establishes whether the user is who they say they are
+- **Authorization (AuthZ)**
+  - Process of establishing what level of access an authenticated person or service has
+- **How are authentication and authorization related?**
+  - Diagram that shows the relationship between authentication and authorization:
+    - ![Relationship between authentication and authorization](https://docs.microsoft.com/en-us/learn/azure-fundamentals/secure-access-azure-identity-services/media/2-id-card-access.png)
