@@ -3051,7 +3051,7 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 
 ### Secure access to your applications by using Azure identity services
 
-### Compare authentication and authorization
+#### Compare authentication and authorization
 
 - **Authentication (AuthN)**
   - Process of establishing the identity of a person or service that wants to access a resource
@@ -3063,3 +3063,80 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 - **How are authentication and authorization related?**
   - Diagram that shows the relationship between authentication and authorization:
     - ![Relationship between authentication and authorization](https://docs.microsoft.com/en-us/learn/azure-fundamentals/secure-access-azure-identity-services/media/2-id-card-access.png)
+
+#### What is Azure Active Directory?
+
+- Provides identity services that enable your users to sign in and access
+  - Microsoft cloud applications
+  - Cloud applications that you develop
+- Supports single sign-on (SSO)
+- **How does Azure AD compare to Active Directory?**
+  - Active Directory is related to Azure AD
+  - Some key differences
+    - _Active Directory_
+      - Identity and access management
+      - Managed by your own organization
+    - _Azure AD_
+      - Cloud-based identity and access management
+      - Control the identity accounts
+      - Microsoft ensures that the service is available globally
+  - Connect Active Directory with Azure AD
+    - Help protect you by detecting suspicious sign-in attempts at no extra cost
+- **Who uses Azure AD?**
+  - _IT administrators_
+    - Control access to applications and resources
+  - _App developers_
+    - Provide a standards-based approach for adding functionality to applications
+    - SSO functionality
+    - Enabling an app to work with a user's existing credentials
+  - _Users_
+    - Manage their identities
+  - _Online service subscribers_
+    - Tenant
+      - Representation of an organization
+      - Has its own identity
+  - Each Microsoft 365, Office 365, Azure, and Dynamics CRM Online tenant is automatically an Azure AD tenant
+  - Screenshot of what an IT administrator might see in the Azure portal when working with Active Directory:
+    - ![IT administrator view of Active Directory](https://docs.microsoft.com/en-us/learn/azure-fundamentals/secure-access-azure-identity-services/media/3-azure-active-directory.png)
+- **What services does Azure AD provide?**
+  - _Authentication_
+    - Verifying identity to access applications and resources
+    - Self-service password reset
+    - Multifactor authentication
+    - Banned passwords
+    - Smart lockout services
+  - _Single sign-on_
+    - Only one username and one password to access multiple applications
+  - _Application management_
+  - _Device management_
+    - Supports the registration of devices
+    - Enables devices to be managed through tools like Microsoft Intune
+    - Allows for device-based Conditional Access policies
+    - Restrict access attempts to only those coming from known devices
+- **What kinds of resources can Azure AD help secure?**
+  - External and internal resources
+    - _External resources_
+      - Microsoft Office 365
+      - Azure portal
+      - (SaaS) applications
+    - _Internal resources_
+      - Apps on your corporate network and intranet
+- **What's single sign-on?**
+  - Enables a user to sign in one time
+  - Use that credential to access multiple resources and applications
+  - Need to remember only one ID and one password
+  - Single identity that's tied to the user
+  - Simplifies the security model
+  - Reduces the effort needed to change or disable accounts
+  - Easier for users to manage their identities
+  - Increases your security capabilities
+- **How can I connect Active Directory with Azure AD?**
+  - Most popular method
+    - Azure AD Connect
+      - Synchronizes user identities between on-premises Active Directory and Azure AD
+      - Can use features
+      - SSO
+      - Multifactor authentication
+      - Self-service password reset
+      - Diagram that shows how Azure AD Connect fits between on-premises Active Directory and Azure AD:
+        - ![How Azure AD Connect fits between on-premises Active Directory and Azure AD](https://docs.microsoft.com/en-us/learn/azure-fundamentals/secure-access-azure-identity-services/media/3-azure-ad-connect.png)
