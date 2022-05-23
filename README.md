@@ -3194,3 +3194,63 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 - **Where is Conditional Access available?**
   - Azure AD Premium P1 or P2 license
   - Microsoft 365 Business Premium license
+
+### Build a cloud governance strategy on Azure
+
+- _Governance_
+  - General process of establishing rules and policies and ensuring that those rules and policies are enforced
+  - Most beneficial when you have:
+    - Multiple engineering teams working in Azure
+    - Multiple subscriptions to manage
+    - Regulatory requirements that must be enforced
+    - Standards that must be followed for all cloud resources
+
+#### Control access to cloud resources by using Azure role-based access control
+
+- Control access
+- Built-in roles that describe common access rules for cloud resources
+- Can also define your own roles
+- Each role has an associated set of access permissions that relate to that role
+- **How is role-based access control applied to resources?**
+  - Applied to a scope
+    - Resource or set of resources
+  - Diagram that shows the relationship between roles and scopes:
+    - ![Relationship between roles and scopes](https://docs.microsoft.com/en-us/learn/azure-fundamentals/build-cloud-governance-strategy-azure/media/4-role-scope-0223bfae.png)
+  - Scopes include:
+    - A management group
+    - A single subscription
+    - A resource group
+    - A single resource
+  - Grant access at a parent scope -> Permissions are inherited by all child scopes
+    - For example:
+      - Assign the Owner role to a user at the management group scope -> Can manage everything in all subscriptions within the management group
+- **How is Azure RBAC enforced?**
+  - Enforced on any action that's initiated against an Azure resource
+  - Passes through Azure Resource Manager
+    - Management service
+    - Organize and secure your cloud resources
+  - Doesn't enforce access permissions at the application or data level
+    - Must be handled by your application
+  - Uses an allow model
+- **Who does Azure RBAC apply to?**
+  - Can apply
+    - Individual person
+    - Group
+    - Special identity types
+      - Used by applications and services to automate access to Azure resources
+- **How do I manage Azure RBAC permissions?**
+  - Access control (IAM) pane in the Azure portal
+  - Following screenshot shows an example of the Access control (IAM) pane:
+    - ![Screenshot of an example of the Access Control (IAM) pane](https://docs.microsoft.com/en-us/learn/azure-fundamentals/build-cloud-governance-strategy-azure/media/4-role-based-access-control-blade-360b5130.png)
+
+#### Prevent accidental changes by using resource locks
+
+#### Organize your Azure resources by using tags
+
+#### Control and audit your resources by using Azure Policy
+
+#### Govern multiple subscriptions by using Azure Blueprints
+
+#### Accelerate your cloud adoption journey by using the Cloud Adoption Framework for Azure
+
+#### Create a subscription governance strategy
