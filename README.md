@@ -3245,6 +3245,38 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 
 #### Prevent accidental changes by using resource locks
 
+- Prevents resources from being accidentally deleted or changed
+- Risk that people with the right level of access could delete critical cloud resources
+- Warning system that reminds you that a resource should not be deleted or changed
+- **How do I manage resource locks?**
+  - Can manage resource locks from
+    - Azure portal
+    - PowerShell
+    - Azure CLI
+    - Azure Resource Manager template
+  - To view, add, or delete locks in the Azure portal
+  - Settings section of any resource's Settings pane
+  - Example that shows how to add a resource lock from the Azure portal:
+    - ![How to add a resource lock from the Azure Portal](https://docs.microsoft.com/en-us/learn/azure-fundamentals/build-cloud-governance-strategy-azure/media/7-portal-add-lock-ebc3d24c.png)
+- **What levels of locking are available?**
+  - _CanNotDelete_
+    - Can still read and modify a resource
+    - Can't delete the resource without first removing the lock
+  - _ReadOnly_
+    - Can read a resource
+    - Can't delete or change the resource
+    - Restricting all authorized users to the permissions granted by the Reader role in Azure RBAC
+- **How do I delete or change a locked resource?**
+  - First remove the lock
+  - After -> Can apply any action you have permissions to perform
+  - Helps protect your administrators from doing something they might not have intended to do
+    - Regardless of RBAC permissions
+- **Combine resource locks with Azure Blueprints**
+  - What if a cloud administrator accidentally deletes a resource lock?
+    - _Azure Blueprints_
+      - Define the set of standard Azure resources that your organization requires
+      - Can automatically replace the resource lock if that lock is removed
+
 #### Organize your Azure resources by using tags
 
 #### Control and audit your resources by using Azure Policy
