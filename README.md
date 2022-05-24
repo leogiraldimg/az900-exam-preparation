@@ -3312,6 +3312,71 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 
 #### Control and audit your resources by using Azure Policy
 
+- Service in Azure that enables
+  - Create, assign, and manage policies that control or audit your resources
+- Enforce different rules across all of your resource configurations
+  - Configurations stay compliant with corporate standards
+- **How does Azure Policy define policies?**
+  - Define
+    - Individual policies
+    - Groups of related policies (initiatives)
+  - Evaluates your resources
+  - Highlights resources that aren't compliant with the policies you've created
+  - Prevent noncompliant resources from being created
+  - Comes with built-in policy and initiative definitions for Storage, Networking, Compute, Security Center, and Monitoring
+  - Can automatically remediate noncompliant resources and configurations
+  - Integrates with Azure DevOps by applying any continuous integration and delivery pipeline policies
+- **Azure Policy in action**
+  - Implementing a policy in Azure Policy involves three tasks:
+    - _Task 1. Create a policy definition_
+      - Expresses
+        - What to evaluate
+        - What action to take
+      - Some example policy definitions:
+        - Allowed virtual machine SKUs
+          - Specify a set of VM SKUs that your organization can deploy
+        - Allowed locations
+          - Restrict the locations that your organization can specify when it deploys resources
+        - MFA should be enabled on accounts with write permissions on your subscription
+        - CORS should not allow every resource to access your web applications
+          - Allows only required domains to interact with your web app
+        - System updates should be installed on your machines
+    - _Task 2. Assign the definition to resources_
+      - Implement your policy definitions
+      - Policy assignment
+        - Policy definition that takes place within a specific scope
+          - Management group
+          - Single subscription
+          - Resource group
+        - Inherited by all child resources within that scope
+        - Can exclude a subscope from the policy assignment
+    - _Task 3. Review the evaluation results_
+      - Resource is marked as compliant or noncompliant
+      - Review the noncompliant policy results
+        - Take any action that's needed
+      - Happens about once per hour
+- **What are Azure Policy initiatives?**
+  - Way of grouping related policies together
+  - Contains all of the policy definitions
+  - Example
+    - Azure Policy includes an initiative named Enable Monitoring in Azure Security Center
+    - Following policy definitions are included:
+      - Monitor unencrypted SQL Database in Security Center
+      - Monitor OS vulnerabilities in Security Center
+      - Monitor missing Endpoint Protection in Security Center
+- **How do I define an initiative?**
+  - Using
+    - Azure portal
+    - Command-line tools
+  - Built-in initiatives
+  - Custom policy definition
+  - Following image shows a few example Azure Policy initiatives in the Azure portal
+    - ![Example of Azure Policy initiatives in the Azure Portal](https://docs.microsoft.com/en-us/learn/azure-fundamentals/build-cloud-governance-strategy-azure/media/3-define-initiatives-a834dde7.png)
+- **How do I assign an initiative?**
+  - Like a policy assignment
+  - Initiative definition that's assigned to a specific scope
+  - Enables you to increase the number of policies over time
+
 #### Govern multiple subscriptions by using Azure Blueprints
 
 #### Accelerate your cloud adoption journey by using the Cloud Adoption Framework for Azure
