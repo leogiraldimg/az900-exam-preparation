@@ -3279,6 +3279,37 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 
 #### Organize your Azure resources by using tags
 
+- **Resource tags**
+  - Provide extra information
+  - Metadata
+    - About your resources
+  - Useful for:
+    - Resource management
+      - Locate and act on resources that are associated with specific workloads, environments, business units, and owners
+    - Cost management and optimization
+      - Group resources so that you can report on costs, allocate internal cost centers, track budgets, and forecast estimated cost
+    - Operations management
+      - Group resources according to how critical their availability is to your business
+      - Formulate service-level agreements (SLAs)
+    - Security
+      - Classify data by its security level, such as public or confidential
+    - Governance and regulatory compliance
+      - Identify resources that align with governance or regulatory compliance requirements
+    - Workload optimization and automation
+      - Visualize all of the resources that participate in complex deployments
+- **How do I manage resource tags?**
+  - Add, modify, or delete resource tags
+  - Through PowerShell, the Azure CLI, Azure Resource Manager templates, the REST API, or the Azure portal
+  - Can also manage tags by using Azure Policy
+    - Ensure that a resource inherits the same tags as its parent resource group
+    - Enforce tagging rules and conventions
+  - Resource tag consists of a name and a value
+    - Example
+      - ![Example of names and values for tags](https://docs.microsoft.com/en-us/learn/azure-fundamentals/build-cloud-governance-strategy-azure/media/8-vm-tags-7c63fa8a.png)
+  - Can run queries
+    - From PowerShell or the Azure CLI
+    - List all resources that contain these tags
+
 #### Control and audit your resources by using Azure Policy
 
 #### Govern multiple subscriptions by using Azure Blueprints
