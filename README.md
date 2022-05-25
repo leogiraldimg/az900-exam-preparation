@@ -3379,6 +3379,32 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 
 #### Govern multiple subscriptions by using Azure Blueprints
 
+- Define a repeatable set of governance tools and standard Azure resources that your organization requires
+- Orchestrates the deployment of various resource templates and other artifacts, such as:
+  - Policy assignments
+  - Azure Resource Manager templates
+  - Resource groups
+- Scale their governance practices throughout the organization
+- Implementing a blueprint
+  - Three steps:
+    - Create an Azure blueprint
+    - Assign the blueprint
+    - Track the blueprint assignments
+- Creates a record that associates a resource with the blueprint
+- Are also versioned
+  - Track and comment on changes
+- **What are blueprint artifacts?**
+  - Each component in the blueprint definition
+  - Contain one or more parameters that you can configure
+  - Can specify a parameter's value when you create the blueprint definition or when you assign the blueprint definition to a scope
+- **ISO 27001 compliance**
+  - Standard that applies to the security of IT systems
+  - Azure Blueprints has several built-in blueprint definitions that relate to ISO 27001
+  - Following image shows artifacts that are created when you run an ISO 27001 blueprint from a template:
+    - ![Artifacts that are created when you run an ISO 27001 blueprint](https://docs.microsoft.com/en-us/learn/azure-fundamentals/build-cloud-governance-strategy-azure/media/10-iso-27001-shared-blueprint-dc443de7.png)
+  - Blueprint deploys
+    - Artifacts to any existing subscriptions within the management group
+
 #### Accelerate your cloud adoption journey by using the Cloud Adoption Framework for Azure
 
 #### Create a subscription governance strategy
