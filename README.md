@@ -3535,3 +3535,23 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
       - Perform architecture review
 
 #### Create a subscription governance strategy
+
+- Cloud center of excellence team = Cloud enablement team = Cloud custodian team
+  - Implement governance practices
+  - Centralized location for the entire organization
+- Start Azure governance strategy -> Subscription level
+- Three main aspects to consider when you create and manage subscriptions:
+  - **Billing**
+    - One billing report per subscription
+    - Multiple departments
+      - Possible solution: organize subscriptions by department or by project
+      - Resource tags can also help
+  - **Access control**
+    - Subscription = Deployment boundary for Azure resources
+    - Every subscription is associated with an Azure Active Directory tenant
+    - Set granular access through defined roles
+      - Azure role-based access control
+  - **Subscription limits**
+    - Resource limitations
+      - Should be considered during your design phase
+      - If you'll need to exceed -> Add more subscriptions
