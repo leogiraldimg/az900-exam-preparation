@@ -3555,3 +3555,23 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
     - Resource limitations
       - Should be considered during your design phase
       - If you'll need to exceed -> Add more subscriptions
+
+### Examine privacy, compliance, and data protection standards on Azure
+
+#### Introduction
+
+#### Explore compliance terms and requirements
+
+#### Access the Microsoft Privacy Statement, the Online Services Terms, and the Data Protection Addendum
+
+#### Explore the Trust Center
+
+#### Access Azure compliance documentation
+
+#### What is Azure Government?
+
+#### What is Azure China 21Vianet?
+
+#### Knowledge check
+
+#### Summary1 min
