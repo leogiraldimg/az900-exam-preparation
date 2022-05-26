@@ -3407,4 +3407,131 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 
 #### Accelerate your cloud adoption journey by using the Cloud Adoption Framework for Azure
 
+- Guidance to help with your cloud adoption journey
+- Helps you create and implement the business and technology strategies needed to succeed in the cloud
+- **What's in the Cloud Adoption Framework?**
+  - Consists of
+    - Tools
+    - Documentation
+    - Proven practices
+  - Includes these stages:
+    - !(Cloud Adoption Framework stages)[https://docs.microsoft.com/en-us/learn/azure-fundamentals/build-cloud-governance-strategy-azure/media/2-framework-stages-9b54ccbe.png]
+  - Govern stage
+    - Focuses on cloud governance
+  - Cloud Adoption Framework breaks out each stage into further exercises and steps
+- **Define your strategy**
+  - Answer
+    - Why you're moving to the cloud?
+    - What you want to get out of cloud migration?
+  - Should
+    - Understand cloud economics
+    - Consider business impact, turnaround time, global reach, performance, and more
+  - Steps in this stage:
+    - _Define and document your motivations_
+    - _Document business outcomes_
+    - _Evaluate financial considerations_
+      - Identify the return expected from a specific investment
+    - _Understand technical considerations_
+      - Evaluate technical considerations through the completion of first technical project
+- **Make a plan**
+  - Maps your aspirational goals to specific actions
+  - Ensure that your efforts map to the desired business outcomes
+  - Steps in this stage:
+  - _Digital estate_
+    - Create an inventory
+      - Existing digital assets and workloads -> plan to migrate to the cloud
+  - _Initial organizational alignment_
+    - Ensure that the right people are involved
+      - Technical standpoint
+      - Cloud governance standpoint
+  - _Skills readiness plan_
+    - Helps individuals -> build the skills -> operate in the cloud
+  - _Cloud adoption plan_
+    - Brings together
+      - Development
+      - Operations
+      - Business
+    - Shared cloud adoption goal
+- **Ready your organization**
+  - Create a landing zone
+  - Environment in the cloud
+  - Begin hosting your workloads
+  - Steps in this stage:
+  - _Azure setup guide_
+    - Review the Azure setup guide
+    - Become familiar with the tools and approaches to create a landing zone
+  - _Azure landing zone_
+    - Build out the Azure subscriptions
+    - Support each of the major areas of your business
+    - Includes
+      - Cloud infrastructure
+      - Governance
+      - Accounting
+      - Security capabilities
+  - _Expand the landing zone_
+    - Refine
+    - Ensure that it meets need of
+      - Operations
+      - Governance
+      - Security
+  - _Best practices_
+    - Recommended and proven practices
+    - Ensure that your cloud migration efforts -> scalable and maintainable
+- **Adopt the cloud**
+  - Begin to migrate your applications to the cloud
+  - Two parts:
+    - Migrate
+      - _Migrate your first workload_
+        - Deploy your first project to the cloud
+      - _Migration scenarios_
+        - Explore more complex migration scenarios
+      - _Best practices_
+        - Azure cloud migration best practices checklist
+      - _Process improvements_
+        - Make the migration process scale
+        - Requiring less effort
+    - Innovate
+      - _Business value consensus_
+        - Investments in new innovations
+        - Add value to the business
+        - Meet customer needs
+      - _Azure innovation guide_
+        - Accelerate development
+        - Build a MVP
+      - _Best practices_
+        - Verify that your progress maps to recommended practices
+      - _Feedback loops_
+        - Check in frequently with your customers
+- **Govern and manage your cloud environments**
+  - Form
+    - Cloud governance
+    - Cloud management
+  - Changes over time
+  - Cloud governance processes and policies
+  - Govern
+    - _Methodology_
+      - Takes you from your first steps to full cloud governance
+    - _Benchmark_
+      - Governance benchmark tool
+      - Assess
+        - Current state
+        - Future state
+      - Establish a vision for applying the framework
+    - _Initial governance foundation_
+      - MVP
+      - Captures the first steps of your governance plan
+    - _Improve the initial governance foundation_
+      - Add governance controls
+      - Address tangible risks
+  - Manage
+    - _Establish a management baseline_
+      - Minimum set of tools and processes that should be applied to every asset in an environment
+    - _Define business commitments_
+      - Document supported workloads
+      - Establish operational commitments
+    - _Expand the management baseline_
+      - Apply best practices to iterate on your initial management baseline
+    - _Advanced operations and design principles_
+      - Perform architecture review
+
 #### Create a subscription governance strategy
