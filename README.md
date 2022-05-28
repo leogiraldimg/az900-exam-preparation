@@ -3734,3 +3734,31 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
   - Signed between customers and 21Vianet
   - Supports most of the same services that global Azure has
   - To operate in China you might need to rehost or refactor some or all your applications or services
+
+## Describe Azure cost management and service level agreements
+
+### Plan and manage your Azure costs
+
+#### Introduction
+
+#### Compare costs by using the Total Cost of Ownership Calculator
+
+#### Exercise - Compare sample workload costs by using the TCO Calculator
+
+#### Purchase Azure services
+
+#### Exercise - Estimate workload cost by using the Pricing calculator
+
+#### Manage animize total cost on Azure
+
+### Choose the right Azure services by examining SLAs and service lifecycle
+
+#### Introduction
+
+#### What are service-level agreements (SLAs)?
+
+#### Define your application SLA
+
+#### Design your application to meet your SLA
+
+#### Access preview services and preview features
