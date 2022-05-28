@@ -3739,9 +3739,47 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 
 ### Plan and manage your Azure costs
 
-#### Introduction
-
 #### Compare costs by using the Total Cost of Ownership Calculator
+
+- **TCO Calculator**
+  - Total cost of ownership
+  - Estimate the cost savings of operating your solution on Azure over time compared to operating in your on-premises datacenter
+  - Enter the details of your on-premises workloads
+  - Industry-average cost for related operational costs
+  - Side-by-side report
+  - Compare those costs with the same workloads running on Azure
+  - The following image shows one example:
+    - ![TCO report bar graphs](https://docs.microsoft.com/en-us/learn/azure-fundamentals/plan-manage-azure-costs/media/2-tco-report-bar-graphs.png)
+  - How does the TCO Calculator work?
+    - **Step 1: Define your workloads**
+      - Enter the specifications of your on-premises infrastructure
+      - Four categories:
+        - _Servers_
+          - Operating systems
+          - Virtualization methods
+          - CPU cores
+          - Memory (RAM)
+        - _Databases_
+          - Database types
+          - Server hardware
+          - Azure service you want to use
+        - _Storage_
+          - Storage type and capacity
+          - Backup or archive storage
+        - _Networking_
+          - Amount of network bandwidth you currently consume
+    - **Step 2: Adjust assumptions**
+      - Specify whether your current on-premises licenses are enrolled for Software Assurance
+      - Save you money by reusing those licenses on Azure
+      - Specify whether you need to replicate your storage to another Azure region for greater redundancy
+      - Key operating cost assumptions:
+        - Electricity price per kilowatt hour (KWh)
+        - Hourly pay rate for IT administration
+        - Network maintenance cost as a percentage of network hardware and software costs
+    - **Step 3: View the report**
+      - Timeframe between one and five years
+      - Here's an example:
+        - ![TCO report piecharts](https://docs.microsoft.com/en-us/learn/azure-fundamentals/plan-manage-azure-costs/media/2-tco-report-piecharts.png)
 
 #### Exercise - Compare sample workload costs by using the TCO Calculator
 
