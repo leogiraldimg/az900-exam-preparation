@@ -3712,6 +3712,13 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 
 #### What is Azure Government?
 
+- Separate instance of the Microsoft Azure service
+- Addresses the security and compliance needs of US federal agencies, state and local governments, and their solution providers
+- Physically isolated datacenters
+- Networks located only in the US
+- Available in eight geographies
+- Most compliance certifications of any cloud provider
+
 #### What is Azure China 21Vianet?
 
 #### Knowledge check
