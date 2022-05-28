@@ -3694,6 +3694,22 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 
 #### Access Azure compliance documentation
 
+- Detailed documentation about legal and regulatory standards and compliance on Azure
+- Compliance offerings across these categories:
+  - Global
+  - US government
+  - Financial services
+  - Health
+  - Media and manufacturing
+  - Regional
+- Additional compliance resources
+  - Audit reports
+  - Privacy information
+  - Compliance implementations
+  - Mappings
+  - White papers
+  - Analyst reports
+
 #### What is Azure Government?
 
 #### What is Azure China 21Vianet?
