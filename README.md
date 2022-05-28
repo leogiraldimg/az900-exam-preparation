@@ -3632,6 +3632,41 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 
 #### Access the Microsoft Privacy Statement, the Online Services Terms, and the Data Protection Addendum
 
+- Detail Microsoft's commitment to protecting data and privacy in the cloud
+- **Microsoft Privacy Statement**
+  - Explains
+    - What personal data Microsoft collects
+    - How Microsoft uses it
+    - For what purposes
+  - Covers
+    - Microsoft's services
+    - Websites
+    - Apps
+    - Software
+    - Servers
+    - Devices
+- **Online Services Terms (OST)**
+  - Legal agreement between Microsoft and the customer
+  - Details the obligations by both parties
+  - Processing and security of customer data and personal data
+  - Applies specifically to Microsoft's online services that you license through a subscription
+    - Azure
+    - Dynamics 365
+    - Office 365
+    - Bing Maps
+- **Data Protection Addendum (DPA)**
+  - Defines the data processing and security terms
+  - Online services
+  - Include:
+    - Compliance with laws
+    - Disclosure of processed data
+    - Data Security
+    - Data encryption
+    - Data access
+    - Customer responsibilities
+    - Compliance with auditing
+  - Data transfer, retention, and deletion
+
 #### Explore the Trust Center
 
 #### Access Azure compliance documentation
