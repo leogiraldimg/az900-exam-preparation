@@ -3721,6 +3721,20 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 
 #### What is Azure China 21Vianet?
 
+- Operated by 21Vianet
+- Physically separated instance of cloud services
+- Located in China
+- Independently operated and transacted by Shanghai Blue Cloud Technology Co., Ltd. ("21Vianet")
+- China Telecommunication Regulation
+  - Providers of cloud services, infrastructure as a service (IaaS) and platform as a service (PaaS)
+  - Only locally registered companies with less than 50 percent foreign investment qualify for these permits
+- **Products and services available in China**
+  - Azure, Office 365, and Power BI technologies
+  - Azure agreements and contracts
+  - Signed between customers and 21Vianet
+  - Supports most of the same services that global Azure has
+  - To operate in China you might need to rehost or refactor some or all your applications or services
+
 #### Knowledge check
 
 #### Summary1 min
