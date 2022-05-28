@@ -3667,7 +3667,30 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
     - Compliance with auditing
   - Data transfer, retention, and deletion
 
-#### Explore the Trust Center
+#### Explore the [Trust Center](https://www.microsoft.com/trust-center?rtc=1%3Fazure-portal%3Dtrue)
+
+- Showcases
+  - Microsoft's principles for maintaining data integrity in the cloud
+  - How Microsoft implements and supports
+    - Security
+    - Privacy
+    - Compliance
+    - Transparency
+- Important part of the Microsoft Trusted Cloud Initiative
+- Provides:
+  - In-depth information about
+    - Security
+    - Privacy
+    - Compliance offerings
+    - Policies
+    - Features
+    - Practices across Microsoft cloud products
+  - Additional resources for each topic
+  - Links to
+    - Security
+    - Privacy
+    - Compliance blogs
+    - Upcoming events
 
 #### Access Azure compliance documentation
 
