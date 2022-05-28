@@ -3742,6 +3742,7 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 #### Compare costs by using the Total Cost of Ownership Calculator
 
 - **TCO Calculator**
+  - [TCO Calculator access link](https://azure.microsoft.com/pricing/tco/calculator)
   - Total cost of ownership
   - Estimate the cost savings of operating your solution on Azure over time compared to operating in your on-premises datacenter
   - Enter the details of your on-premises workloads
@@ -3780,8 +3781,6 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
       - Timeframe between one and five years
       - Here's an example:
         - ![TCO report piecharts](https://docs.microsoft.com/en-us/learn/azure-fundamentals/plan-manage-azure-costs/media/2-tco-report-piecharts.png)
-
-#### Exercise - Compare sample workload costs by using the TCO Calculator
 
 #### Purchase Azure services
 
