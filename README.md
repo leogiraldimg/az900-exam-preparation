@@ -3734,7 +3734,3 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
   - Signed between customers and 21Vianet
   - Supports most of the same services that global Azure has
   - To operate in China you might need to rehost or refactor some or all your applications or services
-
-#### Knowledge check
-
-#### Summary1 min
