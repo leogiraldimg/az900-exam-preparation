@@ -3558,9 +3558,77 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 
 ### Examine privacy, compliance, and data protection standards on Azure
 
-#### Introduction
+- Regulatory compliance
+  - Discipline and process of ensuring that a company follows the laws that governing bodies enforce
 
 #### Explore compliance terms and requirements
+
+- _Control_
+  - Good standard that you can compare your solution against to ensure security
+- **Which compliance categories are available on Azure?**
+  - Following image shows some of the more popular compliance offerings that are available on Azure:
+    - ![More popular compliance offerings that are available on Azure](https://docs.microsoft.com/en-us/learn/azure-fundamentals/examine-privacy-compliance-data-protection-standards/media/2-compliance-matrix-383090ad.png)
+  - Four categories: Global, US Government, Industry, and Regional
+  - Examples:
+    - **Criminal Justice Information Service**
+    - US state or local agency -> Wants to access the FBI's Criminal Justice Information Services (CJIS) database
+      - Required to adhere to the CJIS Security Policy
+    - Major cloud provider
+      - Commits to conformance with the CJIS Security Policy
+        - Adheres to the same requirements that law enforcement and public safety entities must meet
+    - **Cloud Security Alliance STAR Certification**
+    - Rigorous independent third-party assessment
+    - Cloud provider's security posture
+    - Based on
+      - Achieving International Organization of Standards/International Electrotechnical Commission (ISO/IEC) 27001 certification
+      - Meeting criteria -> Cloud Controls Matrix (CCM)
+    - Demonstrates that:
+      - Conforms to ISO/IEC 27001
+      - Addressed issues -> Cloud security -> Outlined in the CCM
+      - Assessed against -> STAR Capability Maturity Model
+        - Management of activities in CCM control areas
+    - **European Union Model Clauses**
+      - European Union (EU) Standard Contractual Clauses
+      - Guarantees
+        - Transfers of personal data outside of the EU
+      - First company to receive joint approval from the EU
+      - Azure customers can
+        - Move data freely through Microsoft's cloud -> From Europe to the rest of the world
+    - **Health Insurance Portability and Accountability Act (HIPAA)**
+      - US federal law
+      - Regulates patient Protected Health Information (PHI)
+      - Offers
+        - Business Associate Agreement (BAA)
+      - Contract addendum
+    - **International Organization of Standards/International Electrotechnical Commission 27018**
+      - First cloud provider
+      - ISO/IEC 27018 code of practice
+      - Covers the processing of personal information
+    - **Multi-Tier Cloud Security Singapore**
+      - MTCS 584:2013 Certification
+    - **Service Organization Controls 1, 2, and 3**
+      - Microsoft-covered cloud services
+      - Audited at least annually
+        - Service Organization Controls (SOC) report framework
+      - Covers
+        - Data
+        - Security
+        - Availability
+        - Processing integrity
+        - Confidentiality
+    - **National Institute of Standards (NIST) and Technology Cybersecurity Framework (CSF)**
+      - Voluntary framework
+      - Standards, guidelines, and best practices to manage cybersecurity-related risks
+      - Undergone
+        - Federal Risk and Authorization Management Program (FedRAMP)
+          - Moderate Baseline Audit
+          - High Baseline Audits
+      - Certified according to the FedRAMP standards
+      - Office 365
+        - Certified to the objectives specified in the NIST CSF
+    - **United Kingdom Government G-Cloud**
+      - Cloud computing certification
+      - For services used by government entities in the United Kingdom
 
 #### Access the Microsoft Privacy Statement, the Online Services Terms, and the Data Protection Addendum
 
