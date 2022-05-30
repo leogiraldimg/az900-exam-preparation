@@ -3784,6 +3784,130 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 
 #### Purchase Azure services
 
+- **What types of Azure subscriptions can I use?**
+  - The types of resources you use affect your monthly bill
+  - Free and paid subscription options
+    - _Free trial_
+      - 12 months of popular free services
+      - Credit to explore any Azure service for 30 days
+      - More than 25 services that are always free
+    - _Pay-as-you-go_
+      - Pay for what you use
+      - Attaching a credit or debit card to your account
+    - _Member offers_
+      - Existing membership to certain Microsoft products and services
+      - Credits for your Azure account
+- **How do I purchase Azure services?**
+  - Three main ways
+    - _Through an Enterprise Agreement_
+      - Larger customers
+      - Enterprise customers
+      - Sign an Enterprise Agreement with Microsoft
+      - Predetermined amount on Azure services over a period of three years
+      - Paid annually
+      - Best customized pricing
+    - _Directly from the web_
+      - Purchase Azure services directly from the Azure portal
+      - Standard prices
+      - Billed monthly
+      - Credit card payment
+      - Invoice
+      - Web Direct
+    - _Through a Cloud Solution Provider (CSP)_
+      - Microsoft Partner
+      - Helps you build solutions on top of Azure
+      - Price they determine
+      - Answer your support questions
+      - Escalate them to Microsoft, as needed
+- **What factors affect cost?**
+  - _Resource type_
+    - Type of resource or how you customize it
+  - _Usage meters_
+    - When you provision a resource
+      - Azure creates meters
+    - Track that resource's usage
+    - Single VM as an example
+    - Meters
+      - Overall CPU time
+      - Time spent -> Public IP address
+      - Incoming (ingress) and outgoing (egress) network traffic
+      - Disk size
+        - Amount operations
+          - Disk read
+          - Disk write
+    - Meter
+      - Tracks a specific type of usage
+      - Correlates to a quantity of billable units
+      - Charged to your account
+      - Each billing period
+      - Rate per billable unit
+      - Depends on the resource type
+  - _Resource usage_
+    - Always charged based on what you use
+    - Example
+      - Can delete or dealloc ate a VM
+        - Deleting
+          - Removed from your subscription
+        - Deallocating
+          - No longer running
+          - Associated hard disks and data are still kept
+          - VM isn't assigned to a CPU or network in Azure's datacenter
+          - Doesn't generate the costs associated with
+            - Compute time
+            - VM's IP address
+          - Still billed for disk storage
+          - Way to minimize costs
+  - _Azure subscription types_
+    - Include usage allowances
+    - Affect costs
+  - _Azure Marketplace_
+    - Purchase
+      - Azure-based solutions
+      - Services from third-party vendors
+    - Through Azure Marketplace
+- **Does location or network traffic affect cost?**
+  - Provision a resource
+    - Need to define the location
+  - _Location_
+    - Different regions can have different associated price
+    - Geographic regions can affect where your network traffic flows
+    - A cost influence to consider
+  - _Zones for billing of network traffic_
+    - Bandwidth
+      - Data moving in and out of Azure datacenters
+    - Inbound
+      - Free
+    - Outbound
+      - Pricing is based on zones
+    - Zone = Geographical grouping of Azure regions for billing purposes
+      - Zone 1 : Australia Central, West US, East US, Canada West, West Europe, France Central, and others
+      - Zone 2 : Australia East, Japan West, Central India, Korea South, and others
+      - Zone 3 : Brazil South, South Africa North, South Africa West, UAE Central, UAE North
+      - DE Zone 1 : Germany Central, Germany Northeast
+- **How can I estimate the total cost?**
+  - Azure Pricing calculator
+  - Displays Azure products in categories
+  - Add these categories to your estimate
+  - Configure according to your specific requirements
+  - Receive
+    - Consolidated estimated price
+    - Detailed breakdown of the costs associated with each resource you added to your solution
+  - Options you can configure in the Pricing calculator
+    - _Region_
+      - Geographical location in which you can provision a service
+    - _Tier_
+      - Different levels of availability or performance
+      - Different associated costs
+    - _Billing options_
+      - Different ways you can pay for a service
+    - _Support options_
+      - Additional support pricing options
+    - _Programs and offers_
+      - Choose from specific licensing programs or other offers
+    - _Azure Dev/Test pricing_
+      - Available prices for development and test workloads
+      - Resources within an Azure subscription that's based on a Dev/Test offer
+
 #### Exercise - Estimate workload cost by using the Pricing calculator
 
 #### Manage animize total cost on Azure
