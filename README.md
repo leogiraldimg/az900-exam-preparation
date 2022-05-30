@@ -3910,6 +3910,8 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 
 #### Manage and minimize total cost on Azure
 
+https://docs.microsoft.com/en-us/learn/modules/plan-manage-azure-costs/6-manage-minimize-total-cost
+
 ### Choose the right Azure services by examining SLAs and service lifecycle
 
 #### Introduction
