@@ -3908,9 +3908,7 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
       - Available prices for development and test workloads
       - Resources within an Azure subscription that's based on a Dev/Test offer
 
-#### Exercise - Estimate workload cost by using the Pricing calculator
-
-#### Manage animize total cost on Azure
+#### Manage and minimize total cost on Azure
 
 ### Choose the right Azure services by examining SLAs and service lifecycle
 
