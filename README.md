@@ -4032,6 +4032,89 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 
 #### What are service-level agreements (SLAs)?
 
+- Service-level agreement (SLA)
+  - Formal agreement between a service company and the customer
+  - Defines the performance standards that Microsoft commits to for you, the customer
+- **Why are SLAs important?**
+  - Understand what guarantees you can expect
+  - The availability of the services that you use affect your application's performance
+  - Establish the SLA you set with your customers
+- **Where can I access SLAs for Azure services?**
+  - You can access SLAs from [Service Level Agreements](https://azure.microsoft.com/support/legal/sla/)
+- **What's in a typical SLA?**
+  - SLA breaks down into these sections:
+  - _Introduction_
+    - What to expect in the SLA
+    - Scope
+    - How subscription renewals can affect the terms
+  - _General terms_
+    - Terms that are used throughout the SLA
+    - Consistent vocabulary
+    - Define what's meant by downtime, incidents, and error codes
+    - Defines the general terms of the agreement
+    - How to submit a claim
+      - Receive credit for
+        - Any performance or availability issues
+        - Limitations of the agreement.
+  - _SLA details_
+    - Defines the specific guarantees for the service
+    - Performance commitments
+    - Measured as a percentage
+      - Ranges from 99.9 percent ("three nines") to 99.99 percent ("four nines")
+    - Primary performance commitment
+      - Focuses on uptime
+        - Percentage of time that a product or service is successfully operational
+      - Other factors
+        - Latency
+          - How fast the service must respond to a request
+    - Defines any additional terms that are specific to this service
+- **How do percentages relate to total downtime?**
+  - Downtime
+    - Time duration that the service is unavailable
+  - Table to give you a sense of how total downtime decreases as the SLA percentage increases:
+    - Amounts are cumulative
+    - The duration of multiple different service outages would be combined
+      - Added together
+
+| SLA percentage | Downtime per week | Downtime per month | Downtime per year |
+| -------------- | ----------------- | ------------------ | ----------------- |
+| 99             | 1.68 hours        | 7.2 hours          | 3.65 days         |
+| 99.9           | 10.1 minutes      | 43.2 minutes       | 8.76 hours        |
+| 99.95          | 5 minutes         | 21.6 minutes       | 4.38 hours        |
+| 99.99          | 1.01 minutes      | 4.32 minutes       | 52.56 minutes     |
+| 99.999         | 6 seconds         | 25.9 seconds       | 5.26 minutes      |
+
+- **What are service credits?**
+  - Percentage of the fees you paid that are credited back to you according to the claim approval process
+  - SLA
+    - Describes how Microsoft responds when an Azure service fails to perform to its specification
+  - You might receive a discount on your Azure bill as compensation when a service fails to perform according to its SLA
+  - Here's how credits are applied for Azure Database for MySQL according to uptime:
+
+| Monthly uptime percentage | Service credit percentage |
+| ------------------------- | ------------------------- |
+| < 99.99                   | 10                        |
+| < 99                      | 25                        |
+| < 95                      | 100                       |
+
+- **What's the SLA for free services?**
+  - Free products typically don't have an SLA
+    - Provide a free or shared tier that provides more limited functionality
+- **How do I know when there's an outage?**
+  - Azure status
+    - Provides a global view of the health of Azure services and regions
+    - Provides an RSS feed of changes to the health of Azure services
+    - Connect this feed to communication software such as Microsoft Teams or Slack
+  - From the Azure status page, you can also access Azure Service Health
+    - Provides a personalized view of the health of the Azure services and regions that you're using
+- **How can I request a service credit from Microsoft?**
+  - Need to file a claim with Microsoft to receive a service credit
+  - Cloud Solution Provider (CSP) partner
+    - Manages the claims process
+  - SLA specifies the timeline by which you must submit your claim
+  - Many services
+    - Must submit your claim by the end of the calendar month which the incident occurred
+
 #### Define your application SLA
 
 #### Design your application to meet your SLA
