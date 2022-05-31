@@ -3910,7 +3910,118 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 
 #### Manage and minimize total cost on Azure
 
-https://docs.microsoft.com/en-us/learn/modules/plan-manage-azure-costs/6-manage-minimize-total-cost
+- **Understand estimated costs before you deploy**
+  - Understand how each of your choices is metered and billed
+  - Calculate your projected costs
+    - Pricing calculator
+    - Total Cost of Ownership (TCO) Calculator
+- **Use Azure Advisor to monitor your usage**
+  - Identifies unused or underutilized resources
+  - Recommends unused resources that you can remove
+  - Example recommendations from Azure Advisor:
+    - ![Azure Advisor](https://docs.microsoft.com/en-us/learn/azure-fundamentals/plan-manage-azure-costs/media/6-azure-advisor.png)
+  - Recommendations are sorted by impact:
+    - High
+    - Medium
+    - Low
+  - Can automatically remediate, or fix
+- **Use spending limits to restrict your spending**
+  - If you have a free trial or a credit-based Azure subscription
+    - Prevent accidental overrun
+  - Quotas
+    - Limits on the number of similar resources you can provision within your subscription
+- **Use Azure Reservations to prepay**
+  - Offers discounted prices on certain Azure services
+  - Can save you up to 72 percent as compared to pay-as-you-go prices
+  - Reserve services and resources by paying in advance
+  - Following example shows estimated savings on VMs:
+    - ![Azure reservations](https://docs.microsoft.com/en-us/learn/azure-fundamentals/plan-manage-azure-costs/media/6-azure-reservations.png)
+  - Available to customers with
+    - Enterprise Agreement
+    - Cloud Solution Providers
+    - Pay-as-you-go
+- **Choose low-cost locations and regions**
+  - Cost of Azure products, services, and resources can vary across locations and regions
+  - Provision connected resources that are metered by bandwidth in the same Azure region
+  - Reduce egress traffic between them
+- **Research available cost-saving offers**
+- **Use Azure Cost Management + Billing to control spending**
+  - Free service
+  - Helps
+    - Understand your Azure bill
+    - Manage your account and subscriptions
+    - Monitor and control Azure spending
+    - Optimize resource use
+  - Following image shows current usage broken down by service:
+    - ![Azure Cost Manage](https://docs.microsoft.com/en-us/learn/azure-fundamentals/plan-manage-azure-costs/media/6-cost-management.png)
+  - Include:
+    - _Reporting_
+      - Generate reports
+        - Forecast future usage and expenditure
+    - _Data enrichment_
+      - Improve accountability
+        - Categorizing resources with tags
+    - _Budgets_
+      - Resource demand trends
+      - Consumption rates
+      - Cost patterns
+    - _Alerting_
+      - Based on
+        - Cost
+        - Usage budgets
+    - _Recommendations_
+      - Eliminate idle resources
+      - Optimize the Azure resources you provision
+- **Apply tags to identify cost owners**
+  - Organize billing data
+  - Identify groups that generate the biggest Azure costs
+  - Following image shows a year's worth of usage broken down by tags -> Azure Cost Management + Billing page:
+    - ![Azure Cost Management + Billing page](https://docs.microsoft.com/en-us/learn/azure-fundamentals/plan-manage-azure-costs/media/6-cost-management-tags.png)
+- **Resize underutilized virtual machines**
+  - Resize or shut down VMs that are underutilized or idle
+  - Following image shows this idea:
+    - ![VM resize](https://docs.microsoft.com/en-us/learn/azure-fundamentals/plan-manage-azure-costs/media/6-vm-resize.png)
+  - Resizing a VM requires it to be stopped, resized, and then restarted
+    - Plan for an outage
+    - Shift your traffic to another instance
+- **Deallocate virtual machines during off hours**
+  - Deallocate
+    - No longer run the VM
+    - Preserve the associated hard disks and data
+  - VM workloads that are only used during certain periods
+    - Running them every hour of every day
+    - Wasting money
+  - Shut down when not in use
+  - Start back when you need them
+  - Saving you compute costs
+  - Excellent strategy for development and testing environments
+- **Delete unused resources**
+  - Not uncommon
+    - Nonproduction or proof-of-concept systems -> following the completion of a project
+  - Regularly
+    - Review your environment
+    - Identify these systems
+  - Saving
+    - Infrastructure costs
+    - Licensing and operating costs
+- **Migrate from IaaS to PaaS services**
+  - Natural evolution
+  - Start with
+    - IaaS services
+    - Map more directly to concepts and operations you're already familiar with
+  - Reduce costs
+    - Move IaaS -> PaaS services
+    - Provides ready-made development and deployment environments that are managed for you
+    - Don't need to worry about
+      - Software updates
+      - Security patches
+      - Optimizing physical storage
+- **Save on licensing costs**
+  - _Choose cost-effective operating systems_
+  - _Use Azure Hybrid Benefit to repurpose software licenses on Azure_
+    - Licenses for Windows Server or SQL Server
+    - Licenses are covered by Software Assurance
+    - Repurpose those licenses on VMs on Azure
 
 ### Choose the right Azure services by examining SLAs and service lifecycle
 
