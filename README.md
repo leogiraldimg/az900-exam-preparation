@@ -4027,6 +4027,9 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 
 #### Introduction
 
+- Service-level agreements (SLAs) in Azure
+- How they can affect your application design decisions
+
 #### What are service-level agreements (SLAs)?
 
 #### Define your application SLA
