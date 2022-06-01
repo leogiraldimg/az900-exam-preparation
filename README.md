@@ -2,6 +2,8 @@
 
 Knowledge trail: https://docs.microsoft.com/en-us/learn/certifications/exams/az-900.
 
+Practice test: https://pts.measureup.com/web/PBS/LMS/index.php?l=1&k=7701664&tam=1675704&role=1&course=at_test202205110604131652249053.
+
 ## Describe core Azure concepts
 
 ### Introduction to Azure fundamentals
