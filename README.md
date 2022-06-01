@@ -4135,42 +4135,46 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 - Need to design an efficient and reliable solution for this application on Azure, keeping that application SLA in mind
 - Select the Azure products and services you need
   - Provision your cloud resources according to those requirements
-- **Identify your workloads**
-  - Workload
-    - Distinct capability or task that's logically separated from other tasks
-    - In terms of business logic and data storage requirements
-    - Defines a set of requirements
-      - Availability
-      - Scalability
-      - Data consistency
-      - Disaster recovery
-  - On Azure, the Special Orders application will require:
-    - Two virtual machines
-    - One instance of Azure SQL Database
-    - One instance of Azure Load Balancer
-  - Diagram that shows the basic architecture:
-    - ![Special Orders application basic architecture](https://docs.microsoft.com/en-us/learn/azure-fundamentals/choose-azure-services-sla-lifecycle/media/4-special-orders-architecture.svg)
-- **Combine SLAs to compute the composite SLA**
-  - After you've identified the SLA for the individual workloads
-  - Notice that those SLAs are not all the same
-  - How does this affect our overall application SLA requirement of 99.9 percent?
-  - Compute the composite SLA
-    - Set of services
-    - Multiply the SLA of each individual service
-  - From [Service Level Agreements](https://azure.microsoft.com/support/legal/sla/), you discover the SLA for each Azure service
-  - They are:
-    - Azure Virtual Machines -> 99.9 percent
-    - Azure SQL Database -> 99.99 percent
-    - Azure Load Balancer -> 99.99 percent
-  - For the Special Orders application, the composite SLA would be:
-    - You need two virtual machines
-      - Include the Virtual Machines SLA of 99.9 percent two times
-    - Results in an overall number that's lower than the 99.9 percent
-      - Why?
-        - Using multiple services adds an extra level of complexity and slightly increases the risk of failure
-          - Go back to your team and ask whether this is acceptable
-          - Implement some other strategies into your design to improve this SLA
-    - The calculation:
+
+##### Identify your workloads
+
+- Workload
+  - Distinct capability or task that's logically separated from other tasks
+  - In terms of business logic and data storage requirements
+  - Defines a set of requirements
+    - Availability
+    - Scalability
+    - Data consistency
+    - Disaster recovery
+- On Azure, the Special Orders application will require:
+  - Two virtual machines
+  - One instance of Azure SQL Database
+  - One instance of Azure Load Balancer
+- Diagram that shows the basic architecture:
+  - ![Special Orders application basic architecture](https://docs.microsoft.com/en-us/learn/azure-fundamentals/choose-azure-services-sla-lifecycle/media/4-special-orders-architecture.svg)
+
+##### Combine SLAs to compute the composite SLA
+
+- After you've identified the SLA for the individual workloads
+- Notice that those SLAs are not all the same
+- How does this affect our overall application SLA requirement of 99.9 percent?
+- Compute the composite SLA
+  - Set of services
+  - Multiply the SLA of each individual service
+- From [Service Level Agreements](https://azure.microsoft.com/support/legal/sla/), you discover the SLA for each Azure service
+- They are:
+  - Azure Virtual Machines -> 99.9 percent
+  - Azure SQL Database -> 99.99 percent
+  - Azure Load Balancer -> 99.99 percent
+- For the Special Orders application, the composite SLA would be:
+  - You need two virtual machines
+    - Include the Virtual Machines SLA of 99.9 percent two times
+  - Results in an overall number that's lower than the 99.9 percent
+    - Why?
+      - Using multiple services adds an extra level of complexity and slightly increases the risk of failure
+        - Go back to your team and ask whether this is acceptable
+        - Implement some other strategies into your design to improve this SLA
+  - The calculation:
 
 $$
 99.9\% \times 99.9\% \times 99.99\% \times 99.99\%\\
@@ -4179,63 +4183,70 @@ $$
 = 99.78\\
 $$
 
-- **What happens when the composite SLA doesn't meet your needs?**
-  - _Choose customization options that fit your required SLA_
-    - Customization choices you make when you provision each workload affects that SLA
-      - Example:
-        - Disks
-          - With Virtual Machines
-            - Choose from
-              - HDD
-              - SSD
-              - Premium SSD
-              - Ultra Disk
-          - SLA for a single VM would be
-            - 95 percent
-            - 99.5 percent
-            - 99.9 percent
-          - Depending on the disk
-        - Tiers
-          - Azure services are offered as both
-            - Free tier product
-            - Standard paid service
-          - Example
-            - Azure Automation provides 500 minutes of job runtime in an Azure free account
-              - Not backed by an SLA
-            - Standard tier SLA for Azure Automation is 99.9 percent
-  - _Build availability requirements into your design_
-    - Improve the availability of the application
-    - Avoid having any single points of failure
-    - Instead of adding more virtual machines
-    - Deploy one or more extra instances of the same virtual machine across the different availability zones in the same Azure region
-    - Availability zone
-      - Unique physical location within an Azure region
-      - Each zone is made up of one or more datacenters
-      - Independent power, cooling, and networking
-      - Different schedules for maintenance
-        - One zone is affected
-          - Virtual machine instance in the other zone is unaffected
-    - Raises the virtual machine SLA to 99.99 percent
-    - Recalculating your composite SLA above with this Virtual Machines SLA
-      - Exceeds your target of 99.9 percent
+##### What happens when the composite SLA doesn't meet your needs?
+
+###### Choose customization options that fit your required SLA
+
+- Customization choices you make when you provision each workload affects that SLA
+  - Example:
+    - Disks
+      - With Virtual Machines
+        - Choose from
+          - HDD
+          - SSD
+          - Premium SSD
+          - Ultra Disk
+      - SLA for a single VM would be
+        - 95 percent
+        - 99.5 percent
+        - 99.9 percent
+      - Depending on the disk
+    - Tiers
+      - Azure services are offered as both
+        - Free tier product
+        - Standard paid service
+      - Example
+        - Azure Automation provides 500 minutes of job runtime in an Azure free account
+          - Not backed by an SLA
+        - Standard tier SLA for Azure Automation is 99.9 percent
+
+###### Build availability requirements into your design
+
+- Improve the availability of the application
+- Avoid having any single points of failure
+- Instead of adding more virtual machines
+- Deploy one or more extra instances of the same virtual machine across the different availability zones in the same Azure region
+- Availability zone
+  - Unique physical location within an Azure region
+  - Each zone is made up of one or more datacenters
+  - Independent power, cooling, and networking
+  - Different schedules for maintenance
+    - One zone is affected
+      - Virtual machine instance in the other zone is unaffected
+- Raises the virtual machine SLA to 99.99 percent
+- Recalculating your composite SLA above with this Virtual Machines SLA
+  - Exceeds your target of 99.9 percent
 
 $$
 99.99\% \times 99.99\% \times 99.99\% \times 99.99\%\\
 = 99.96\\
 $$
 
-- _Include redundancy to increase availability_
-  - Duplicate components across several regions
-  - Redundancy
-  - Minimize costs during non-critical periods
-    - Run your application only in a single region
-  - Achieve maximum availability in your application
-    - Add redundancy to every single part
-  - Can be difficult and expensive
-  - Solutions that are more complex
-- **Very high performance is difficult to achieve**
-  - Performance targets above 99.99 percent are very difficult to achieve
-    - Means 1 minute of downtime per week
-  - Difficult for humans to respond to failures quickly enough
+###### Include redundancy to increase availability
+
+- Duplicate components across several regions
+- Redundancy
+- Minimize costs during non-critical periods
+  - Run your application only in a single region
+- Achieve maximum availability in your application
+  - Add redundancy to every single part
+- Can be difficult and expensive
+- Solutions that are more complex
+
+##### Very high performance is difficult to achieve
+
+- Performance targets above 99.99 percent are very difficult to achieve
+  - Means 1 minute of downtime per week
+- Difficult for humans to respond to failures quickly enough
 
 #### Access preview services and preview features
