@@ -14,14 +14,14 @@ Knowledge trail: https://docs.microsoft.com/en-us/learn/certifications/exams/az-
 
 #### What is Azure fundamentals?
 
-- Série de seis roteiros de aprendizagem
-- Ajudam você a se familiarizar com o Azure e seus diversos serviços e recursos
+- Series of six learning paths
+- Help you familiarize yourself with Azure and its many services and features
 
 ##### Why should I take Azure fundamentals?
 
 ###### Preparation for Exam AZ-900
 
-Exame inclui seis áreas de domínio de conhecimento:
+Exam includes six domain knowledge areas:
 
 | AZ-900 Domain Area                                              | Weight |
 | --------------------------------------------------------------- | ------ |
