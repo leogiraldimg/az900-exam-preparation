@@ -4175,7 +4175,7 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
   - The calculation:
 
 $$
-99.9\% \times 99.9\% \times 99.99\% \times 99.99\%\\
+99.9 \times 99.9 \times 99.99 \times 99.99\\
 = 0.999 \times 0.999 \times 0.9999 \times 0.9999\\
 = 0.9978\\
 = 99.78\\
