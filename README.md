@@ -59,12 +59,10 @@ Exame inclui seis áreas de domínio de conhecimento:
 
 #### What is Azure?
 
-- Tipos de serviços:
-
+- Services types:
   - SAAS
   - PAAS
   - IAAS
-
 - VMs
 - Cloud Base Storage
   - Store application or backup safely
