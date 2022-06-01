@@ -77,10 +77,8 @@ Exam includes six domain knowledge areas:
 - Microsoft Cosmos DB
   - Support for several popular NoSQL APIs
 - Azure Artificial Inteligence and Machine Learing services
-
   - Empower developers and data scientists
-  - Wide range productive experiences for building, training and deploying machine learing models faster
-
+  - Wide range productive experiences for building, training and deploying machine learning models faster
 - Azure's regional data centers allow you to ditribute your applications globally so you can locate your data in apps where they're needed most
 - Azure Portal lets you create, configure and control all your services and resources from a single easy to use web-based interface
 
@@ -109,7 +107,7 @@ Exam includes six domain knowledge areas:
 - Designed for resiliency and continuous availability
   - Maintains a presence in every Azure datacenter
   - Resilient to individual datacenter failures and avoids network slowdowns by being close to users
-  - Requires no downtime for maintenance activitie
+  - Requires no downtime for maintenance activities
 
 #### What is Azure Marketplace?
 
