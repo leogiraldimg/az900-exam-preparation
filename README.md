@@ -4117,6 +4117,17 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 
 #### Define your application SLA
 
+- Application SLA
+  - Defines the SLA requirements for a specific application
+  - Refers to an application that you build on Azure
+- Factors -> might consider
+  - **Business impact**
+  - **Effect on other business operations**
+  - **Usage patterns**
+    - Define when and how users access your application
+    - One question to consider
+      - Availability requirement differs between critical and non-critical time periods
+
 #### Design your application to meet your SLA
 
 #### Access preview services and preview features
