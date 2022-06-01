@@ -4226,7 +4226,7 @@ $$
   - Exceeds your target of 99.9 percent
 
 $$
-99.99\% \times 99.99\% \times 99.99\% \times 99.99\%\\
+99.99 \times 99.99 \times 99.99 \times 99.99\\
 = 99.96\\
 $$
 
