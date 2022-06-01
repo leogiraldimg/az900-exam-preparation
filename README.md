@@ -216,7 +216,7 @@ Includes firts-class support to build and host web apps and HTTP-based web servi
 | Azure API Management                  | Publish APIs to developers, partners, and employees securely and at scale |
 | Azure Cognitive Search                | Deploy this fully managed search as a service                             |
 | Web Apps feature of Azure App Service | Create and deploy mission-critical web apps at scale                      |
-| Azure SignalR Service                 | Add real-time web functionalities easil                                   |
+| Azure SignalR Service                 | Add real-time web functionalities easily                                  |
 
 ###### IoT
 
