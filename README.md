@@ -4250,3 +4250,48 @@ $$
 - Difficult for humans to respond to failures quickly enough
 
 #### Access preview services and preview features
+
+- How Azure services go from the preview phase to being generally available product integrated into Azure
+- **What is the service lifecycle?**
+  - Defines how every Azure service is released for public use
+  - Starts in the development phase
+    - Azure team collects and defines its requirements
+    - Begins to build the service
+  - Service is released to the public preview phase
+    - Public can access and experiment with it
+    - Provide real-world feedback
+    - Gives you the opportunity to request new or different capabilities
+  - Released to all customers as a production-ready service
+    - General availability (GA)
+- **What terms and conditions can I expect?**
+  - Each Azure preview defines its own terms and conditions
+  - Excluded from the service level agreements
+  - Not recommended for business-critical workloads
+- **How can I access preview services?**
+  - From the Azure portal
+  - How to see what preview services are available
+    - Go to the Azure portal
+    - Select Create a resource
+    - Enter preview in the search box, and select Enter
+    - Select a preview service to learn more about it. You can also launch the service if you'd like to try it out
+- **How can I access new features for an existing service?**
+  - Preview features are accessible when you deploy, configure, and manage the service
+- **How can I access preview features for the Azure portal?**
+  - Access preview features that are specific to the Azure portal
+    - [Microsoft Azure (Preview)](https://www.facebook.com/friends/suggestions/?profile_id=100010745860571)
+  - Preview features provide
+    - Performance, navigation, and accessibility improvements
+    - To the Azure portal interface
+  - "Microsoft Azure (Preview)" displays in the page header
+- **How can I provide feedback on the Azure portal?**
+  - From any of the 124 forums for Azure services
+  - Azure feedback community ideas page
+  - From the Feedback tab in the Azure portal
+- **How can I stay updated on the latest announcements?**
+  - Azure updates page
+  - Provides information about the latest updates to
+    - Azure products
+    - Services
+    - Features
+    - Product roadmaps
+    - Announcements
