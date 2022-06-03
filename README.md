@@ -4293,3 +4293,9 @@ $$
     - Features
     - Product roadmaps
     - Announcements
+
+## Extra concepts
+
+- [Microsoft Defender for Cloud](https://docs.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction)
+- [Cloud bursting](https://www.techtarget.com/searchcloudcomputing/definition/cloud-bursting#:~:text=Cloud%20bursting%20is%20an%20application,more%20computing%20resources%20when%20needed.)
+- [Azure Private Link](https://docs.microsoft.com/en-us/azure/private-link/private-link-overview)
