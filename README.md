@@ -604,6 +604,11 @@ The Azure organizing structure for resources, which has 4 levels: management gro
 - **Resources**: instances of services that you create, like VMs, storage or SQL databases
 - **Resource groups**: resources are combined into resource groups, which act as a logical container into which Azure resources like web apps, databases and storage accounts are deployed and managed
 - **Subscriptions**: groups together user accounts and the resources that have been created by those user accounts. For each subscription, there is limits or quotas on the amount of resources that you can create and use. Organizations can use subscriptions to manage costs and the resources that are created by users, teams and projects
+  - Billing occurs at the subscription level
+    - Examples:
+      - You should create 3 subscriptions when your company has three departments that must each receive an Azure bill
+      - You should create 2 subscriptions when your company has two physical locations that must each receive a separate bill
+      - You should create 2 subscription when your company has two divisions that must share one Azure bill
 - **Management groups**: help manage access, policy and compliance for multiple subscriptions. All subscriptions in a management group automatically inherit the conditions applied to the management group
 
 #### Azure regions, availability zones, and region pairs
@@ -715,6 +720,9 @@ Azure can help make your app highly available through availability zones.
 - A resource can only be a member of a single resource group
 - Resource groups can't be nested
 - Resources can be moved between resource groups with some services having specific limitations or requirements to move
+- When you delete resource group, all the resources contained in that resource group are also deleted
+  - Also deletes the metadata of all contained resources
+- Can include resources from different Azure regions
 
 ###### Logical grouping
 
@@ -2818,6 +2826,9 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
   - Mapped to a physical server in an Azure datacenter
 - _Host group_
   - Collection of dedicated hosts
+- Cannot share provided physical servers across multiple Azure subscriptions
+  - Underlying physical hosts are single-tenant
+  - Dedicated to one Azure subscription only
 
 ##### What are the benefits of Azure Dedicated Host?
 
@@ -3241,6 +3252,21 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
   - Access control (IAM) pane in the Azure portal
   - Following screenshot shows an example of the Access control (IAM) pane:
     - ![Screenshot of an example of the Access Control (IAM) pane](https://docs.microsoft.com/en-us/learn/azure-fundamentals/build-cloud-governance-strategy-azure/media/4-role-based-access-control-blade-360b5130.png)
+- **Roles**
+  - _Contributor_
+    - Create and manage resources
+    - Not include the ability to grant access to others
+  - _Owner_
+    - Create and manage resources
+    - Full access to all resources
+    - Ability to delegate access to others
+  - _Reader_
+    - View Azure resources
+    - Not create or manage Azure resources
+  - _User Access Administrator_
+    - Manage user access to Azure resources
+    - Not create or manage the resources
+  - +70 built-in roles
 
 #### Prevent accidental changes by using resource locks
 
@@ -4350,6 +4376,11 @@ $$
   - Advanced threat protection features for virtual machines, SQL databases, containers, web applications, your network, and more
     - Include securing the management ports of your VMs with just-in-time access , and adaptive application controls to create allowlists for what apps should and shouldn't run on your machines
 - Provides native integration with Microsoft Defender Antivirus in Windows
+- **Regulatory Compliance Dashboard**
+  - You can find:
+    - _Overall compliance score_
+      - Provides insight into your organization's compliance posture agains a supported set of standards and policies
+    - _Number of passing and failling assessments_
 
 ### [Cloud bursting](https://www.techtarget.com/searchcloudcomputing/definition/cloud-bursting#:~:text=Cloud%20bursting%20is%20an%20application,more%20computing%20resources%20when%20needed.)
 
@@ -4404,3 +4435,52 @@ $$
   - Enables deployment of container instances into an Azure virtual network
   - Communicate securely with other resources in the virtual network
     - Including those that are on premises (VPN gateway or ExpressRoute)
+
+### Azure Data Box Gateway
+
+- Used to periodically migrate data to Azure
+- Uses Server Message Block (SMB)
+- Securely transfer large amounts of data to and from Azure Data Box
+- Replicate data between on-premises storage and Azure Data Box
+- Transfer data into and out of Azure Storage accounts using yout network
+- Virtual appliance you run on-premises
+  - Presents an SMB endpoint to your users
+
+### Azure Data Box Heavy
+
+- Should not use to periodically migrate data to Azure using SMB
+- Physical data transfer service
+- Allows copy large ammounts of data (up to 100TB) from on-premises to Azure
+
+### Azure Data Share
+
+- Should not use to periodically migrate data to Azure using SMB
+- Cloud-based storage service offered by MS
+- Allows share data across multiple devices and applications
+
+### Azure AD
+
+#### Premium x Free
+
+- Premium
+  - Publich on-premises web apps using Azure AD
+    - Provided by Azure AD Application Proxy
+  - On-premises users to be able to reset their own passwords
+- Free
+  - On-premises directory synchronization
+  - Single-sign on (SSO)
+  - User and group management
+
+### Azure AzCopy
+
+- Used in combination with Azure Storage Explorer to transfer an on-premises VHD to Azure
+- Command-line tool
+- Used to upload and download data to and from Azure Blob storage
+
+### Azure Storage Explorer
+
+- Graphical user interface tool
+- Manage your Azure Storage resources
+- Create and manage storage accounts, blobs, queues, tables, and files
+- Monitor storage account metrics
+- Access stored data through the various Storage Explorer features
