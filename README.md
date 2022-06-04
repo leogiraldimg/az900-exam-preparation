@@ -680,7 +680,7 @@ Azure can help make your app highly available through availability zones.
 #### Azure region pairs
 
 - There's a minimum of three zones within a single region
-- Large disaster tat could cause an outage to affect two datacenters
+- Large disaster that could cause an outage to affect two datacenters
   - Azure also creates _region pairs_
 
 ##### What is region pair?
@@ -1732,7 +1732,7 @@ Azure supports Docker
 #### Azure Files fundamentals
 
 - Fully managed file shares
-- Accessible via Server Message Block and Network File System protocols
+- Accessible via Server Message Block (SMB) and Network File System protocols (NFS)
 - Mounted concurrently by cloud or on-premises deployments of Windows, Linux and macOS
 - Application running in Azure VMs or cloud services can mount it to access file data
 - Access simultaneously
