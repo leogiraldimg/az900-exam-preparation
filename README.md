@@ -1664,6 +1664,7 @@ Azure supports Docker
 - Service that you can use to store files, messages, tables, and other types of information
 - Clients can read data from and write data to
 - Used by IaaS VMs and PaaS cloud services
+  - But it's considered an IaaS
 - Azure Storage account
   - Created through
     - Azure portal
@@ -2608,18 +2609,18 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
 ##### Azure Advisor
 
 - Evaluates your Azure resources
-- Makes recommendations to help
-- Improve reliability, security, and performance
+- Makes recommendations to help improve reliability, security, and performance
 - Achieve operational excellence
 - Reduce costs
 - Designed to help you save time on cloud optimization
 - Advisor dashboard displays personalized recommendations for all your subscriptions
-- Recommendations are divided into five categories
+- Recommendations are divided into five categories:
   - Reliability -> ensure and improve the continuity of your business-critical applications
   - Security -> detect threats and vulnerabilities that might lead to security breaches
   - Performance -> improve the speed of your applications
   - Cost -> optimize and reduce your overall Azure spending
   - Operational Excellence -> achieve process and workflow efficiency, resource manageability, and deployment best practices
+- Makes shutdown recommendations based on CPU and outbound network utilization
 
 ##### Azure Monitor
 
