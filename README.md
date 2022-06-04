@@ -4299,6 +4299,58 @@ $$
 
 ### [Microsoft Defender for Cloud](https://docs.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction)
 
+- Cloud Security Posture Management (CSPM)
+- Cloud Workload Protection Platform (CWPP)
+- For all of your Azure, on-premises, and multi-cloud (Amazon AWS and Google GCP) resources
+- Three vital needs
+  - _Continually assesses_
+    - Security posture
+    - Track new security opportunities
+    - Report on the progress of your security efforts
+  - _Secures_
+    - Workloads with step-by-step actions
+    - Protect your workloads from known security risks
+  - _Defends_
+    - Workloads in real-time
+    - React immediately and prevent security events from developing
+- Two broad pillars of cloud security
+  - **Cloud Security Posture Management (CSPM)**
+    - Remediate security issues and watch your security posture improve
+    - Posture management features provide:
+      - _Hardening guidance_
+        - Help you improve your security
+      - _Visibility_
+        - Help you understand your current security situation
+    - Continually assesses your resources, subscriptions, and organization for security issues
+    - Shows your security posture in _secure score_
+    - Higher the score, the lower the identified risk level
+    - Provides hardening recommendations
+      - Based on any identified security misconfigurations and weaknesses
+  - **Cloud Workload Protection Platform (CWP)**
+    - Identify unique workload security requirements
+    - Offers security alerts
+      - Powered by Microsoft Threat Intelligence
+- **Defend your Azure-native resources**
+  - _Azure PaaS services_
+    - Native integration with Microsoft Defender for Cloud Apps
+      - Microsoft Cloud App Security
+  - _Azure data services_
+    - Get assessments for potential vulnerabilities across Azure SQL and Storage services , and recommendations for how to mitigate them
+  - _Networks_
+    - Helps you limit exposure to brute force attacks
+    - Reducing access to virtual machine ports, using the just-in-time VM access
+- **Defend your on-premises resources**
+  - Add Defender for Cloud capabilities to your hybrid cloud environment to protect your non-Azure servers
+- **Defend resources running on other clouds**
+  - Can protect resources in other clouds (such as AWS and GCP)
+- Native integration with Microsoft Defender for Endpoint
+- You can set your policies to run on management groups, across subscriptions, and even for a whole tenant
+- Continuously discovers new resources that are being deployed across your workloads
+- Extend the Defender for Cloud protection with:
+  - Advanced threat protection features for virtual machines, SQL databases, containers, web applications, your network, and more
+    - Include securing the management ports of your VMs with just-in-time access , and adaptive application controls to create allowlists for what apps should and shouldn't run on your machines
+- Provides native integration with Microsoft Defender Antivirus in Windows
+
 ### [Cloud bursting](https://www.techtarget.com/searchcloudcomputing/definition/cloud-bursting#:~:text=Cloud%20bursting%20is%20an%20application,more%20computing%20resources%20when%20needed.)
 
 ### [Azure Private Link](https://docs.microsoft.com/en-us/azure/private-link/private-link-overview)
