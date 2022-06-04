@@ -4296,6 +4296,58 @@ $$
 
 ## Extra concepts
 
-- [Microsoft Defender for Cloud](https://docs.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction)
-- [Cloud bursting](https://www.techtarget.com/searchcloudcomputing/definition/cloud-bursting#:~:text=Cloud%20bursting%20is%20an%20application,more%20computing%20resources%20when%20needed.)
-- [Azure Private Link](https://docs.microsoft.com/en-us/azure/private-link/private-link-overview)
+### [Microsoft Defender for Cloud](https://docs.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction)
+
+### [Cloud bursting](https://www.techtarget.com/searchcloudcomputing/definition/cloud-bursting#:~:text=Cloud%20bursting%20is%20an%20application,more%20computing%20resources%20when%20needed.)
+
+### [Azure Private Link](https://docs.microsoft.com/en-us/azure/private-link/private-link-overview)
+
+### [Azure Container Instances](https://docs.microsoft.com/en-us/azure/container-instances/container-instances-overview)
+
+- Offers the fastest and simplest way to run a container in Azure
+- Without having to manage any virtual machines
+- Without having to adopt a higher-level service
+- Great solution for any scenario that can operate in isolated containers
+  - Simple applications
+  - Task automation
+  - Build jobs
+- Scenarios where you need full container orchestration
+  - Azure Kubernetes Service (AKS)
+- **Fast startup times**
+  - Startup benefits over virtual machines (VMs)
+  - Linux or Windows container images
+    - Docker Hub
+    - Another cloud-based docker registry
+- **Container access**
+  - Enables exposing your container groups directly to the internet
+  - IP address and a fully qualified domain name (FQDN)
+  - Can specify a custom DNS name label
+  - Supports executing a command in a running container by providing an interactive shell
+  - Access takes places over HTTPS, using TLS
+- **Compliant deployments**
+  - _Hypervisor-level security_
+    - Guarantees your application is as isolated in a container as it would be in a VM
+  - _Customer data_
+    - Stores the minimum customer data
+- **Custom sizes**
+  - Optimized to run just a single application
+  - Specifications of CPU cores and memory
+  - For compute-intensive jobs
+  - Can schedule Linux containers to use NVIDIA Tesla GPU resources
+- **Persistent storage**
+  - Retrieve and persist state with Azure Container Instances
+  - Azure Files shares
+- **Linux and Windows containers**
+  - Some features are currently restricted to Linux containers:
+    - Multiple containers per container group
+    - Volume mounting (Azure Files, emptyDir, GitRepo, secret )
+    - Resource usage metrics with Azure Monitor
+    - Virtual network deployment
+    - GPU resources
+- **Co-scheduled groups**
+  - Supports scheduling of multi-container groups that share a host machine, local network, storage, and lifecycle
+  - Combine your main application container with other supporting
+- **Virtual network deployment**
+  - Enables deployment of container instances into an Azure virtual network
+  - Communicate securely with other resources in the virtual network
+    - Including those that are on premises (VPN gateway or ExpressRoute)
