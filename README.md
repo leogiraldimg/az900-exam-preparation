@@ -402,6 +402,7 @@ You can sign up without credit card.
   - Provides the most flexibility
   - Organizations determine where to run their applications
   - Organizations control security, compliance, or legal requirements
+  - Company can augment on-premises resources by providing overflow capacity
 
 #### Describe cloud benefits and considerations
 
@@ -946,6 +947,8 @@ Additional subscriptions:
   - Dedicated or shared HW?
   - How much memory reserved for it?
 - There's a free tier you can use to host small, low-traffic sites
+  - $200 credit -> 30 days
+  - Free access to Azure services for one year
 
 ##### Types of app services
 
@@ -1886,9 +1889,13 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
       - Protect sensitive data at-rest and in-motion
       - Backups and point-in-time-restore -> up to 35 days
     - Three pricing tiers
-      - Basic
-      - General Purpose
-      - Memory Optimized
+      - _Basic_
+        - Storage is limited to 1TB
+        - Azure Standard Storage
+      - _General Purpose_
+        - Supports data storage up to 16TB
+        - Uses Azure Premium storage
+      - _Memory Optimized_
     - Different resource capabilities to support your database workloads
   - **Hyperscale (Citus)**
     - Horizontally scales queries across multiple machines by using sharding
@@ -2371,6 +2378,7 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
   - Not the underlying platform or infrastructure
   - Perform work in response to an event
   - Work can be completed quickly
+- Abstraction of servers, infrastructure, and OS
 
 ##### Azure Logic Apps
 
@@ -2576,6 +2584,7 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
   - From imperative code
 - Available for Windows, Linux, and Mac
 - You can access it in a web browser via Azure Cloud Shell
+  - A storage account is required to use Azure Cloud Shell
 
 ##### The Azure CLI
 
@@ -3087,6 +3096,8 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
   - Microsoft cloud applications
   - Cloud applications that you develop
 - Supports single sign-on (SSO)
+- Web apps must be registered with Azure AD to support authentication and authorization services
+  - Registration is through the Azure Management Portal
 - **How does Azure AD compare to Active Directory?**
   - Active Directory is related to Azure AD
   - Some key differences
@@ -3173,6 +3184,7 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
     - _Something the user is_
       - Biometric property, such as a fingerprint or face scan
   - Increases identity security by limiting the impact of credential exposure
+  - MFA server is required for authentication when supporting users located on on-premises Active Directory only
 - **What's Azure AD Multi-Factor Authentication?**
   - Service that provides multifactor authentication capabilities
   - Additional form of authentication during sign-in
