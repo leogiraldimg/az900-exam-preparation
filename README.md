@@ -723,6 +723,7 @@ Azure can help make your app highly available through availability zones.
 - When you delete resource group, all the resources contained in that resource group are also deleted
   - Also deletes the metadata of all contained resources
 - Can include resources from different Azure regions
+- Quotas for resources in Azure Resource Groups are per region rather than per subscription
 
 ###### Logical grouping
 
@@ -779,6 +780,8 @@ Azure can help make your app highly available through availability zones.
   - **Access control boundary**:
     - Azure applies access-management policies at the subscription level
     - Manage and control access to the resources that users provision with specific subscriptions
+- A user can be given access to multiple subscriptions and access resources in those subscriptions
+- A resource can belong to only one subscription
 
 ##### Create additional Azure subscriptions
 
@@ -1294,6 +1297,9 @@ Azure supports Docker
     - Azure SQL Data Warehouse
     - Azure Database for PostgreSQL
     - Azure for MySQL
+  - Virtual Network peering can be used to tranfer data between Azure AD tenants, subscriptions, and deployment models
+    - Peering creates a high-bandwidth, low-latency connection between virtual networks
+    - Does not require any downtime for the peered virtual networks
 - Configurations:
   - **Isolation and segmentation**
     - Create multiple isolated virtual networks
@@ -1765,6 +1771,7 @@ Azure supports Docker
   - **Cool access tier**
     - Data that is infrequently accessed
     - Stored for at least 30 days
+      - Incurs penalties for data deleted within 30 days
     - Ex.: invoices for your costumers
     - Account level
     - Blob level, during upload or after upload
@@ -3301,6 +3308,13 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
     - _Azure Blueprints_
       - Define the set of standard Azure resources that your organization requires
       - Can automatically replace the resource lock if that lock is removed
+      - When a Azure Blueprint is updated and the updated version is published, any assignments of the blueprint are not updated automatically
+        - You must update the blueprint assignment with the new updated version of the assignment
+      - When a Azure Blueprint is unassigned, all of the resources assigned by the blueprint remain in place
+        - Blueprint resource locking is removed
+        - Deletion of the blueprint assignment object
+      - When you delete a core blueprint, any assigned versions of the blueprint remain in place
+        - Must be unassigned before it can be deleted
 
 #### Organize your Azure resources by using tags
 
