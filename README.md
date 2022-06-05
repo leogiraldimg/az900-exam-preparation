@@ -4484,3 +4484,42 @@ $$
 - Create and manage storage accounts, blobs, queues, tables, and files
 - Monitor storage account metrics
 - Access stored data through the various Storage Explorer features
+
+### [Azure Spot Virtual Machines](https://docs.microsoft.com/en-us/azure/virtual-machines/spot-vms)
+
+- Take advantage of our unused capacity
+- Significant cost savings
+- Great for workloads that can handle interruptions
+  - Batch processing jobs
+  - Dev/test environments
+  - Large compute workloads
+- Amount of available capacity can vary based on size, region, time of day, and more
+- Azure will allocate the VMs if there is capacity available
+- No SLA for these VMs
+- No high availability guarantees
+
+#### Eviction policy
+
+- VMs can be evicted based on capacity or the max price you set
+- Set the eviction policy to Deallocate (default) or Delete
+  - **Deallocate policy**
+    - Moves your VM to the stopped-deallocated state
+    - Will count against your quota and you will be charged storage costs for the underlying disks
+  - **Delete policy**
+    - VMs are deleted together with their underlying disks
+    - Will not continue to be charged for the storage
+
+#### Limitations
+
+- Can be deployed to any region, except Microsoft Azure China 21Vianet
+
+#### Pricing
+
+- Variable, based on region and SKU
+- Option to set a max price
+- If you set the max price to be -1 , the VM won't be evicted based on price
+
+#### Pricing and eviction history
+
+- See historical pricing and eviction rates per size in a region in the portal
+- Select View pricing history and compare prices in nearby regions
