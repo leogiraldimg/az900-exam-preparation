@@ -3348,6 +3348,10 @@ Sandbox link: https://docs.microsoft.com/en-us/learn/modules/azure-database-fund
       - Identify resources that align with governance or regulatory compliance requirements
     - Workload optimization and automation
       - Visualize all of the resources that participate in complex deployments
+  - Not all resources support tags
+    - Cannot be applied to classic resources that existed before Microsoft introduced Azure Resource Manager (ARM)
+  - Tags applied to a Resource Group are not inherited by its resources
+    - They are also not inherited if they are applied at the Azure subscription level
 - **How do I manage resource tags?**
   - Add, modify, or delete resource tags
   - Through PowerShell, the Azure CLI, Azure Resource Manager templates, the REST API, or the Azure portal
